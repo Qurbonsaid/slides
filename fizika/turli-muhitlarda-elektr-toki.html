@@ -1010,7 +1010,7 @@
   </button>
   
   <!-- PNG Export Button -->
-  <button class="png-btn" id="pngBtn" title="PNG sifatida saqlash" onclick="event.stopPropagation(); saveAsPNG();">
+  <button class="png-btn" id="pngBtn" title="PNG sifatida saqlash">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
       <polyline points="7 10 12 15 17 10"/>
@@ -1502,14 +1502,20 @@
   
   <!-- PNG Export functionality -->
   <script>
-    async function saveAsPNG() {
+    async function saveAsPNG(e) {
+      if (e) e.stopPropagation();
+      
       const btn = document.getElementById('pngBtn');
       btn.disabled = true;
       btn.style.opacity = '0.5';
       
       try {
         const activeSlide = document.querySelector('.slide.active');
-        if (!activeSlide) return;
+        if (!activeSlide) {
+          console.error('No active slide found');
+          alert("Hech qanday aktiv slayd topilmadi.");
+          return;
+        }
         
         const canvas = await html2canvas(activeSlide, {
           backgroundColor: '#ffffff',
@@ -1526,7 +1532,7 @@
           const url = URL.createObjectURL(blob);
           const a = document.createElement('a');
           a.href = url;
-          a.download = 'slayd-' + (window.currentSlideIndex + 1) + '.png';
+          a.download = `slayd-${window.currentSlideIndex + 1}.png`;
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
@@ -1541,6 +1547,14 @@
         btn.style.opacity = '1';
       }
     }
+    
+    // Add click event listener to PNG button
+    document.addEventListener('DOMContentLoaded', function() {
+      const pngBtn = document.getElementById('pngBtn');
+      if (pngBtn) {
+        pngBtn.addEventListener('click', saveAsPNG);
+      }
+    });
   </script>
   
   <script src="../js/slide-engine.js"></script>
