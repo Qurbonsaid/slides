@@ -21,6 +21,10 @@ class SlideEngine {
     // Show first slide
     this.slides[0].classList.add('active');
     
+    // Initialize global variable for PPTX export
+    window.currentSlideIndex = 0;
+    window.goToSlide = (index) => this.goToSlide(index);
+    
     // Setup event listeners
     this.setupClickNavigation();
     this.setupKeyboardNavigation();
@@ -34,8 +38,8 @@ class SlideEngine {
   
   setupClickNavigation() {
     document.addEventListener('click', (e) => {
-      // Ignore clicks on fullscreen button
-      if (e.target.closest('.fullscreen-btn')) return;
+      // Ignore clicks on fullscreen button and download button
+      if (e.target.closest('.fullscreen-btn') || e.target.closest('.download-btn')) return;
       
       this.hideClickHint();
       this.nextSlide();
@@ -139,6 +143,9 @@ class SlideEngine {
       this.slides[this.currentSlide].classList.remove('exit');
       this.slides[index].classList.add('active');
       this.currentSlide = index;
+      
+      // Update global variable for PPTX export
+      window.currentSlideIndex = index;
       
       this.updateProgress();
       this.updateCounter();

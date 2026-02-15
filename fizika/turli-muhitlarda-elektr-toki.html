@@ -10,17 +10,17 @@
   
   <style>
     :root {
-      --bg-primary: #0f172a;
-      --bg-secondary: #1e293b;
-      --bg-tertiary: #334155;
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #f1f5f9;
       --primary: #6366f1;
       --accent: #06b6d4;
       --accent2: #f59e0b;
       --success: #22c55e;
       --danger: #ef4444;
-      --text-primary: #f1f5f9;
-      --text-secondary: #cbd5e1;
-      --text-muted: #94a3b8;
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #475569;
     }
     
     * {
@@ -73,7 +73,7 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.05);
       z-index: 1000;
     }
     
@@ -119,26 +119,62 @@
       right: 2rem;
       width: 2.5rem;
       height: 2.5rem;
-      background: rgba(255, 255, 255, 0.1);
-      border: none;
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 0.5rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.2s;
+      transition: background 0.2s, border 0.2s;
       z-index: 1000;
       backdrop-filter: blur(10px);
     }
     
     .fullscreen-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(0, 0, 0, 0.08);
+      border-color: rgba(0, 0, 0, 0.15);
     }
     
     .fullscreen-btn svg {
       width: 1.25rem;
       height: 1.25rem;
       fill: var(--text-primary);
+    }
+    
+    /* Download Button */
+    .download-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, border 0.2s;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    
+    .download-btn:hover {
+      background: rgba(0, 0, 0, 0.08);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+    
+    .download-btn svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      stroke: var(--text-primary);
+    }
+    
+    .download-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
     
     /* Typography */
@@ -164,7 +200,7 @@
     }
     
     .gradient-text {
-      background: linear-gradient(135deg, var(--primary), var(--accent));
+      background: linear-gradient(135deg, #4f46e5, #0891b2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -195,6 +231,7 @@
       padding: 1.5rem;
       border-radius: 0.75rem;
       border-left: 4px solid var(--primary);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       animation: fadeInUp 0.6s ease forwards;
       opacity: 0;
     }
@@ -231,6 +268,7 @@
       border-radius: 0.75rem;
       text-align: center;
       border-top: 3px solid var(--primary);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       animation: fadeInUp 0.6s ease forwards;
       opacity: 0;
     }
@@ -259,8 +297,8 @@
     
     /* Formula Box */
     .formula-box {
-      background: rgba(99, 102, 241, 0.1);
-      border: 2px solid rgba(99, 102, 241, 0.3);
+      background: rgba(99, 102, 241, 0.08);
+      border: 2px solid rgba(99, 102, 241, 0.2);
       border-radius: 0.75rem;
       padding: 1.5rem;
       margin: 1.5rem 0;
@@ -305,7 +343,8 @@
     
     /* Animation Container */
     .animation-container {
-      background: var(--bg-secondary);
+      background: var(--bg-tertiary);
+      border: 1px solid rgba(0, 0, 0, 0.05);
       border-radius: 0.75rem;
       padding: 2rem;
       display: flex;
@@ -331,7 +370,7 @@
       height: 4px;
       background: var(--accent);
       border-radius: 50%;
-      opacity: 0.6;
+      opacity: 0.8;
       animation: float 20s infinite ease-in-out;
     }
     
@@ -349,7 +388,7 @@
     .wire {
       width: 400px;
       height: 4px;
-      background: linear-gradient(90deg, #64748b 0%, #94a3b8 50%, #64748b 100%);
+      background: linear-gradient(90deg, #475569 0%, #64748b 50%, #475569 100%);
       border-radius: 2px;
       position: relative;
       box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
@@ -408,7 +447,7 @@
     .electrolysis {
       width: 400px;
       height: 200px;
-      background: rgba(6, 182, 212, 0.1);
+      background: rgba(6, 182, 212, 0.05);
       border: 3px solid var(--accent);
       border-radius: 0.5rem;
       position: relative;
@@ -420,7 +459,7 @@
       width: 20px;
       height: 140px;
       top: 30px;
-      background: linear-gradient(180deg, #64748b, #94a3b8);
+      background: linear-gradient(180deg, #475569, #64748b);
       border-radius: 4px;
     }
     
@@ -482,12 +521,12 @@
     .discharge-tube {
       width: 400px;
       height: 120px;
-      background: rgba(139, 92, 246, 0.1);
+      background: rgba(139, 92, 246, 0.05);
       border: 3px solid #a78bfa;
       border-radius: 60px;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 0 30px rgba(139, 92, 246, 0.4), inset 0 0 30px rgba(139, 92, 246, 0.2);
+      box-shadow: 0 0 30px rgba(139, 92, 246, 0.2), inset 0 0 30px rgba(139, 92, 246, 0.1);
       animation: glow 2s ease-in-out infinite;
     }
     
@@ -510,7 +549,7 @@
     .vacuum-tube {
       width: 400px;
       height: 180px;
-      background: rgba(15, 23, 42, 0.8);
+      background: rgba(100, 116, 139, 0.05);
       border: 3px solid #64748b;
       border-radius: 0.5rem;
       position: relative;
@@ -566,7 +605,7 @@
     
     .p-region {
       flex: 1;
-      background: rgba(239, 68, 68, 0.15);
+      background: rgba(239, 68, 68, 0.08);
       border: 2px solid var(--danger);
       border-radius: 0.5rem 0 0 0.5rem;
       position: relative;
@@ -577,7 +616,7 @@
     
     .n-region {
       flex: 1;
-      background: rgba(6, 182, 212, 0.15);
+      background: rgba(6, 182, 212, 0.08);
       border: 2px solid var(--accent);
       border-radius: 0 0.5rem 0.5rem 0;
       position: relative;
@@ -593,7 +632,7 @@
       bottom: 0;
       width: 4px;
       background: linear-gradient(180deg, var(--danger), var(--accent));
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
       animation: pulse 2s ease-in-out infinite;
       transform: translateX(-50%);
     }
@@ -698,7 +737,7 @@
     }
     
     .comparison-table th {
-      background: var(--bg-secondary);
+      background: #e0e7ff;
       padding: 1rem;
       text-align: left;
       font-weight: 600;
@@ -707,12 +746,16 @@
     
     .comparison-table td {
       padding: 0.875rem 1rem;
-      border-bottom: 1px solid var(--bg-tertiary);
+      border-bottom: 1px solid #e2e8f0;
       color: var(--text-secondary);
     }
     
+    .comparison-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+    
     .comparison-table tr:hover {
-      background: rgba(99, 102, 241, 0.05);
+      background: rgba(99, 102, 241, 0.08);
     }
     
     .comparison-table td:first-child {
@@ -959,6 +1002,15 @@
         </symbol>
       </defs>
       <use xlink:href="#icon-expand"/>
+    </svg>
+  </button>
+  
+  <!-- Download Button -->
+  <button class="download-btn" id="downloadBtn" title="PPTX yuklab olish">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <line x1="12" y1="15" x2="12" y2="3"></line>
     </svg>
   </button>
   
@@ -1440,6 +1492,149 @@
       </h1>
     </div>
   </section>
+  
+  <!-- Load PptxGenJS first (required dependency) -->
+  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@latest/dist/pptxgen.bundle.js"></script>
+  
+  <!-- Download PPTX functionality -->
+  <script>
+    // PPTX Download Function
+    async function downloadPPTX() {
+      const btn = document.getElementById('downloadBtn');
+      btn.disabled = true;
+      btn.style.opacity = '0.5';
+      
+      try {
+        const pptx = new PptxGenJS();
+        
+        // Configure presentation
+        pptx.layout = 'LAYOUT_16x9';
+        pptx.author = 'Fizika Taqdimoti';
+        pptx.title = 'Turli Muhitlarda Elektr Toki';
+        pptx.subject = 'Fizika';
+        
+        const slides = document.querySelectorAll('.slide');
+        const currentSlide = currentSlideIndex; // save current
+        
+        // Add transition effect between slides
+        const transition = { type: 'fade', duration: 0.5 };
+        
+        for (let i = 0; i < slides.length; i++) {
+          const slide = slides[i];
+          const pptxSlide = pptx.addSlide();
+          
+          // Set slide transition
+          pptxSlide.transition = transition;
+          
+          // Set background color
+          pptxSlide.background = { color: 'F8FAFC' };
+          
+          // Extract text content from the slide
+          const heading = slide.querySelector('h1, h2');
+          const subtitle = slide.querySelector('.subtitle');
+          const textContent = slide.querySelectorAll('.text-content, .toc-item, .card, p');
+          
+          let yPos = 0.5;
+          
+          // Add heading
+          if (heading) {
+            const headingText = heading.textContent.trim();
+            pptxSlide.addText(headingText, {
+              x: 0.5,
+              y: yPos,
+              w: 9,
+              h: 1,
+              fontSize: heading.tagName === 'H1' ? 44 : 36,
+              bold: true,
+              color: '0F172A',
+              align: 'center'
+            });
+            yPos += 1.2;
+          }
+          
+          // Add subtitle
+          if (subtitle) {
+            pptxSlide.addText(subtitle.textContent.trim(), {
+              x: 0.5,
+              y: yPos,
+              w: 9,
+              h: 0.6,
+              fontSize: 20,
+              color: '334155',
+              align: 'center'
+            });
+            yPos += 0.8;
+          }
+          
+          // Add content
+          if (textContent.length > 0) {
+            const contentArray = [];
+            textContent.forEach((elem, idx) => {
+              if (idx < 8) { // Limit content items
+                const text = elem.textContent.trim();
+                if (text && text.length > 0 && text.length < 500) {
+                  contentArray.push({
+                    text: text,
+                    options: { fontSize: 14, color: '334155', bullet: true }
+                  });
+                }
+              }
+            });
+            
+            if (contentArray.length > 0) {
+              pptxSlide.addText(contentArray, {
+                x: 1,
+                y: yPos,
+                w: 8,
+                h: 4,
+                fontSize: 14,
+                color: '334155'
+              });
+            }
+          }
+          
+          // Add footer with slide number
+          pptxSlide.addText(`${i + 1} / ${slides.length}`, {
+            x: 0.5,
+            y: 5,
+            w: 1,
+            h: 0.3,
+            fontSize: 12,
+            color: '64748B',
+            align: 'left'
+          });
+        }
+        
+        // Save the file
+        await pptx.writeFile({ fileName: 'Turli_Muhitlarda_Elektr_Toki.pptx' });
+        
+        // Go back to current slide
+        if (typeof goToSlide === 'function') {
+          goToSlide(currentSlide);
+        }
+        
+        console.log('PPTX exported successfully!');
+        
+      } catch (err) {
+        console.error('PPTX export error:', err);
+        alert('PPTX yuklab olishda xatolik yuz berdi. Qayta urinib ko\'ring.');
+      } finally {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+      }
+    }
+    
+    // Add click event listener to download button
+    document.addEventListener('DOMContentLoaded', function() {
+      const downloadBtn = document.getElementById('downloadBtn');
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function(e) {
+          e.stopPropagation(); // Prevent slide navigation
+          downloadPPTX();
+        });
+      }
+    });
+  </script>
   
   <script src="../js/slide-engine.js"></script>
 </body>
