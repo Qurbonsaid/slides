@@ -38,8 +38,8 @@ class SlideEngine {
   
   setupClickNavigation() {
     document.addEventListener('click', (e) => {
-      // Ignore clicks on fullscreen button and png button
-      if (e.target.closest('.fullscreen-btn') || e.target.closest('.png-btn')) return;
+      // Ignore clicks on fullscreen button
+      if (e.target.closest('.fullscreen-btn')) return;
       
       this.hideClickHint();
       this.nextSlide();
