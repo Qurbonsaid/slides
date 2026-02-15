@@ -1492,11 +1492,29 @@
   
   <!-- GIF Export functionality -->
   <script>
+    // Fetch worker script and create a same-origin Blob URL
+    async function getWorkerBlobUrl() {
+      try {
+        const response = await fetch('https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.worker.js');
+        if (!response.ok) {
+          throw new Error('Worker skriptini yuklab bo\'lmadi');
+        }
+        const workerText = await response.text();
+        const blob = new Blob([workerText], { type: 'application/javascript' });
+        return URL.createObjectURL(blob);
+      } catch (error) {
+        console.error('Worker Blob URL yaratishda xatolik:', error);
+        throw error;
+      }
+    }
+    
     // GIF Export Function
     async function exportSlideAsGif() {
       const btn = document.getElementById('gifBtn');
       btn.disabled = true;
       btn.innerHTML = '⏳'; // loading state
+      
+      let workerBlobUrl = null;
       
       try {
         const activeSlide = document.querySelector('.slide.active');
@@ -1504,13 +1522,16 @@
           throw new Error('Hech qanday aktiv slayd topilmadi');
         }
         
+        // Get same-origin worker Blob URL to avoid SecurityError
+        workerBlobUrl = await getWorkerBlobUrl();
+        
         // Create GIF encoder
         const gif = new GIF({
           workers: 2,
           quality: 10,
           width: activeSlide.offsetWidth,
           height: activeSlide.offsetHeight,
-          workerScript: 'https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.worker.js'
+          workerScript: workerBlobUrl
         });
         
         const fps = 10;
@@ -1542,6 +1563,11 @@
           a.click();
           URL.revokeObjectURL(url);
           
+          // Clean up worker Blob URL
+          if (workerBlobUrl) {
+            URL.revokeObjectURL(workerBlobUrl);
+          }
+          
           btn.disabled = false;
           btn.innerHTML = '🎬'; // restore icon
         });
@@ -1550,7 +1576,13 @@
         
       } catch (err) {
         console.error('GIF eksport xatosi:', err);
-        alert('GIF yaratishda xatolik yuz berdi. Qayta urinib ko\'ring.');
+        alert('GIF eksport qilishda xatolik yuz berdi. Qayta urinib ko\'ring.');
+        
+        // Clean up worker Blob URL on error
+        if (workerBlobUrl) {
+          URL.revokeObjectURL(workerBlobUrl);
+        }
+        
         btn.disabled = false;
         btn.innerHTML = '🎬';
       }
