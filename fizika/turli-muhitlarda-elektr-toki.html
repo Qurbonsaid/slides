@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turli Muhitlarda Elektr Toki - Fizika Taqdimoti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --primary: #6366f1;
+      --accent: #06b6d4;
+      --accent2: #f59e0b;
+      --success: #22c55e;
+      --danger: #ef4444;
+      --text-primary: #f1f5f9;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    /* Slide Container */
+    .slide {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      opacity: 0;
+      transform: translateX(100%) scale(0.9);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      pointer-events: none;
+    }
+    
+    .slide.active {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      pointer-events: auto;
+    }
+    
+    .slide.exit {
+      opacity: 0;
+      transform: translateX(-100%) scale(0.9);
+    }
+    
+    /* Progress Bar */
+    .progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 1000;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+    
+    /* Slide Counter */
+    .slide-counter {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      z-index: 1000;
+    }
+    
+    /* Click Hint */
+    .click-hint {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+      animation: pulse 2s infinite;
+    }
+    
+    /* Fullscreen Button */
+    .fullscreen-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    
+    .fullscreen-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .fullscreen-btn svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: var(--text-primary);
+    }
+    
+    /* Typography */
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 1.1;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .subtitle {
+      font-size: 1.5rem;
+      color: var(--text-secondary);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Content Layouts */
+    .content-wrapper {
+      max-width: 1100px;
+      width: 100%;
+    }
+    
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .toc-item {
+      background: var(--bg-secondary);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      border-left: 4px solid var(--primary);
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+    
+    .toc-item:nth-child(1) { animation-delay: 0.1s; }
+    .toc-item:nth-child(2) { animation-delay: 0.2s; }
+    .toc-item:nth-child(3) { animation-delay: 0.3s; }
+    .toc-item:nth-child(4) { animation-delay: 0.4s; }
+    
+    .toc-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .toc-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: var(--bg-secondary);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      text-align: center;
+      border-top: 3px solid var(--primary);
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+    
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+    
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-subtitle {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    
+    /* Formula Box */
+    .formula-box {
+      background: rgba(99, 102, 241, 0.1);
+      border: 2px solid rgba(99, 102, 241, 0.3);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.25rem;
+      text-align: center;
+      animation: glow 3s ease-in-out infinite;
+    }
+    
+    .formula-large {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0.5rem 0;
+    }
+    
+    .formula-small {
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+    
+    /* Text Content */
+    .text-content {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin: 1rem 0;
+    }
+    
+    .text-content strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    
+    /* Two Column Layout */
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    /* Animation Container */
+    .animation-container {
+      background: var(--bg-secondary);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Floating Particles Background */
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 20s infinite ease-in-out;
+    }
+    
+    .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .particle:nth-child(2) { left: 20%; animation-delay: 2s; }
+    .particle:nth-child(3) { left: 30%; animation-delay: 4s; }
+    .particle:nth-child(4) { left: 40%; animation-delay: 1s; }
+    .particle:nth-child(5) { left: 50%; animation-delay: 3s; }
+    .particle:nth-child(6) { left: 60%; animation-delay: 5s; }
+    .particle:nth-child(7) { left: 70%; animation-delay: 7s; }
+    .particle:nth-child(8) { left: 80%; animation-delay: 6s; }
+    .particle:nth-child(9) { left: 90%; animation-delay: 8s; }
+    
+    /* Wire with Electron Flow */
+    .wire {
+      width: 400px;
+      height: 4px;
+      background: linear-gradient(90deg, #64748b 0%, #94a3b8 50%, #64748b 100%);
+      border-radius: 2px;
+      position: relative;
+      box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    }
+    
+    .electron {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0 0 15px var(--accent);
+      animation: electronFlow 3s infinite linear;
+    }
+    
+    .electron:nth-child(2) { animation-delay: 1s; }
+    .electron:nth-child(3) { animation-delay: 2s; }
+    
+    /* Crystal Lattice */
+    .lattice {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3rem;
+      position: relative;
+    }
+    
+    .ion {
+      width: 24px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    
+    .ion:nth-child(odd) { animation-delay: 0s; }
+    .ion:nth-child(even) { animation-delay: 1s; }
+    
+    .free-electron {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent);
+      animation: drift 4s infinite linear;
+    }
+    
+    .free-electron:nth-child(11) { left: 10%; animation-delay: 0s; }
+    .free-electron:nth-child(12) { left: 30%; animation-delay: 1s; }
+    .free-electron:nth-child(13) { left: 50%; animation-delay: 2s; }
+    .free-electron:nth-child(14) { left: 70%; animation-delay: 3s; }
+    
+    /* Electrolysis Container */
+    .electrolysis {
+      width: 400px;
+      height: 200px;
+      background: rgba(6, 182, 212, 0.1);
+      border: 3px solid var(--accent);
+      border-radius: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .electrode {
+      position: absolute;
+      width: 20px;
+      height: 140px;
+      top: 30px;
+      background: linear-gradient(180deg, #64748b, #94a3b8);
+      border-radius: 4px;
+    }
+    
+    .electrode.cathode {
+      left: 30px;
+    }
+    
+    .electrode.anode {
+      right: 30px;
+    }
+    
+    .electrode-label {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    
+    .positive-ion {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--danger);
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.625rem;
+      font-weight: bold;
+      animation: driftRight 4s infinite linear;
+    }
+    
+    .negative-ion {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.625rem;
+      font-weight: bold;
+      animation: driftLeft 4s infinite linear;
+    }
+    
+    .positive-ion:nth-child(3) { top: 50px; left: 50%; animation-delay: 0s; }
+    .positive-ion:nth-child(4) { top: 100px; left: 50%; animation-delay: 2s; }
+    .negative-ion:nth-child(5) { top: 75px; left: 50%; animation-delay: 1s; }
+    .negative-ion:nth-child(6) { top: 125px; left: 50%; animation-delay: 3s; }
+    
+    /* Gas Discharge Tube */
+    .discharge-tube {
+      width: 400px;
+      height: 120px;
+      background: rgba(139, 92, 246, 0.1);
+      border: 3px solid #a78bfa;
+      border-radius: 60px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(139, 92, 246, 0.4), inset 0 0 30px rgba(139, 92, 246, 0.2);
+      animation: glow 2s ease-in-out infinite;
+    }
+    
+    .spark {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: #a78bfa;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #a78bfa;
+      animation: spark 2s infinite ease-in-out;
+    }
+    
+    .spark:nth-child(1) { left: 20%; top: 30%; animation-delay: 0s; }
+    .spark:nth-child(2) { left: 40%; top: 60%; animation-delay: 0.3s; }
+    .spark:nth-child(3) { left: 60%; top: 40%; animation-delay: 0.6s; }
+    .spark:nth-child(4) { left: 80%; top: 70%; animation-delay: 0.9s; }
+    
+    /* Vacuum Tube */
+    .vacuum-tube {
+      width: 400px;
+      height: 180px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 3px solid #64748b;
+      border-radius: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cathode {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 80px;
+      background: linear-gradient(90deg, #ef4444, #f59e0b);
+      border-radius: 4px;
+      box-shadow: 0 0 20px #ef4444;
+      animation: heat 1.5s ease-in-out infinite;
+    }
+    
+    .anode {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 120px;
+      background: #64748b;
+      border-radius: 4px;
+    }
+    
+    .thermionic-electron {
+      position: absolute;
+      left: 60px;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent);
+      animation: thermoElectron 3s infinite linear;
+    }
+    
+    .thermionic-electron:nth-child(3) { top: 60px; animation-delay: 0s; }
+    .thermionic-electron:nth-child(4) { top: 80px; animation-delay: 1s; }
+    .thermionic-electron:nth-child(5) { top: 100px; animation-delay: 2s; }
+    
+    /* Semiconductor p-n Junction */
+    .pn-junction {
+      width: 500px;
+      height: 200px;
+      display: flex;
+      position: relative;
+    }
+    
+    .p-region {
+      flex: 1;
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--danger);
+      border-radius: 0.5rem 0 0 0.5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .n-region {
+      flex: 1;
+      background: rgba(6, 182, 212, 0.15);
+      border: 2px solid var(--accent);
+      border-radius: 0 0.5rem 0.5rem 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .junction-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--danger), var(--accent));
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      animation: pulse 2s ease-in-out infinite;
+      transform: translateX(-50%);
+    }
+    
+    .hole {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border: 2px solid var(--danger);
+      border-radius: 50%;
+      color: var(--danger);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      font-weight: bold;
+      animation: float 3s infinite ease-in-out;
+    }
+    
+    .electron-carrier {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: var(--accent);
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      font-weight: bold;
+      box-shadow: 0 0 10px var(--accent);
+      animation: float 3s infinite ease-in-out;
+    }
+    
+    .hole:nth-child(2) { left: 20%; top: 30%; animation-delay: 0s; }
+    .hole:nth-child(3) { left: 40%; top: 60%; animation-delay: 1s; }
+    .hole:nth-child(4) { left: 60%; top: 40%; animation-delay: 2s; }
+    
+    .electron-carrier:nth-child(2) { right: 20%; top: 40%; animation-delay: 0.5s; }
+    .electron-carrier:nth-child(3) { right: 40%; top: 70%; animation-delay: 1.5s; }
+    .electron-carrier:nth-child(4) { right: 60%; top: 50%; animation-delay: 2.5s; }
+    
+    .region-label {
+      font-size: 2rem;
+      font-weight: 800;
+      opacity: 0.3;
+    }
+    
+    /* Band Gap Diagram */
+    .band-diagram {
+      width: 300px;
+      height: 250px;
+      position: relative;
+      margin: 0 auto;
+    }
+    
+    .band {
+      width: 100%;
+      height: 80px;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      position: absolute;
+    }
+    
+    .conduction-band {
+      top: 0;
+      background: rgba(6, 182, 212, 0.2);
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+    
+    .valence-band {
+      bottom: 0;
+      background: rgba(99, 102, 241, 0.2);
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    
+    .band-gap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent2);
+      text-align: center;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    /* Comparison Table */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    
+    .comparison-table th {
+      background: var(--bg-secondary);
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .comparison-table td {
+      padding: 0.875rem 1rem;
+      border-bottom: 1px solid var(--bg-tertiary);
+      color: var(--text-secondary);
+    }
+    
+    .comparison-table tr:hover {
+      background: rgba(99, 102, 241, 0.05);
+    }
+    
+    .comparison-table td:first-child {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    
+    @keyframes glow {
+      0%, 100% {
+        box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 25px rgba(99, 102, 241, 0.6);
+      }
+    }
+    
+    @keyframes electronFlow {
+      0% {
+        left: 0%;
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        left: 100%;
+        opacity: 0;
+      }
+    }
+    
+    @keyframes drift {
+      0% {
+        top: 0;
+        left: 10%;
+      }
+      50% {
+        top: 50%;
+        left: 90%;
+      }
+      100% {
+        top: 100%;
+        left: 10%;
+      }
+    }
+    
+    @keyframes driftRight {
+      0% {
+        left: 50%;
+        opacity: 1;
+      }
+      100% {
+        left: 10%;
+        opacity: 0;
+      }
+    }
+    
+    @keyframes driftLeft {
+      0% {
+        left: 50%;
+        opacity: 1;
+      }
+      100% {
+        left: 90%;
+        opacity: 0;
+      }
+    }
+    
+    @keyframes spark {
+      0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.5);
+      }
+    }
+    
+    @keyframes heat {
+      0%, 100% {
+        box-shadow: 0 0 20px #ef4444;
+      }
+      50% {
+        box-shadow: 0 0 40px #f59e0b;
+      }
+    }
+    
+    @keyframes thermoElectron {
+      0% {
+        left: 60px;
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        left: 340px;
+        opacity: 0;
+      }
+    }
+    
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .slide {
+        padding: 2rem;
+      }
+      
+      h1 {
+        font-size: 3rem;
+      }
+      
+      h2 {
+        font-size: 2.25rem;
+      }
+      
+      .toc-grid,
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+      
+      .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .comparison-table {
+        font-size: 0.75rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .slide {
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.75rem;
+      }
+      
+      .subtitle {
+        font-size: 1rem;
+      }
+      
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .wire,
+      .electrolysis,
+      .discharge-tube,
+      .vacuum-tube,
+      .pn-junction {
+        transform: scale(0.8);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  
+  <!-- Slide Counter -->
+  <div class="slide-counter">1 / 15</div>
+  
+  <!-- Click Hint -->
+  <div class="click-hint">
+    <span>Davom etish uchun bosing →</span>
+  </div>
+  
+  <!-- Fullscreen Button -->
+  <button class="fullscreen-btn" title="To'liq ekran">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="icon-expand" viewBox="0 0 24 24">
+          <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+        </symbol>
+        <symbol id="icon-collapse" viewBox="0 0 24 24">
+          <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+        </symbol>
+      </defs>
+      <use xlink:href="#icon-expand"/>
+    </svg>
+  </button>
+  
+  <!-- Slide 1: Title -->
+  <section class="slide">
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <h1 class="gradient-text">Turli Muhitlarda Elektr Toki</h1>
+    <p class="subtitle">Fan: Fizika</p>
+    <p class="subtitle">Daraja: Oliy ta'lim</p>
+    <p class="subtitle" style="margin-top: 2rem; font-size: 1.25rem; color: var(--text-muted);">2026-yil</p>
+  </section>
+  
+  <!-- Slide 2: Table of Contents -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Mundarija</h2>
+      <div class="toc-grid">
+        <div class="toc-item">
+          <div class="toc-number">01</div>
+          <div class="toc-title">Nazariy asos</div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-number">02</div>
+          <div class="toc-title">Metallarda tok</div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-number">03</div>
+          <div class="toc-title">Elektrolitlar va gazlar</div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-number">04</div>
+          <div class="toc-title">Vakuum va yarim o'tkazgichlar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 3: Electric Current - General Concepts -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Elektr Toki — Umumiy Tushunchalar</h2>
+      <div class="formula-box">
+        <div class="formula-small">Tok kuchi:</div>
+        <div class="formula-large">I = ΔQ / Δt</div>
+        <div class="formula-small">Tok zichligi:</div>
+        <div class="formula-large">j = n · e · v<sub>d</sub></div>
+      </div>
+      <p class="text-content">
+        <strong>Elektr toki</strong> — zaryadlangan zarrachalarning tartibli harakati. 
+        <strong>n</strong> — zaryad tashuvchilar konsentratsiyasi, 
+        <strong>e</strong> — elementar zaryad, 
+        <strong>v<sub>d</sub></strong> — drift tezligi.
+      </p>
+      <div class="animation-container">
+        <div class="wire">
+          <div class="electron"></div>
+          <div class="electron"></div>
+          <div class="electron"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 4: Current Carriers Classification -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Tok Tashuvchilar Klasifikatsiyasi</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🔷</div>
+          <div class="card-title">Metallar</div>
+          <div class="card-subtitle">Erkin elektronlar</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💧</div>
+          <div class="card-title">Elektrolitlar</div>
+          <div class="card-subtitle">Ionlar</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💨</div>
+          <div class="card-title">Gazlar</div>
+          <div class="card-subtitle">Elektronlar + Ionlar</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌌</div>
+          <div class="card-title">Vakuum</div>
+          <div class="card-subtitle">Termoelektronlar</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <div class="card-title">Yarim o'tkazgichlar</div>
+          <div class="card-subtitle">Elektronlar + Kovaklar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 5: Current in Metals -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Metallarda Elektr Toki</h2>
+      <div class="two-column">
+        <div>
+          <h3>Drude modeli (1900)</h3>
+          <div class="formula-box">
+            <div class="formula-small">Drift tezligi:</div>
+            <div class="formula-large">v<sub>d</sub> = eEτ / m</div>
+            <div class="formula-small" style="margin-top: 1rem;">O'tkazuvchanlik:</div>
+            <div class="formula-large">σ = ne²τ / m<sub>e</sub></div>
+          </div>
+          <p class="text-content">
+            <strong>Om qonuni:</strong> j = σE (differensial), U = IR (integral)<br>
+            <strong>Harorat bog'liqligi:</strong> R(T) = R₀(1 + αΔT)
+          </p>
+        </div>
+        <div class="animation-container">
+          <div class="lattice">
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="ion"></div>
+            <div class="free-electron"></div>
+            <div class="free-electron"></div>
+            <div class="free-electron"></div>
+            <div class="free-electron"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 6: Quantum Theory Approach -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Kvant Nazariyasi Yondashuvi</h2>
+      <div class="text-content" style="margin-bottom: 1.5rem;">
+        <strong>Sommerfeld modeli:</strong> Fermi-Dirac taqsimoti, energiya zonalari nazariyasi
+      </div>
+      <div class="formula-box">
+        <div class="formula-small">Fermi-Dirac taqsimoti:</div>
+        <div class="formula-large">f(E) = 1 / (e<sup>(E-E<sub>F</sub>)/k<sub>B</sub>T</sup> + 1)</div>
+      </div>
+      <div class="formula-box">
+        <div class="formula-small">Bloch teoremasi:</div>
+        <div class="formula-large">ψ<sub>k</sub>(r) = u<sub>k</sub>(r) · e<sup>ikr</sup></div>
+      </div>
+      <div class="formula-box">
+        <div class="formula-small">Kvant o'tkazuvchanlik:</div>
+        <div class="formula-large">σ = (e² / ℏ) · k<sub>F</sub> · l / (3π²)</div>
+      </div>
+      <p class="text-content">
+        Energiya zonalari va o'tkazuvchanlik zonasi tushunchasi.
+        <strong>k<sub>F</sub></strong> — Fermi to'lqin vektori, 
+        <strong>l</strong> — erkin yo'l uzunligi.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Slide 7: Current in Electrolytes -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Elektrolitlarda Elektr Toki</h2>
+      <div class="two-column">
+        <div>
+          <h3>Ion o'tkazuvchanlik</h3>
+          <p class="text-content">
+            <strong>Elektrolitik dissotsiatsiya:</strong><br>
+            NaCl → Na⁺ + Cl⁻<br>
+            CuSO₄ → Cu²⁺ + SO₄²⁻
+          </p>
+          <p class="text-content" style="margin-top: 1rem;">
+            Musbat ionlar <strong>katodga</strong> (−), manfiy ionlar <strong>anodga</strong> (+) harakat qiladi.
+          </p>
+        </div>
+        <div class="animation-container">
+          <div class="electrolysis">
+            <div class="electrode cathode">
+              <div class="electrode-label">Katod (−)</div>
+            </div>
+            <div class="electrode anode">
+              <div class="electrode-label">Anod (+)</div>
+            </div>
+            <div class="positive-ion">+</div>
+            <div class="positive-ion">+</div>
+            <div class="negative-ion">−</div>
+            <div class="negative-ion">−</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 8: Faraday's Laws -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Faradey Elektroliz Qonunlari</h2>
+      <div class="formula-box" style="margin-top: 2rem;">
+        <div class="formula-small">Birinchi qonun:</div>
+        <div class="formula-large">m = k · I · t</div>
+      </div>
+      <div class="formula-box">
+        <div class="formula-small">Ikkinchi qonun:</div>
+        <div class="formula-large">k = M / (z · F)</div>
+      </div>
+      <div class="formula-box">
+        <div class="formula-small">Umumiy formula:</div>
+        <div class="formula-large">m = (M · I · t) / (z · F)</div>
+      </div>
+      <p class="text-content" style="text-align: center; margin-top: 2rem;">
+        <strong>m</strong> — ajralib chiqqan modda massasi<br>
+        <strong>k</strong> — elektrokimyoviy ekvivalent<br>
+        <strong>M</strong> — molyar massa<br>
+        <strong>z</strong> — valentlik<br>
+        <strong>F</strong> = 96485 C/mol — Faradey doimiysi
+      </p>
+    </div>
+  </section>
+  
+  <!-- Slide 9: Current in Gases -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Gazlarda Elektr Toki</h2>
+      <div class="two-column">
+        <div>
+          <h3>Ionlanish mexanizmlari</h3>
+          <p class="text-content">
+            • <strong>Issiqlik ionlanishi</strong> — yuqori haroratda<br>
+            • <strong>Fotoionlanish</strong> — ultrabinafsha nurlanish<br>
+            • <strong>Zarba ionlanishi</strong> — tezlashtirilgan elektronlar
+          </p>
+          <h3 style="margin-top: 1.5rem;">Gaz razryadlari turlari</h3>
+          <p class="text-content">
+            • Jim razryad<br>
+            • Porlash razryadi<br>
+            • Yoy razryadi<br>
+            • Uchqun razryadi
+          </p>
+        </div>
+        <div class="animation-container">
+          <div class="discharge-tube">
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 10: Paschen's Law and Plasma -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Paschen Qonuni va Plazma</h2>
+      <div class="formula-box">
+        <div class="formula-small">Paschen qonuni:</div>
+        <div class="formula-large">V<sub>b</sub> = B · p · d / ln(A · p · d)</div>
+      </div>
+      <p class="text-content">
+        <strong>V<sub>b</sub></strong> — yorilish potensiali, 
+        <strong>p</strong> — bosim, 
+        <strong>d</strong> — elektrodlar orasidagi masofa
+      </p>
+      <h3 style="margin-top: 1.5rem;">Plazma — moddaning 4-holati</h3>
+      <div class="formula-box">
+        <div class="formula-small">Debye radiusi:</div>
+        <div class="formula-large">λ<sub>D</sub> = √(ε₀k<sub>B</sub>T / ne²)</div>
+        <div class="formula-small" style="margin-top: 1rem;">Plazma chastotasi:</div>
+        <div class="formula-large">ω<sub>p</sub> = √(ne² / ε₀m<sub>e</sub>)</div>
+      </div>
+      <p class="text-content">
+        <strong>Qo'llanilishi:</strong> ITER termoyadorviy reaktori, plazma ekranlar, MHD generatorlar
+      </p>
+    </div>
+  </section>
+  
+  <!-- Slide 11: Current in Vacuum -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Vakuumda Elektr Toki</h2>
+      <div class="two-column">
+        <div>
+          <h3>Termoelektron emissiya</h3>
+          <div class="formula-box">
+            <div class="formula-small">Richardson-Dushman qonuni:</div>
+            <div class="formula-large">j<sub>s</sub> = AT² · e<sup>−φ/k<sub>B</sub>T</sup></div>
+          </div>
+          <div class="formula-box">
+            <div class="formula-small">Langmuir-Child 3/2 qonuni:</div>
+            <div class="formula-large">I ∝ V<sup>3/2</sup></div>
+          </div>
+          <p class="text-content">
+            <strong>φ</strong> — chiqish ishi, katoddan elektronlarni chiqarish uchun zarur energiya
+          </p>
+        </div>
+        <div class="animation-container">
+          <div class="vacuum-tube">
+            <div class="cathode"></div>
+            <div class="anode"></div>
+            <div class="thermionic-electron"></div>
+            <div class="thermionic-electron"></div>
+            <div class="thermionic-electron"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 12: Semiconductors -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Yarim O'tkazgichlarda Elektr Toki</h2>
+      <div class="two-column">
+        <div>
+          <h3>Zonalar nazariyasi</h3>
+          <p class="text-content">
+            • <strong>O'tkazuvchanlik zonasi</strong> — erkin elektronlar<br>
+            • <strong>Valentlik zonasi</strong> — bog'langan elektronlar<br>
+            • <strong>Taqiqlangan zona</strong> (E<sub>g</sub>) — energiya oralig'i
+          </p>
+          <div class="formula-box" style="margin-top: 1rem;">
+            <div class="formula-small">Tashuvchilar konsentratsiyasi:</div>
+            <div class="formula-large">n(T) = C · T<sup>3/2</sup> · e<sup>−E<sub>g</sub>/2k<sub>B</sub>T</sup></div>
+          </div>
+          <p class="text-content">
+            <strong>Xususiy yarim o'tkazgichlar:</strong> Si, Ge
+          </p>
+        </div>
+        <div class="animation-container">
+          <div class="band-diagram">
+            <div class="band conduction-band">O'tkazuvchanlik zonasi</div>
+            <div class="band-gap">E<sub>g</sub></div>
+            <div class="band valence-band">Valentlik zonasi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 13: p-n Junction and Diodes -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">p-n O'tish va Diodlar</h2>
+      <div class="animation-container" style="margin-bottom: 1.5rem;">
+        <div class="pn-junction">
+          <div class="p-region">
+            <div class="region-label" style="color: var(--danger);">p</div>
+            <div class="hole">+</div>
+            <div class="hole">+</div>
+            <div class="hole">+</div>
+          </div>
+          <div class="junction-line"></div>
+          <div class="n-region">
+            <div class="region-label" style="color: var(--accent);">n</div>
+            <div class="electron-carrier">−</div>
+            <div class="electron-carrier">−</div>
+            <div class="electron-carrier">−</div>
+          </div>
+        </div>
+      </div>
+      <div class="formula-box">
+        <div class="formula-small">Diod I-V xarakteristikasi:</div>
+        <div class="formula-large">I = I₀ · [e<sup>eV/k<sub>B</sub>T</sup> − 1]</div>
+      </div>
+      <p class="text-content" style="text-align: center;">
+        <strong>Qo'llanilishi:</strong> LED, quyosh batareyalari, to'g'rilagichlar
+      </p>
+    </div>
+  </section>
+  
+  <!-- Slide 14: Comparison Table -->
+  <section class="slide">
+    <div class="content-wrapper">
+      <h2 class="gradient-text">Solishtiruv Jadvali</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Muhit</th>
+            <th>Tok tashuvchilar</th>
+            <th>O'tkazuvchanlik turi</th>
+            <th>Harorat ta'siri</th>
+            <th>Om qonuni</th>
+            <th>Qo'llanilishi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Metallar</td>
+            <td>Erkin elektronlar</td>
+            <td>Elektron</td>
+            <td>↑T → ↓σ</td>
+            <td>Bajariladi</td>
+            <td>Simlar, kontaktlar</td>
+          </tr>
+          <tr>
+            <td>Elektrolitlar</td>
+            <td>Musbat va manfiy ionlar</td>
+            <td>Ion</td>
+            <td>↑T → ↑σ</td>
+            <td>Bajariladi</td>
+            <td>Batareyalar, elektroliz</td>
+          </tr>
+          <tr>
+            <td>Gazlar</td>
+            <td>Elektronlar va ionlar</td>
+            <td>Elektron-ion</td>
+            <td>↑T → ↑ionlanish</td>
+            <td>Bajarilmaydi</td>
+            <td>Lampalar, plazma</td>
+          </tr>
+          <tr>
+            <td>Vakuum</td>
+            <td>Termoelektronlar</td>
+            <td>Elektron (emissiya)</td>
+            <td>↑T → ↑emissiya</td>
+            <td>Bajarilmaydi (V<sup>3/2</sup>)</td>
+            <td>Elektron lampalar, CRT</td>
+          </tr>
+          <tr>
+            <td>Yarim o'tkazgichlar</td>
+            <td>Elektronlar va kovaklar</td>
+            <td>Aralash</td>
+            <td>↑T → ↑σ (eksponensial)</td>
+            <td>Bajariladi (chiziqli sohada)</td>
+            <td>Tranzistorlar, mikrochiplar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  <!-- Slide 15: Conclusion -->
+  <section class="slide">
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="content-wrapper" style="text-align: center;">
+      <h2 class="gradient-text">Xulosa</h2>
+      <div class="text-content" style="font-size: 1.25rem; max-width: 800px; margin: 2rem auto;">
+        <p style="margin-bottom: 1rem;">
+          ✓ Elektr toki turli muhitlarda turlicha mexanizmlar orqali o'tadi
+        </p>
+        <p style="margin-bottom: 1rem;">
+          ✓ Har bir muhitning o'ziga xos xususiyatlari va qo'llanilish sohalari mavjud
+        </p>
+        <p style="margin-bottom: 1rem;">
+          ✓ Klassik va kvant nazariyalari muhitlarni to'liq tavsiflab beradi
+        </p>
+        <p style="margin-bottom: 1rem;">
+          ✓ Zamonaviy texnologiyalar barcha turdagi o'tkazuvchanlikdan foydalanadi
+        </p>
+      </div>
+      <h1 class="gradient-text" style="margin-top: 3rem; font-size: 3rem;">
+        E'tiboringiz uchun rahmat!
+      </h1>
+    </div>
+  </section>
+  
+  <script src="../js/slide-engine.js"></script>
+</body>
+</html>
