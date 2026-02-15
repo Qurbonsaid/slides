@@ -142,45 +142,6 @@
       fill: var(--text-primary);
     }
     
-    /* PNG Export Button */
-    .png-btn {
-      position: fixed;
-      bottom: 2rem;
-      right: 5rem;
-      width: 3rem;
-      height: 3rem;
-      background: rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 0.5rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s, border 0.2s, transform 0.2s;
-      z-index: 1000;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-    
-    .png-btn:hover {
-      background: rgba(0, 0, 0, 0.08);
-      border-color: rgba(0, 0, 0, 0.15);
-      transform: translateY(-1px);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-    
-    .png-btn:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-      transform: none;
-    }
-    
-    .png-btn svg {
-      width: 1.25rem;
-      height: 1.25rem;
-      stroke: var(--text-primary);
-    }
-    
     /* Typography */
     h1 {
       font-size: 4rem;
@@ -1009,15 +970,7 @@
     </svg>
   </button>
   
-  <!-- PNG Export Button -->
-  <button class="png-btn" id="pngBtn" title="PNG sifatida saqlash">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-      <polyline points="7 10 12 15 17 10"/>
-      <line x1="12" y1="15" x2="12" y2="3"/>
-    </svg>
-  </button>
-  
+
   <!-- Slide 1: Title -->
   <section class="slide">
     <div class="particles">
@@ -1068,9 +1021,28 @@
       <h2 class="gradient-text">Elektr Toki — Umumiy Tushunchalar</h2>
       <div class="formula-box">
         <div class="formula-small">Tok kuchi:</div>
-        <div class="formula-large">I = ΔQ / Δt</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>I</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mrow><mi>Δ</mi><mi>Q</mi></mrow>
+              <mrow><mi>Δ</mi><mi>t</mi></mrow>
+            </mfrac>
+          </math>
+        </div>
         <div class="formula-small">Tok zichligi:</div>
-        <div class="formula-large">j = n · e · v<sub>d</sub></div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mi>n</mi>
+            <mo>⋅</mo>
+            <mi>e</mi>
+            <mo>⋅</mo>
+            <msub><mi>v</mi><mi>d</mi></msub>
+          </math>
+        </div>
       </div>
       <p class="text-content">
         <strong>Elektr toki</strong> — zaryadlangan zarrachalarning tartibli harakati. 
@@ -1131,9 +1103,27 @@
           <h3>Drude modeli (1900)</h3>
           <div class="formula-box">
             <div class="formula-small">Drift tezligi:</div>
-            <div class="formula-large">v<sub>d</sub> = eEτ / m</div>
+            <div class="formula-large">
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <msub><mi>v</mi><mi>d</mi></msub>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow><mi>e</mi><mi>E</mi><mi>τ</mi></mrow>
+                  <mi>m</mi>
+                </mfrac>
+              </math>
+            </div>
             <div class="formula-small" style="margin-top: 1rem;">O'tkazuvchanlik:</div>
-            <div class="formula-large">σ = ne²τ / m<sub>e</sub></div>
+            <div class="formula-large">
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>σ</mi>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow><mi>n</mi><msup><mi>e</mi><mn>2</mn></msup><mi>τ</mi></mrow>
+                  <msub><mi>m</mi><mi>e</mi></msub>
+                </mfrac>
+              </math>
+            </div>
           </div>
           <p class="text-content">
             <strong>Om qonuni:</strong> j = σE (differensial), U = IR (integral)<br>
@@ -1171,15 +1161,69 @@
       </div>
       <div class="formula-box">
         <div class="formula-small">Fermi-Dirac taqsimoti:</div>
-        <div class="formula-large">f(E) = 1 / (e<sup>(E-E<sub>F</sub>)/k<sub>B</sub>T</sup> + 1)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>f</mi>
+            <mo>(</mo>
+            <mi>E</mi>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <msup>
+                  <mi>e</mi>
+                  <mfrac>
+                    <mrow><mi>E</mi><mo>−</mo><msub><mi>E</mi><mi>F</mi></msub></mrow>
+                    <mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow>
+                  </mfrac>
+                </msup>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+          </math>
+        </div>
       </div>
       <div class="formula-box">
         <div class="formula-small">Bloch teoremasi:</div>
-        <div class="formula-large">ψ<sub>k</sub>(r) = u<sub>k</sub>(r) · e<sup>ikr</sup></div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <msub><mi>ψ</mi><mi>k</mi></msub>
+            <mo>(</mo>
+            <mi>r</mi>
+            <mo>)</mo>
+            <mo>=</mo>
+            <msub><mi>u</mi><mi>k</mi></msub>
+            <mo>(</mo>
+            <mi>r</mi>
+            <mo>)</mo>
+            <mo>⋅</mo>
+            <msup>
+              <mi>e</mi>
+              <mrow><mi>i</mi><mi>k</mi><mi>r</mi></mrow>
+            </msup>
+          </math>
+        </div>
       </div>
       <div class="formula-box">
         <div class="formula-small">Kvant o'tkazuvchanlik:</div>
-        <div class="formula-large">σ = (e² / ℏ) · k<sub>F</sub> · l / (3π²)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>σ</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <msup><mi>e</mi><mn>2</mn></msup>
+                <mo>⋅</mo>
+                <msub><mi>k</mi><mi>F</mi></msub>
+                <mo>⋅</mo>
+                <mi>l</mi>
+              </mrow>
+              <mrow><mi>ℏ</mi><mo>⋅</mo><mn>3</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+            </mfrac>
+          </math>
+        </div>
       </div>
       <p class="text-content">
         Energiya zonalari va o'tkazuvchanlik zonasi tushunchasi.
@@ -1229,15 +1273,43 @@
       <h2 class="gradient-text">Faradey Elektroliz Qonunlari</h2>
       <div class="formula-box" style="margin-top: 2rem;">
         <div class="formula-small">Birinchi qonun:</div>
-        <div class="formula-large">m = k · I · t</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>m</mi>
+            <mo>=</mo>
+            <mi>k</mi>
+            <mo>⋅</mo>
+            <mi>I</mi>
+            <mo>⋅</mo>
+            <mi>t</mi>
+          </math>
+        </div>
       </div>
       <div class="formula-box">
         <div class="formula-small">Ikkinchi qonun:</div>
-        <div class="formula-large">k = M / (z · F)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mi>M</mi>
+              <mrow><mi>z</mi><mo>⋅</mo><mi>F</mi></mrow>
+            </mfrac>
+          </math>
+        </div>
       </div>
       <div class="formula-box">
         <div class="formula-small">Umumiy formula:</div>
-        <div class="formula-large">m = (M · I · t) / (z · F)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>m</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mrow><mi>M</mi><mo>⋅</mo><mi>I</mi><mo>⋅</mo><mi>t</mi></mrow>
+              <mrow><mi>z</mi><mo>⋅</mo><mi>F</mi></mrow>
+            </mfrac>
+          </math>
+        </div>
       </div>
       <p class="text-content" style="text-align: center; margin-top: 2rem;">
         <strong>m</strong> — ajralib chiqqan modda massasi<br>
@@ -1287,7 +1359,16 @@
       <h2 class="gradient-text">Paschen Qonuni va Plazma</h2>
       <div class="formula-box">
         <div class="formula-small">Paschen qonuni:</div>
-        <div class="formula-large">V<sub>b</sub> = B · p · d / ln(A · p · d)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <msub><mi>V</mi><mi>b</mi></msub>
+            <mo>=</mo>
+            <mfrac>
+              <mrow><mi>B</mi><mo>⋅</mo><mi>p</mi><mo>⋅</mo><mi>d</mi></mrow>
+              <mrow><mo>ln</mo><mo>(</mo><mi>A</mi><mo>⋅</mo><mi>p</mi><mo>⋅</mo><mi>d</mi><mo>)</mo></mrow>
+            </mfrac>
+          </math>
+        </div>
       </div>
       <p class="text-content">
         <strong>V<sub>b</sub></strong> — yorilish potensiali, 
@@ -1297,9 +1378,31 @@
       <h3 style="margin-top: 1.5rem;">Plazma — moddaning 4-holati</h3>
       <div class="formula-box">
         <div class="formula-small">Debye radiusi:</div>
-        <div class="formula-large">λ<sub>D</sub> = √(ε₀k<sub>B</sub>T / ne²)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <msub><mi>λ</mi><mi>D</mi></msub>
+            <mo>=</mo>
+            <msqrt>
+              <mfrac>
+                <mrow><msub><mi>ε</mi><mn>0</mn></msub><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow>
+                <mrow><mi>n</mi><msup><mi>e</mi><mn>2</mn></msup></mrow>
+              </mfrac>
+            </msqrt>
+          </math>
+        </div>
         <div class="formula-small" style="margin-top: 1rem;">Plazma chastotasi:</div>
-        <div class="formula-large">ω<sub>p</sub> = √(ne² / ε₀m<sub>e</sub>)</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <msub><mi>ω</mi><mi>p</mi></msub>
+            <mo>=</mo>
+            <msqrt>
+              <mfrac>
+                <mrow><mi>n</mi><msup><mi>e</mi><mn>2</mn></msup></mrow>
+                <mrow><msub><mi>ε</mi><mn>0</mn></msub><msub><mi>m</mi><mi>e</mi></msub></mrow>
+              </mfrac>
+            </msqrt>
+          </math>
+        </div>
       </div>
       <p class="text-content">
         <strong>Qo'llanilishi:</strong> ITER termoyadorviy reaktori, plazma ekranlar, MHD generatorlar
@@ -1316,11 +1419,35 @@
           <h3>Termoelektron emissiya</h3>
           <div class="formula-box">
             <div class="formula-small">Richardson-Dushman qonuni:</div>
-            <div class="formula-large">j<sub>s</sub> = AT² · e<sup>−φ/k<sub>B</sub>T</sup></div>
+            <div class="formula-large">
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <msub><mi>j</mi><mi>s</mi></msub>
+                <mo>=</mo>
+                <mi>A</mi>
+                <msup><mi>T</mi><mn>2</mn></msup>
+                <mo>⋅</mo>
+                <msup>
+                  <mi>e</mi>
+                  <mrow>
+                    <mo>−</mo>
+                    <mfrac>
+                      <mi>φ</mi>
+                      <mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow>
+                    </mfrac>
+                  </mrow>
+                </msup>
+              </math>
+            </div>
           </div>
           <div class="formula-box">
             <div class="formula-small">Langmuir-Child 3/2 qonuni:</div>
-            <div class="formula-large">I ∝ V<sup>3/2</sup></div>
+            <div class="formula-large">
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>I</mi>
+                <mo>∝</mo>
+                <msup><mi>V</mi><mfrac><mn>3</mn><mn>2</mn></mfrac></msup>
+              </math>
+            </div>
           </div>
           <p class="text-content">
             <strong>φ</strong> — chiqish ishi, katoddan elektronlarni chiqarish uchun zarur energiya
@@ -1353,7 +1480,29 @@
           </p>
           <div class="formula-box" style="margin-top: 1rem;">
             <div class="formula-small">Tashuvchilar konsentratsiyasi:</div>
-            <div class="formula-large">n(T) = C · T<sup>3/2</sup> · e<sup>−E<sub>g</sub>/2k<sub>B</sub>T</sup></div>
+            <div class="formula-large">
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>n</mi>
+                <mo>(</mo>
+                <mi>T</mi>
+                <mo>)</mo>
+                <mo>=</mo>
+                <mi>C</mi>
+                <mo>⋅</mo>
+                <msup><mi>T</mi><mfrac><mn>3</mn><mn>2</mn></mfrac></msup>
+                <mo>⋅</mo>
+                <msup>
+                  <mi>e</mi>
+                  <mrow>
+                    <mo>−</mo>
+                    <mfrac>
+                      <msub><mi>E</mi><mi>g</mi></msub>
+                      <mrow><mn>2</mn><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow>
+                    </mfrac>
+                  </mrow>
+                </msup>
+              </math>
+            </div>
           </div>
           <p class="text-content">
             <strong>Xususiy yarim o'tkazgichlar:</strong> Si, Ge
@@ -1393,7 +1542,25 @@
       </div>
       <div class="formula-box">
         <div class="formula-small">Diod I-V xarakteristikasi:</div>
-        <div class="formula-large">I = I₀ · [e<sup>eV/k<sub>B</sub>T</sup> − 1]</div>
+        <div class="formula-large">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>I</mi>
+            <mo>=</mo>
+            <msub><mi>I</mi><mn>0</mn></msub>
+            <mo>⋅</mo>
+            <mo>[</mo>
+            <msup>
+              <mi>e</mi>
+              <mfrac>
+                <mrow><mi>e</mi><mi>V</mi></mrow>
+                <mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow>
+              </mfrac>
+            </msup>
+            <mo>−</mo>
+            <mn>1</mn>
+            <mo>]</mo>
+          </math>
+        </div>
       </div>
       <p class="text-content" style="text-align: center;">
         <strong>Qo'llanilishi:</strong> LED, quyosh batareyalari, to'g'rilagichlar
@@ -1497,66 +1664,7 @@
     </div>
   </section>
   
-  <!-- Load html2canvas for PNG export -->
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-  
-  <!-- PNG Export functionality -->
-  <script>
-    async function saveAsPNG(e) {
-      if (e) e.stopPropagation();
-      
-      const btn = document.getElementById('pngBtn');
-      btn.disabled = true;
-      btn.style.opacity = '0.5';
-      
-      try {
-        const activeSlide = document.querySelector('.slide.active');
-        if (!activeSlide) {
-          console.error('No active slide found');
-          alert("Hech qanday aktiv slayd topilmadi.");
-          return;
-        }
-        
-        const canvas = await html2canvas(activeSlide, {
-          backgroundColor: '#ffffff',
-          scale: 3,               // HIGH QUALITY — 3x resolution
-          useCORS: true,
-          logging: false,
-          allowTaint: false,
-          width: activeSlide.scrollWidth,
-          height: activeSlide.scrollHeight
-        });
-        
-        // Convert to PNG blob and download
-        canvas.toBlob(function(blob) {
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = `slayd-${window.currentSlideIndex + 1}.png`;
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          URL.revokeObjectURL(url);
-        }, 'image/png', 1.0);
-        
-      } catch (err) {
-        console.error('PNG export error:', err);
-        alert("Rasmni saqlashda xatolik yuz berdi. Qayta urinib ko'ring.");
-      } finally {
-        btn.disabled = false;
-        btn.style.opacity = '1';
-      }
-    }
-    
-    // Add click event listener to PNG button
-    document.addEventListener('DOMContentLoaded', function() {
-      const pngBtn = document.getElementById('pngBtn');
-      if (pngBtn) {
-        pngBtn.addEventListener('click', saveAsPNG);
-      }
-    });
-  </script>
-  
+
   <script src="../js/slide-engine.js"></script>
 </body>
 </html>
