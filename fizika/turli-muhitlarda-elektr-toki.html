@@ -142,39 +142,38 @@
       fill: var(--text-primary);
     }
     
-    /* Download Button */
-    .download-btn {
+    /* GIF Export Button */
+    .gif-btn {
       position: fixed;
       bottom: 2rem;
       right: 5rem;
-      width: 2.5rem;
-      height: 2.5rem;
-      background: rgba(0, 0, 0, 0.05);
+      width: 3rem;
+      height: 3rem;
+      background: rgba(255, 255, 255, 0.95);
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 0.5rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.2s, border 0.2s;
+      transition: background 0.2s, border 0.2s, transform 0.2s;
       z-index: 1000;
       backdrop-filter: blur(10px);
+      font-size: 1.25rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
-    .download-btn:hover {
-      background: rgba(0, 0, 0, 0.08);
+    .gif-btn:hover {
+      background: rgba(255, 255, 255, 1);
       border-color: rgba(0, 0, 0, 0.15);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
     
-    .download-btn svg {
-      width: 1.25rem;
-      height: 1.25rem;
-      stroke: var(--text-primary);
-    }
-    
-    .download-btn:disabled {
-      opacity: 0.5;
+    .gif-btn:disabled {
+      opacity: 0.6;
       cursor: not-allowed;
+      transform: none;
     }
     
     /* Typography */
@@ -1005,14 +1004,8 @@
     </svg>
   </button>
   
-  <!-- Download Button -->
-  <button class="download-btn" id="downloadBtn" title="PPTX yuklab olish">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-      <polyline points="7 10 12 15 17 10"></polyline>
-      <line x1="12" y1="15" x2="12" y2="3"></line>
-    </svg>
-  </button>
+  <!-- GIF Export Button -->
+  <button class="gif-btn" id="gifBtn" title="GIF sifatida saqlash">🎬</button>
   
   <!-- Slide 1: Title -->
   <section class="slide">
@@ -1493,144 +1486,83 @@
     </div>
   </section>
   
-  <!-- Load PptxGenJS first (required dependency) -->
-  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@latest/dist/pptxgen.bundle.js"></script>
+  <!-- Load html2canvas and gif.js libraries for GIF export -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.js"></script>
   
-  <!-- Download PPTX functionality -->
+  <!-- GIF Export functionality -->
   <script>
-    // PPTX Download Function
-    async function downloadPPTX() {
-      const btn = document.getElementById('downloadBtn');
+    // GIF Export Function
+    async function exportSlideAsGif() {
+      const btn = document.getElementById('gifBtn');
       btn.disabled = true;
-      btn.style.opacity = '0.5';
+      btn.innerHTML = '⏳'; // loading state
       
       try {
-        const pptx = new PptxGenJS();
+        const activeSlide = document.querySelector('.slide.active');
+        if (!activeSlide) {
+          throw new Error('Hech qanday aktiv slayd topilmadi');
+        }
         
-        // Configure presentation
-        pptx.layout = 'LAYOUT_16x9';
-        pptx.author = 'Fizika Taqdimoti';
-        pptx.title = 'Turli Muhitlarda Elektr Toki';
-        pptx.subject = 'Fizika';
+        // Create GIF encoder
+        const gif = new GIF({
+          workers: 2,
+          quality: 10,
+          width: activeSlide.offsetWidth,
+          height: activeSlide.offsetHeight,
+          workerScript: 'https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.worker.js'
+        });
         
-        const slides = document.querySelectorAll('.slide');
-        const currentSlide = currentSlideIndex; // save current
+        const fps = 10;
+        const duration = 3; // seconds
+        const totalFrames = fps * duration;
+        const interval = 1000 / fps;
         
-        // Add transition effect between slides
-        const transition = { type: 'fade', duration: 0.5 };
-        
-        for (let i = 0; i < slides.length; i++) {
-          const slide = slides[i];
-          const pptxSlide = pptx.addSlide();
-          
-          // Set slide transition
-          pptxSlide.transition = transition;
-          
-          // Set background color
-          pptxSlide.background = { color: 'F8FAFC' };
-          
-          // Extract text content from the slide
-          const heading = slide.querySelector('h1, h2');
-          const subtitle = slide.querySelector('.subtitle');
-          const textContent = slide.querySelectorAll('.text-content, .toc-item, .card, p');
-          
-          let yPos = 0.5;
-          
-          // Add heading
-          if (heading) {
-            const headingText = heading.textContent.trim();
-            pptxSlide.addText(headingText, {
-              x: 0.5,
-              y: yPos,
-              w: 9,
-              h: 1,
-              fontSize: heading.tagName === 'H1' ? 44 : 36,
-              bold: true,
-              color: '0F172A',
-              align: 'center'
-            });
-            yPos += 1.2;
-          }
-          
-          // Add subtitle
-          if (subtitle) {
-            pptxSlide.addText(subtitle.textContent.trim(), {
-              x: 0.5,
-              y: yPos,
-              w: 9,
-              h: 0.6,
-              fontSize: 20,
-              color: '334155',
-              align: 'center'
-            });
-            yPos += 0.8;
-          }
-          
-          // Add content
-          if (textContent.length > 0) {
-            const contentArray = [];
-            textContent.forEach((elem, idx) => {
-              if (idx < 8) { // Limit content items
-                const text = elem.textContent.trim();
-                if (text && text.length > 0 && text.length < 500) {
-                  contentArray.push({
-                    text: text,
-                    options: { fontSize: 14, color: '334155', bullet: true }
-                  });
-                }
-              }
-            });
-            
-            if (contentArray.length > 0) {
-              pptxSlide.addText(contentArray, {
-                x: 1,
-                y: yPos,
-                w: 8,
-                h: 4,
-                fontSize: 14,
-                color: '334155'
-              });
-            }
-          }
-          
-          // Add footer with slide number
-          pptxSlide.addText(`${i + 1} / ${slides.length}`, {
-            x: 0.5,
-            y: 5,
-            w: 1,
-            h: 0.3,
-            fontSize: 12,
-            color: '64748B',
-            align: 'left'
+        // Capture frames over time to catch animations
+        for (let i = 0; i < totalFrames; i++) {
+          const canvas = await html2canvas(activeSlide, {
+            backgroundColor: '#f8fafc',
+            scale: 1, // Use 1 for performance, 2 for quality
+            useCORS: true,
+            logging: false,
+            allowTaint: true
           });
+          gif.addFrame(canvas, { delay: interval });
+          
+          // Wait for next frame
+          await new Promise(resolve => setTimeout(resolve, interval));
         }
         
-        // Save the file
-        await pptx.writeFile({ fileName: 'Turli_Muhitlarda_Elektr_Toki.pptx' });
+        // Render and download
+        gif.on('finished', function(blob) {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `slayd-${window.currentSlideIndex + 1}.gif`;
+          a.click();
+          URL.revokeObjectURL(url);
+          
+          btn.disabled = false;
+          btn.innerHTML = '🎬'; // restore icon
+        });
         
-        // Go back to current slide
-        if (typeof goToSlide === 'function') {
-          goToSlide(currentSlide);
-        }
-        
-        console.log('PPTX exported successfully!');
+        gif.render();
         
       } catch (err) {
-        console.error('PPTX export error:', err);
-        alert('PPTX yuklab olishda xatolik yuz berdi. Qayta urinib ko\'ring.');
-      } finally {
+        console.error('GIF eksport xatosi:', err);
+        alert('GIF yaratishda xatolik yuz berdi. Qayta urinib ko\'ring.');
         btn.disabled = false;
-        btn.style.opacity = '1';
+        btn.innerHTML = '🎬';
       }
     }
     
-    // Add click event listener to download button
+    // Add click event listener to GIF button
     document.addEventListener('DOMContentLoaded', function() {
-      const downloadBtn = document.getElementById('downloadBtn');
-      if (downloadBtn) {
-        downloadBtn.addEventListener('click', function(e) {
+      const gifBtn = document.getElementById('gifBtn');
+      if (gifBtn) {
+        gifBtn.addEventListener('click', function(e) {
           e.stopPropagation(); // Prevent slide navigation
-          downloadPPTX();
+          exportSlideAsGif();
         });
       }
     });
