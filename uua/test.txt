@@ -1,0 +1,1122 @@
+&1
+#1
+UUA qisqartmasi qanday ma'noni anglatadi?
+@1
+Uchuvchisiz uchar apparatlar
+@0
+Umumiy uchar apparatlar
+@0
+Uzoqqa uchuvchi apparatlar
+@0
+Uzilgan uchar aloqalar
+#2
+Harbiy operatsiyalarda UUA lar asosan qanday vazifalarni bajaradi?
+@0
+Faqat yuk tashish
+@2
+Razvedka, kuzatuv va tahdidlarni baholash
+@0
+Tibbiy yordam ko'rsatish
+@0
+Yo'llarni ta'mirlash
+#3
+Qishloq xo'jaligida UUA lar qaysi kameralar yordamida o'simliklar kasalliklarini aniqlaydi?
+@0
+Faqat oddiy optik kameralar
+@0
+Faqat rentgen kameralar
+@3
+Multispektral va termal kameralar
+@0
+Ultratovushli kameralar
+#1
+UUA larning qutqaruv ishlari va favqulodda vaziyatlardagi asosiy roli nimadan iborat?
+@1
+Vaziyatni tezkor baholash va qidiruv ishlari
+@0
+Zilzilalarni to'xtatish
+@0
+Yong'inni o'chirish
+@0
+Transport vositalarini boshqarish
+#2
+Ilmiy-tadqiqot sohasida UUA lar yordamida nimalar amalga oshiriladi?
+@0
+Faqat dori-darmon yetkazib berish
+@2
+Geografik, ekologik va meteorologik ma'lumotlar yig'ish
+@0
+Faqat sanoat obyektlarini qurish
+@0
+Harbiy mashg'ulotlar o'tkazish
+&2
+#1
+Elektr toki nima?
+@1
+Elektr zaryadlarining tartibli harakati
+@0
+Elektr zaryadlarining tartibsiz harakati
+@0
+Moddalar ichidagi issiqlik harakati
+@0
+Atomlarning tebranishi
+#2
+Metall o'tkazgichlarda elektr tokini asosan nimalar tashiydi?
+@0
+Ionlar
+@2
+Erkin elektronlar
+@0
+Protonlar
+@0
+Neytronlar
+#3
+Elektr toki hosil bo'lishi uchun qanday shartlar bajarilishi zarur?
+@0
+Faqat manba bo'lishi yetarli
+@0
+Faqat yopiq zanjir va o'tkazgich
+@3
+Elektr manbai, yopiq zanjir va o'tkazgich
+@0
+Elektr maydoni va izolyator
+#1
+Doimiy tok nima?
+@1
+Zaryad tashuvchilar bir xil yo'nalishda harakatlanadigan elektr toki
+@0
+Harakat yo'nalishi doim o'zgarib turadigan tok
+@0
+Faqat yuqori kuchlanishli tok
+@0
+Ionlar yordamida tarqaladigan tok
+#2
+O'zgaruvchan tok asosan nima sababdan uzoq masofalarga uzatishda keng qo'llaniladi?
+@0
+Uning chastotasi juda yuqori bo'lgani uchun
+@2
+Transformatorlar yordamida kuchlanishni oson o'zgartirish mumkinligi uchun
+@0
+Erkin elektronlar ko'p bo'lgani uchun
+@0
+Doimiy tokka qaraganda arzon bo'lgani uchun
+&3
+#1
+Elektr qarshiligining asosiy fizik mohiyati nima?
+@1
+Zaryad tashuvchilarning atomlar va ionlar bilan to'qnashuvi
+@0
+Elektronlarning mutlaqo erkin harakatlanishi
+@0
+Moddada erkin elektronlarning ko'pligi
+@0
+Atomlarning tebranmasligi
+#2
+Elektr qarshiligi o'tkazgichning qaysi geometrik o'lchamlariga bog'liq?
+@0
+Faqat uzunligiga
+@2
+Uzunligi va ko'ndalang kesim yuzasiga
+@0
+Faqat ko'ndalang kesim yuzasiga
+@0
+Massasiga va hajmiga
+#3
+Om qonuni qanday matematik formula bilan ifodalanadi?
+@0
+I = U * R
+@0
+R = I / U
+@3
+I = U / R
+@0
+U = I + R
+#1
+Metall o'tkazgichlarda harorat oshishi bilan elektr qarshiligi qanday o'zgaradi?
+@1
+Ortadi
+@0
+Kamayadi
+@0
+O'zgarmaydi
+@0
+Nolga teng bo'ladi
+#2
+Izolyatorlarning elektr qarshiligi nega juda katta bo'ladi?
+@0
+Ular issiqlikni yaxshi o'tkazadi
+@2
+Ularda erkin zaryad tashuvchilar deyarli yo'q
+@0
+Ular faqat o'zgaruvchan tokni o'tkazadi
+@0
+Ularning atomlari juda kichik
+&4
+#1
+Elektr quvvati qaysi harf bilan belgilanadi va qanday o'lchov birligida o'lchanadi?
+@1
+P, vatt (W)
+@0
+E, joul (J)
+@0
+I, amper (A)
+@0
+U, volt (V)
+#2
+Elektr quvvatini hisoblash formulasi qanday?
+@0
+P = U / I
+@2
+P = U * I
+@0
+P = I / U
+@0
+P = U * R
+#3
+Kundalik hayotda va sanoatda elektr energiyasini o'lchash uchun asosan qaysi birlikdan foydalaniladi?
+@0
+Joul (J)
+@0
+Vatt (W)
+@3
+Kilovatt-soat (kWh)
+@0
+Amper-soat (Ah)
+#1
+Tok yuklamasi nima?
+@1
+Elektr zanjiri orqali oqib o'tayotgan tokning miqdori
+@0
+Zanjirdagi qarshilik miqdori
+@0
+Manbaning kuchlanishi
+@0
+Elektronlarning massasi
+#2
+Ortiqcha tok yuklamasining oqibatlari qanday bo'lishi mumkin?
+@0
+Elektr energiyasi sarfi kamayadi
+@2
+Simlar qizib ketadi va qisqa tutashuv xavfi ortadi
+@0
+Tok kuchi doimiy barqarorlashadi
+@0
+Qurilmalarning xizmat muddati uzayadi
+&5
+#1
+Batareya nima vazifani bajaradi?
+@1
+Kimyoviy energiyani elektr energiyasiga aylantiradi
+@0
+Elektr energiyasini mexanik energiyaga aylantiradi
+@0
+Mexanik energiyani issiqlikka aylantiradi
+@0
+Zaryadlarni yo'q qiladi
+#2
+LiPo batareyalarining asosiy xususiyati nima?
+@0
+Ular faqat silindrsimon shaklda bo'ladi
+@2
+Polimer elektrolitga va yuqori energiya zichligiga ega
+@0
+Ularning elektroliti har doim gaz holatida bo'ladi
+@0
+Ular umuman qizimaydi
+#3
+C-rating tushunchasi nimani anglatadi?
+@0
+Batareyaning umumiy massasini
+@0
+Batareyaning faqat zaryadlanish vaqtini
+@3
+Batareyaning qanchalik tez va qanday maksimal tok bilan energiya bera olishini
+@0
+Batareyaning haroratga chidamliligini
+#1
+Batareyada elektronlar tashqi zanjir orqali qaysi tomonga harakatlanadi?
+@1
+Anoddan katodga
+@0
+Katoddan anodga
+@0
+Faqat elektrolit ichida
+@0
+Harakatlanmaydi
+#2
+Agar 2000 mAh sig'imli batareya 10C reytingga ega bo'lsa, u maksimal qanday tok bera oladi?
+@0
+2 A
+@2
+20 A
+@0
+10 A
+@0
+200 A
+&6
+#1
+Kuchlanish pasayishi (Voltage drop) nima?
+@1
+Zanjir bo'ylab tok oqishi natijasida iste'molchiga yetib boradigan kuchlanishning kamayishi
+@0
+Tok kuchining keskin ortishi
+@0
+Elektr manbai kuchlanishining doimiy saqlanishi
+@0
+Qarshilikning birdaniga yo'qolishi
+#2
+Voltage drop ga ta'sir etuvchi asosiy omillar qaysilar?
+@0
+Faqat havo harorati
+@2
+Tok kuchi, elektr qarshiligi va kabel uzunligi
+@0
+Faqat elektr manbaining hajmi
+@0
+Kabelning rangi va izolyatsiyasi
+#3
+Uzoq masofalarga elektr energiyasini uzatishda kuchlanish pasayishining oldini olish uchun nima qilinadi?
+@0
+Kabel uzunligi yanada uzaytiriladi
+@0
+Yupqa simlardan foydalaniladi
+@3
+Kuchlanish yuqori qiymatlarga oshirilib uzatiladi
+@0
+Doimiy tok o'rniga faqat batareyalardan foydalaniladi
+#1
+Kuchlanish pasayishi Om qonunida qanday ifodalanadi?
+@1
+ΔU = I * R
+@0
+ΔU = P * I
+@0
+ΔU = R / I
+@0
+ΔU = I / R
+#2
+Elektr tizimlarida kuchlanish pasayishini kamaytirishning samarali usullaridan biri nima?
+@0
+Kichik kesimli simlardan foydalanish
+@2
+Kattaroq kesimli qalin simlarni tanlash
+@0
+Tok kuchini maksimal darajada oshirish
+@0
+Kabel uzunligini kerakligidan ortiqcha uzaytirish
+&7
+#1
+Brushless motorlarning (BLDC) asosiy afzalligi nima?
+@1
+Mexanik cho'tkalarning yo'qligi sababli uzoq xizmat muddati va yuqori samaradorlik
+@0
+Ular faqat doimiy tok manbaisiz ishlaydi
+@0
+Ularning tuzilishi juda oddiy va arzon
+@0
+Ular umuman qizimaydi
+#2
+Brushless motorda statorning vazifasi nimadan iborat?
+@0
+U aylanadigan qism bo'lib, mexanik energiya uzatadi
+@2
+Tok ta'sirida aylanuvchi magnit maydon hosil qiladi
+@0
+Faqat batareya vazifasini bajaradi
+@0
+Datchiklar o'rnini bosadi
+#3
+Brushless va brushed motorlar o'rtasidagi asosiy farq qayerda?
+@0
+Foydalaniladigan materiallarning rangida
+@0
+Stator va rotorning joylashuv joylarida
+@3
+Tok kommutatsiyasi (mexanik yoki elektron) usulida
+@0
+Faqat ularning og'irligida
+#1
+Rotor brushless motorning qaysi qismi hisoblanadi?
+@1
+Doimiy magnitlardan iborat aylanadigan qismi
+@0
+Qo'zg'almas qismi
+@0
+Mis chulg'amlar joylashgan qismi
+@0
+Batareyani zaryadlovchi qismi
+#2
+Brushless motorlar qaysi elektron qurilma yordamida boshqariladi?
+@0
+Faqat kalit (viklyuchatel) bilan
+@2
+ESC (Electronic Speed Controller) yordamida
+@0
+Transformator yordamida
+@0
+Rezistorlar orqali
+&8
+#1
+KV ko'rsatkichi nimani anglatadi?
+@1
+Motorning 1 volt kuchlanishda bo'sh holatda erishadigan aylanish tezligi (RPM/V)
+@0
+Motorning maksimal quvvatini
+@0
+Motor ishlaydigan maksimal haroratni
+@0
+Batareya sig'imini
+#2
+KV va aylantiruvchi moment (torque) o'rtasida qanday bog'liqlik mavjud?
+@0
+Ular to'g'ri proportsional
+@2
+Teskari bog'liqlik (yuqori KV - past moment)
+@0
+Hech qanday bog'liqlik yo'q
+@0
+Faqat batareyaga bog'liq
+#3
+Thrust (ituvchi kuch) RPM bilan qanday munosabatda bo'ladi?
+@0
+Thrust RPM ga teskari proportsional
+@0
+Thrust RPM bilan doim bir xil o'zgaradi
+@3
+Thrust RPM ning kvadratiga taxminan proportsional
+@0
+Thrust RPM ning kubiga proportsional
+#1
+KV qiymati qanday o'zgartiriladi?
+@1
+Uni dasturiy yo'l bilan o'zgartirib bo'lmaydi, u konstruktiv xususiyat
+@0
+ESC orqali osongina o'zgartiriladi
+@0
+Batareya kuchlanishini oshirish bilan KV ham o'zgaradi
+@0
+Pult orqali sozlanadi
+#2
+Og'ir yuk ko'taruvchi dronlarda odatda qanday motorlar qo'llaniladi?
+@0
+Faqat yuqori KV motorlar
+@2
+Past KV motorlar
+@0
+Faqat brushed motorlar
+@0
+10000 KV dan yuqori motorlar
+&9
+#1
+ESC (Electronic Speed Controller) ning birlamchi vazifasi nima?
+@1
+Dvigatelning aylanish tezligi va ish rejimini elektron usulda boshqarish
+@0
+Faqat akkumulyatorni zaryadlash
+@0
+Videoni yerga uzatish
+@0
+Dronning og'irligini kamaytirish
+#2
+ESC doimiy tokni qanday tokka aylantirib motorga uzatadi?
+@0
+Faqat doimiy tok ko'rinishida
+@2
+Uch fazali o'zgaruvchan tok ko'rinishiga
+@0
+Bir fazali o'zgaruvchan tokka
+@0
+Past kuchlanishli doimiy tokka
+#3
+ESC ni tanlashda tok bo'yicha qanday qoidaga amal qilish kerak?
+@0
+ESC toki motorning maksimal tokidan doim kichik bo'lishi kerak
+@0
+ESC va motor toki aynan teng bo'lishi shart
+@3
+ESCning ruxsat etilgan toki motorning maksimal tokidan kamida 20-30% yuqori tanlanishi kerak
+@0
+Tok qiymatining umuman ahamiyati yo'q
+#1
+Agar motor ruxsat etilgan maksimal kuchlanishdan yuqorida ishlatilsa nima yuz beradi?
+@1
+RPM oshib ketadi, tok ko'payadi, ESC va motor qizib ketadi
+@0
+Samaradorlik cheksiz oshadi
+@0
+Hech narsa bo'lmaydi
+@0
+Batareya sig'imi ko'payadi
+#2
+ESC fazalarni qanday usul bilan boshqaradi?
+@0
+Mexanik cho'tkalar yordamida
+@2
+PWM (Pulse Width Modulation) yordamida elektron tarzda
+@0
+Faqat radioto'lqinlar yordamida
+@0
+Transformator yordamida
+&10
+#1
+Propellerning asosiy vazifasi nima?
+@1
+Motorning aylanish harakatini chiziqli itarish kuchiga (thrust) aylantirish
+@0
+Dronni yorug'lik bilan ta'minlash
+@0
+Videolarni suratga olish
+@0
+Motorni sovitish
+#2
+Propeller diametri oshishi qanday natijaga olib keladi?
+@0
+Thrust kamayadi, shovqin ortadi
+@2
+Thrust ortadi, lekin motor valiga tushadigan moment talabi ham ortadi
+@0
+Faqat aylanish tezligi (RPM) oshadi
+@0
+Dronning og'irligi yengillashadi
+#3
+Propellerning pitch (qadam) ko'rsatkichi nimani anglatadi?
+@0
+Propellerning umumiy og'irligini
+@0
+Propellerdagi pichoqlar sonini
+@3
+Propeller bir marta aylanganda havoda bosib o'tadigan nazariy masofasini
+@0
+Propellerning qanday materialdan qilinganligini
+#1
+Katta diametr va past pitch qanday dronlarda ko'proq foydalaniladi?
+@1
+Foto, video va uzoq vaqt uchadigan dronlarda
+@0
+Racing (poyga) dronlarida
+@0
+Faqat o'yinchoq dronlarda
+@0
+Faqat suv osti dronlarida
+#2
+Propeller parametrlari noto'g'ri tanlansa (masalan, haddan tashqari katta diametr) qanday xavf tug'iladi?
+@0
+Dron tezligi cheksiz oshadi
+@2
+Motor va ESC haddan tashqari qizib ketadi, batareya yuklanadi
+@0
+Batareya muddati ikki baravar ko'payadi
+@0
+Faqat pultning batareyasi tez tugaydi
+&11
+#1
+Propellerning inertsiya momenti qanday jism xususiyatiga asoslanadi?
+@1
+Jismning o'z aylanish harakati holatini saqlashga intilishiga
+@0
+Jismning faqat massasiga
+@0
+Havo oqimining tezligiga
+@0
+Motorning elektr qarshiligiga
+#2
+Kichik diametrli va yengil propellerlarning dinamik xususiyati nima?
+@0
+Inertsiya momenti yuqori, shuning uchun juda sekin aylanadi
+@2
+Inertsiya momenti kichik bo'lgani uchun RPMni juda tez o'zgartira oladi
+@0
+Ular faqat past tezlikda ishlay oladi
+@0
+Ular hech qachon qizib ketmaydi
+#3
+"Disk yuklamasi" (disk loading) tushunchasi qanday ifodalanadi?
+@0
+Propellerning umumiy og'irligi bilan
+@0
+Motorga berilgan tok miqdori bilan
+@3
+Thrustning propeller diski maydoniga nisbati sifatida (q=T/A)
+@0
+Qanot uzunligining havo zichligiga nisbati bilan
+#1
+Inertsiya momenti yuqori bo'lgan propellerlar to'satdan to'xtaganda nima yuz beradi?
+@1
+Motor valiga va rama elementlariga katta zarba yukini uzatadi
+@0
+Hech narsa bo'lmaydi, chunki ular o'zini o'zi tormozlaydi
+@0
+Faqatgina batareya tezroq zaryadsizlanadi
+@0
+Propellerning qanotlari avtomatik katlanib qoladi
+#2
+Havo oqimi bo'ylab thrust qanday taqsimlanadi va buni qanday tekislash mumkin?
+@0
+Bir xil taqsimlanadi, hech narsa qilish kerak emas
+@2
+Uchida ko'proq, markazida kamroq bo'ladi; buni pichoqlardagi "twist" (burilish) orqali tekislash mumkin
+@0
+Faqat markazda thrust bo'ladi, buni o'zgartirib bo'lmaydi
+@0
+Taqsimot faqat motor tezligiga bog'liq
+&12
+#1
+Ko'tarilish kuchi (lift) qaysi tomonga yo'nalgan bo'ladi?
+@1
+Oqim yo'nalishiga taxminan perpendikulyar va odatda yuqoriga qaragan bo'ladi
+@0
+Oqim yo'nalishiga parallel ravishda orqaga
+@0
+Faqat pastga qarab yo'naladi
+@0
+Aylana bo'ylab tarqaladi
+#2
+Bernulli prinsipiga ko'ra aeroprofil atrofidagi bosim qanday farq qiladi?
+@0
+Oqim tezligi past bo'lgan ustki yuzada bosim juda kichik bo'ladi
+@2
+Oqim tezligi yuqori bo'lgan ustki yuzada bosim past, ostki yuzada esa nisbatan yuqori bo'ladi
+@0
+Ikkala yuzada ham bosim va tezlik har doim bir xil bo'ladi
+@0
+Tezlik oshgan joyda bosim ham maksimal darajaga yetadi
+#3
+"Stoll" (stall) hodisasi nima va u qachon yuz beradi?
+@0
+Dvigatelning to'satdan o'chib qolishi, u batareya tugaganda yuz beradi
+@0
+Havo oqimining tezlashishi, u faqat sovuq havoda yuz beradi
+@3
+Hujum burchagi kritik qiymatdan oshganda oqimning yuzadan ajralishi va liftning keskin kamayishi
+@0
+Propellerning sinib ketishi, asosan shamol kuchli bo'lganda yuz beradi
+#1
+Hujum burchagi (angle of attack) nima?
+@1
+Kiruvchi havo oqimi yo'nalishi bilan qanotning chord chizig'i orasidagi burchak
+@0
+Dronning yerga nisbatan qiyaligi
+@0
+Propeller va motor valigacha bo'lgan burchak
+@0
+Qanotning uzunligi va eni orasidagi burchak
+#2
+Lift tenglamasiga ko'ra oqim tezligi oshganda ko'tarilish kuchi qanday o'zgaradi?
+@0
+Tezlik bilan birga chiziqli ravishda sekin o'sadi
+@2
+Tezlikning kvadratiga mutanosib ravishda juda tez o'sadi
+@0
+O'zgarmaydi, chunki faqat zichlikka bog'liq
+@0
+Tezlik oshganda ko'tarilish kuchi doim kamayadi
+&13
+#1
+CoG (Center of Gravity) nima?
+@1
+Jism og'irligi konsentratsiyalashgandek tasavvur qilinadigan og'irlik (massalar) markazi
+@0
+Faqatgina batareyaning joylashgan nuqtasi
+@0
+Motorlarning aylanish tezligi markazi
+@0
+Dronning eng yuqori nuqtasi
+#2
+X-konfiguratsiyali multikopterda CoG ideal holda qayerda joylashishi kerak?
+@0
+Iloji boricha orqa motorlarga yaqin
+@2
+Romaning geometrik markaziga va vertikal o'qda propeller disklari markaziga iloji boricha yaqin
+@0
+Kamera joylashgan old tomonda
+@0
+Batareyaning eng chekkasida
+#3
+CoGning oldinga siljishi dronning parvoz dinamikasiga qanday ta'sir qiladi?
+@0
+Hamma motorlar bir xil ishlayveradi, farqi bo'lmaydi
+@0
+Faqat batareya sarfi kamayadi
+@3
+Dron oldinga egilishga intiladi va oldingi motorlar ko'proq ishlashga (ortiqcha yuklanishga) majbur bo'ladi
+@0
+Dron avtomatik ravishda balandlikni oshiradi
+#1
+CoGni amaliy (eksperimental) aniqlashning eng sodda usuli qanday?
+@1
+Dronni old-orqa va chap-o'ng yo'nalishida tayanch ustiga qo'yib muvozanatlash
+@0
+Faqat dasturiy ta'minot orqali taxmin qilish
+@0
+Dronni yerga urib ko'rish
+@0
+Kabelning uzunligini o'lchash
+#2
+Noto'g'ri markazlash (CoG xatosi) asosan qanday xavfni yuzaga keltiradi?
+@0
+Dron tezligi o'n baravar oshib ketadi
+@2
+Motor/ESClar har xil qiziydi, boshqaruv qiyinlashadi va avariya xavfi ortadi
+@0
+Kamera sifati o'z-o'zidan yaxshilanadi
+@0
+GPS signali kuchayadi
+&14
+#1
+Inersiya momenti dron mexanikasida nimani ifodalaydi?
+@1
+Aylanuvchi jismning o'z burchak tezligini o'zgartirishga bo'lgan qarshilik darajasini
+@0
+Faqat apparatning umumiy og'irligini
+@0
+Batareyaning maksimal quvvatini
+@0
+Havo oqimining tezligini
+#2
+Massani dron markazidan uzoqlashtirish inersiya momentiga qanday ta'sir qiladi?
+@0
+Inersiya momentini kamaytiradi
+@2
+Inersiya momentini tez oshiradi, javob reaksiyasini sekinlashtiradi
+@0
+Umuman ta'sir qilmaydi
+@0
+Faqat motorning qizishini kamaytiradi
+#3
+Nyuton-Eyler tenglamasiga ko'ra, burchak tezlanishi (α) inersiya momenti bilan qanday bog'langan?
+@0
+To'g'ri proportsional (I ortsa, α ham ortadi)
+@0
+Hech qanday bog'liqlik yo'q
+@3
+Teskari proportsional (bir xil momentda I qanchalik katta bo'lsa, α shunchalik kichik bo'ladi)
+@0
+Faqat havo zichligiga bog'liq bo'ladi
+#1
+Kichik inersiya momentiga ega bo'lgan FPV dronlarning asosiy xususiyati nima?
+@1
+Reaksiyalar tez, "o'tkir" va agility (chaqqonlik) yuqori bo'ladi
+@0
+Javob juda sekin bo'ladi
+@0
+Faqat uzoq masofaga, to'g'ri uchishga mo'ljallangan
+@0
+Ular umuman burila olmaydi
+#2
+Dronning uchta asosiy aylanish o'qlari qaysilar?
+@0
+Tezlik, balandlik va og'ish
+@2
+Roll, pitch va yaw
+@0
+Old, orqa va yon
+@0
+Thrust, lift va drag
+&15
+#1
+Frame (rama) dron uchun qanday vazifani bajaradi?
+@1
+Barcha mexanik va elektron komponentlarni o'zida jamlovchi karkas tizimi vazifasini
+@0
+Faqat videoni yozib olish vazifasini
+@0
+Batareyani zaryadlash vazifasini
+@0
+Radio to'lqinlarni qabul qilish vazifasini
+#2
+X-konfiguratsiyali framening asosiy afzalliklaridan biri nima?
+@0
+Unda umuman kamera o'rnatib bo'lmaydi
+@2
+Geometrik markaz va CoG o'rtasida yaxshi moslikka erishish oson, roll va pitch bo'yicha javob simmetrik
+@0
+U faqat bitta motor bilan ishlay oladi
+@0
+Shamolga eng kam chidamli struktura
+#3
+Nima sababdan frame (rama) yetarlicha qattiqlikka (stiffness) ega bo'lishi kerak?
+@0
+Faqat chiroyli ko'rinish uchun
+@0
+O'yinchoqqa o'xshamasligi uchun
+@3
+Deformatsiyaning oldini olish, motorlar geometriyasini saqlash va vibratsiyani kamaytirish uchun
+@0
+Radiosignalni yaxshiroq tarqatish uchun
+#1
+Karbon tola (carbon fiber) nima uchun dron ramalarida ko'p ishlatiladi?
+@1
+Yuqori qattiqlik-massa nisbatiga ega bo'lgani va yengilligi uchun
+@0
+Juda og'ir bo'lgani uchun
+@0
+Radio to'lqinlarni to'sib qo'ygani uchun
+@0
+Zarbada umuman sinmaydigan yagona modda bo'lgani uchun
+#2
+Hexacopter va octocopter konfiguratsiyalarining quadcopterga nisbatan afzalligi nimada?
+@0
+Ular arzonroq va yengilroq
+@2
+Yuk ko'tarish qobiliyati yuqori va bitta motor ishdan chiqqanda ham uchishni davom ettirish (redundans) xususiyatiga ega
+@0
+Ular faqat xona ichida uchishga mo'ljallangan
+@0
+Ularda batareya umuman sarflanmaydi
+&16
+#1
+Uchuvchi apparatga ta'sir etuvchi to'rtta asosiy kuch qaysilar?
+@1
+Og'irlik, ko'tarilish kuchi (Lift), qarshilik kuchi (Drag) va ilgarilanma kuchi (Thrust)
+@0
+Bosim, zichlik, harorat va hajm
+@0
+Inersiya, moment, tezlanish va tezlik
+@0
+Elektr, magnit, mexanik va kimyoviy kuchlar
+#2
+Parazit drag qaysi elementlar tufayli yuzaga keladi?
+@0
+Faqat qanot uchlaridagi girdoblar sababli
+@2
+Foydali lift hosil qilmaydigan sirt va elementlar (fuselage, antennalar, qo'llar) tufayli
+@0
+Faqat propellerning uzunligi tufayli
+@0
+Faqat quyosh nurlari ta'sirida
+#3
+Induktsion drag qanday hosil bo'ladi?
+@0
+Faqat havoning harorati o'zgarganda
+@0
+Apparat faqat yerda turganida
+@3
+Qanot uchlarida past va yuqori bosim zonalarining aralashishi oqibatida girdoblar hosil bo'lishidan (liftning narxi)
+@0
+Dvigatelning qizib ketishi natijasida
+#1
+Aerodinamik samaradorlik qaysi nisbat bilan baholanadi?
+@1
+Lift-drag nisbati (L/D) bilan
+@0
+Og'irlik va thrust nisbati bilan
+@0
+Quvvat va kuchlanish nisbati bilan
+@0
+Tezlik va vaqt nisbati bilan
+#2
+Polar egri (CD-CL diagrammasi) nimani ko'rsatadi?
+@0
+Faqat batareyaning sarflanish tezligini
+@2
+Lift va drag koeffitsiyentlari o'rtasidagi bog'lanishni, turli hujum burchaklaridagi samaradorlikni
+@0
+Faqat shamolning yo'nalishini
+@0
+Radio to'lqinlarning chastotasini
+&17
+#1
+Balandlik oshishi bilan havo zichligi odatda qanday o'zgaradi?
+@1
+Pasayadi
+@0
+Ortadi
+@0
+O'zgarmaydi
+@0
+Avvaliga ortib, keyin o'zgarmay qoladi
+#2
+"Zichlik balandligi" (density altitude) qachon haqiqiy balandlikdan sezilarli darajada yuqori bo'ladi?
+@0
+Juda sovuq va quruq kunlarda
+@2
+Issiq kunlar, past bosim va yuqori namlik sharoitida
+@0
+Faqat yomg'ir yog'ayotgan vaqtda
+@0
+Shamol bo'lmagan qorong'u tunda
+#3
+Havo zichligi kamayganda propellerning ishlashiga qanday ta'sir ko'rsatiladi?
+@0
+Propeller kamroq quvvat bilan ko'proq thrust beradi
+@0
+Batareya sarfi o'z-o'zidan nolga tushadi
+@3
+Propeller ma'lum RPMda kamroq thrust beradi, uchish uchun ko'proq quvvat va motor RPMi talab qilinadi
+@0
+Umuman ta'sir qilmaydi, thrust o'zgarmaydi
+#1
+Dronni tog'li (yuqori balandlikdagi) hududlarda uchirishda nimalar kuzatilishi mumkin?
+@1
+Maksimal ko'tariladigan yuk kamayishi va parvoz vaqtining qisqarishi
+@0
+Dronning tezligi ikki baravar ortishi
+@0
+GPS signalining yo'qolishi
+@0
+Kamera o'z-o'zidan o'chib qolishi
+#2
+Havo zichligining lift (ko'tarilish kuchi) va drag (qarshilik) ga ta'siri qanday formula parametrida aks etadi?
+@0
+Faqat tezlik (V) orqali
+@2
+L va D formulalaridagi zichlik (ρ) ko'paytuvchisi orqali (ular zichlikka to'g'ri proportsional)
+@0
+Faqat og'irlik (W) orqali
+@0
+Faqat harorat (T) orqali
+&18
+#1
+Statik barqarorlik apparatning qanday xususiyati?
+@1
+Kichik bezovtalikdan so'ng o'z muvozanat holatiga qaytishga intilish xususiyati
+@0
+Vaqt o'tishi bilan chayqalishlarning cheksiz ortib borishi
+@0
+Radio signalni yaxshi qabul qilish qobiliyati
+@0
+Kameraning tasvirni barqarorlash xususiyati
+#2
+Dronlar va multirotorlar tabiatan qanday aerodinamik xususiyatga ega?
+@0
+Juda barqaror va hech qanday nazoratni talab qilmaydi
+@2
+Aerodinamik jihatdan beqaror, muvozanat faqat elektronika orqali faol stabilizatsiya qilinadi
+@0
+Ular faqat gorizontal stabilizatorlarga ega
+@0
+Ular faqat shamol yordamida ucha oladi
+#3
+PID nazoratdagi I (integral) komponentining asosiy vazifasi nima?
+@0
+Faqat hozirgi xatolikka mutanosib javob qaytarish
+@0
+Xatolik o'zgarish tezligini sekinlashtirish (damping)
+@3
+Vaqt bo'yicha yig'ilgan xatolikni kompensatsiya qilish va doimiy og'ishni (trim xatosini) yo'qotish
+@0
+Motorni tezkor o'chirish
+#1
+Dron barqarorligini ta'minlovchi uchish nazoratchisi (flight controller) qaysi sensorlardan ma'lumot oladi?
+@1
+Gyroskop, akselerometr, barometr, magnitometr, GPS kabilardan
+@0
+Faqat kameradan
+@0
+Faqat batareya datchigidan
+@0
+Faqat pultning batareyasidan
+#2
+Haddan tashqari katta P (proportional) yoki D (derivative) qiymatlari qanday muammoga olib kelishi mumkin?
+@0
+Dron batareyasi darhol to'lib qoladi
+@2
+Yuqori chastotali tebranishlar, beqarorlik va "oscillation"larga
+@0
+Dron juda sekin va dangasa bo'lib qoladi
+@0
+GPS uzilishi va kompasning buzilishiga
+&19
+#1
+Radio to'lqinlarining chastota (f) va to'lqin uzunligi (λ) orasidagi bog'lanish qanday?
+@1
+λ = c / f (teskari proportsional)
+@0
+λ = c * f (to'g'ri proportsional)
+@0
+λ = f / c
+@0
+Ular orasida hech qanday bog'lanish yo'q
+#2
+FPV dronlarda 2.4 GHz diapazoni asosan qanday maqsadlarda ishlatiladi?
+@0
+Faqat video uzatish uchun
+@2
+Asosan boshqaruv signallari va nazorat linklari (RC link) uchun
+@0
+Dronni quvvatlantirish uchun
+@0
+GPS lokatsiyasini sun'iy yo'ldoshga uzatish uchun
+#3
+5.8 GHz diapazonining 2.4 GHz ga nisbatan asosiy kamchiligi nimada?
+@0
+Kanallar soni kam va ma'lumot uzatish tezligi juda past
+@0
+Antennalari juda katta va og'ir bo'lishi kerak
+@3
+To'siqlardan yomonroq o'tadi, so'nishi kuchliroq va uzoq masofaga yetib borishi qiyinroq
+@0
+Faqat tunda ishlaydi
+#1
+Dron boshqaruvida ISM diapazonlarining (2.4 va 5.8 GHz) ommabopligiga nima sabab bo'lgan?
+@1
+Litsenziyasiz foydalanish imkoniyati va antennalarning ixchamligi
+@0
+Ularning davlat siri ekanligi
+@0
+Boshqa hech qanday radio chastota yo'qligi
+@0
+Ularning to'siqlardan 100% o'ta olishi
+#2
+Wi-Fi va boshqa qurilmalar sababli chastota diapazonida nima yuz berishi mumkin?
+@0
+Signal o'z-o'zidan kuchayadi
+@2
+Interferensiya, paket yo'qotishlari va kanal tiqilinchligi (tiqilinch)
+@0
+Batareya zaryadi ko'payadi
+@0
+Kamera obyekti aniqroq ko'rinadi
+&20
+#1
+Dipol antenna qanday nurlanish diagrammasiga ega?
+@1
+Nisbatan bir tekis "donut" shaklidagi qamrovga ega
+@0
+Old tomonda tor konus shaklida
+@0
+Orqaga yo'nalgan nurlanishga
+@0
+Faqat tepaga qaratilgan to'lqinga ega
+#2
+Cloverleaf yoki Pagoda kabi antennalarning (aylanma polarizatsiyali) asosiy afzalligi nimada?
+@0
+Juda katta uzoqlikdagi masofaga (100 km) tor nur tarqatishi
+@2
+Multipath (qaytgan signallar) interferensiyasini kamaytirishi
+@0
+Ularni batareyasiz ishlatish mumkinligi
+@0
+Ular faqat 2.4 GHz da ishlaydi
+#3
+Diversity qabul qilish tizimi nima maqsadda qo'llaniladi?
+@0
+Dronning tezligini oshirish maqsadida
+@0
+Kameraning piksellarini ko'paytirish uchun
+@3
+Ikki yoki undan ortiq antennadan foydalanib eng yaxshi signalni tanlash va qabul ishonchliligini oshirish uchun
+@0
+GPS signalini to'xtatish uchun
+#1
+Uzoq masofali FPV parvozlarda (Long Range) qabul qiluvchi tomonda ko'pincha qanday antenna ishlatiladi?
+@1
+Katta gain va tor qamrov burchagiga ega bo'lgan Patch yoki Helical antenna
+@0
+Kichkina dipol antenna
+@0
+Faqat omni-directional antenna
+@0
+Radio uzatgichning umuman antennasiz formasi
+#2
+Antennaning rezonans chastotasiga mos bo'lmasligi qanday salbiy oqibatga olib keladi?
+@0
+Motorlar ishlamay qoladi
+@2
+SWR (standing wave ratio) ortib, VTX qurilmasiga zarar yetishi va qizib ketishiga
+@0
+Dron faqat orqaga qarab uchadi
+@0
+Video sifati 4K ga o'zgaradi
+&21
+#1
+FPV tizimida ichki interferensiya manbalariga nimalar kiradi?
+@1
+Brushless motorlar, ESClar, uzun quvvat kabellari va DC-DC konvertorlar
+@0
+Mobil aloqa minoralari
+@0
+Quyosh radiatsiyasi
+@0
+Wi-Fi routerlar
+#2
+Xavfli RF hududlarga qanday obyektlar atrofidagi zonalar kiradi?
+@0
+O'rmonlar va dalalar
+@2
+Aeroportlar, harbiy bazalar, televizion minoralar va elektr podstansiyalar
+@0
+Suv havzalari va ko'llar
+@0
+Ochiq sport maydonchalari
+#3
+Kuchli interferensiya sharoitida FPV qabul qilishda nimalar kuzatilishi mumkin?
+@0
+Rasm sifatining mutlaq yaxshilanishi
+@0
+Batareyaning sovishi
+@3
+Video tasvirdagi "snijeniya", shovqin, artefaktlar va aloqaning uzilishi
+@0
+Apparatning og'irligi kamayishi
+#1
+Interferensiyani kamaytirish uchun dron ichida qanday choralar ko'riladi?
+@1
+Signal va quvvat kabellarini ajratish, ferrit halqalar va LC filtrlardan foydalanish
+@0
+Motorlarni kattalashtirish
+@0
+Kamerani olib tashlash
+@0
+Qanotlarga metall qoplamalar qo'yish
+#2
+Shaharlashgan hududlarda 2.4 va 5.8 GHz diapazonlarining ishlashi qanday bo'ladi?
+@0
+Dala sharoitidagidan ko'ra yaxshiroq va masofasi uzoqroq bo'ladi
+@2
+Ko'plab Wi-Fi va boshqa qurilmalar sababli interferensiya yuqori bo'ladi, masofa qisqarishi mumkin
+@0
+Bu hududlarda faqat 5.8 GHz yaxshi ishlaydi
+@0
+Bu diapazonlarda chastota tekin bo'lib qoladi
+&22
+#1
+Radio interferensiya tufayli boshqaruv aloqasi uzilib qolsa, donda qanday mexanizm ishga tushishi kerak?
+@1
+Failsafe va RTH (Return-to-Home) mexanizmlari
+@0
+O'z-o'zini yo'q qilish mexanizmi
+@0
+Faqat kamerani o'chirish
+@0
+Dvigatellarni maksimal tezlikda ishlatish
+#2
+Aeroportlar atrofida dron uchirish nima uchun qat'iyan man etiladi?
+@0
+Dronlar qushlarga halaqit bergani uchun
+@2
+Radarlar, navigatsion tizimlar va aviadispetcherlar aloqasiga xalaqit berishi va katta xavf tug'dirishi sababli
+@0
+Dronlar ko'zga ko'rinmaydigan chastotada ishlagani uchun
+@0
+Bu yerda havo zichligi juda katta bo'lgani uchun
+#3
+FPV dronni uchirishdan oldin radio link sifatini (signalni) qanday tekshirish tavsiya etiladi?
+@0
+Dronni darhol bulutlar orasiga olib chiqib tekshirish
+@0
+Faqat batareya zaryadini ko'rish orqali
+@3
+Yaqin masofada RSSI va Link Quality ko'rsatkichlarini hamda FPV video sifatini kuzatish orqali
+@0
+Hech qanday tekshiruv shart emas
+#1
+Yuqori voltli kuch liniyalari yaqinida dron uchirishning RF xavfi nimada?
+@1
+Kuchli elektromagnit maydon va impuls shovqinlari qabul qilgichlarning signalini yo'qotishiga sabab bo'lishi
+@0
+Simlar dron batareyasini tez zaryadlashi
+@0
+Dron motorlari o'z-o'zidan kattalashishi
+@0
+Signalning cheksiz uzoq masofaga tarqalishi
+#2
+Xavfsiz parvoz qilish uchun chastota tanlashda qanday usuldan foydalanish maqsadga muvofiq?
+@0
+Eng band va ommabop chastotani tanlash
+@2
+Spektr analizator yoki VTX skaner yordamida tiqilinch bo'lmagan, bo'sh kanallarni tanlash
+@0
+Har doim faqat bitta standart chastotada uchish
+@0
+Dron kanalini telefon orqali doim o'zgartirib turish

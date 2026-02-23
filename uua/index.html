@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Test Tizimi</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f3f4f6;
+            --surface: #ffffff;
+            --text: #1f2937;
+            --success: #16a34a;
+            --error: #dc2626;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            height: 100vh;
+        }
+        #sidebar {
+            width: 250px;
+            background: var(--surface);
+            border-right: 1px solid #e5e7eb;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+        .topic-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #e5e7eb;
+            background: var(--surface);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .topic-btn:hover { background: #f9fafb; }
+        .topic-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        #main {
+            flex: 1;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .question-card {
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+        .question-title {
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        .difficulty-badge {
+            display: inline-block;
+            background: #e5e7eb;
+            color: #4b5563;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+        .option {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .option:hover { background: #f9fafb; }
+        .option input { margin-right: 0.5rem; }
+        .option.correct {
+            background: #dcfce7;
+            border-color: var(--success);
+            color: #14532d;
+        }
+        .option.wrong {
+            background: #fee2e2;
+            border-color: var(--error);
+            color: #7f1d1d;
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        button.submit-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        button.submit-btn:hover { background: #1d4ed8; }
+        #error-msg { color: var(--error); font-weight: 500; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2 style="margin-top:0">Mavzular</h2>
+        <div id="topic-list">Testlar yuklanmoqda...</div>
+    </div>
+    <div id="main">
+        <div class="container">
+            <div class="header-flex">
+                <h1 id="topic-title">Test Tizimi</h1>
+                <div id="score-display" style="font-size:1.25rem; font-weight:bold;"></div>
+            </div>
+            <div id="error-msg"></div>
+            <div id="quiz-container"></div>
+            <button id="submit-btn" class="submit-btn" style="display:none;" onclick="checkAnswers()">Javoblarni tekshirish</button>
+        </div>
+    </div>
+
+    <script>
+        let allTopics = [];
+        let currentTopicIndex = 0;
+
+        async function loadTests() {
+            try {
+                const response = await fetch('./test.txt');
+                if (!response.ok) throw new Error("test.txt faylini topib bo'lmadi. Kodni lokal serverda ishga tushirganingizga ishonch hosil qiling.");
+                const text = await response.text();
+                parseText(text);
+                renderSidebar();
+                if(allTopics.length > 0) selectTopic(0);
+            } catch (error) {
+                document.getElementById('error-msg').textContent = error.message;
+                document.getElementById('topic-list').innerHTML = '';
+            }
+        }
+
+        function parseText(text) {
+            // Matnni tozalash va mavzularga bo'lish (&)
+            const normalized = text.replace(/\r/g, '');
+            const topicBlocks = normalized.split(/&(\d+)/).slice(1);
+            
+            for (let i = 0; i < topicBlocks.length; i += 2) {
+                const topicId = topicBlocks[i];
+                const topicContent = topicBlocks[i+1];
+                const questions = [];
+                
+                // Savollarga bo'lish (#)
+                const qBlocks = topicContent.split(/#(\d+)/).slice(1);
+                for (let j = 0; j < qBlocks.length; j += 2) {
+                    const difficulty = qBlocks[j];
+                    const qContent = qBlocks[j+1];
+                    
+                    // Variantlarga bo'lish (@)
+                    const parts = qContent.split(/@(\d+)/);
+                    const qText = parts[0].trim();
+                    const options = [];
+                    
+                    for (let k = 1; k < parts.length; k += 2) {
+                        const optId = parts[k];
+                        const optText = parts[k+1].trim();
+                        // Variant to'g'riligini aniqlash: @ raqami # raqamiga teng bo'lishi kerak
+                        options.push({
+                            isCorrect: optId === difficulty,
+                            text: optText
+                        });
+                    }
+                    
+                    if(qText) {
+                        questions.push({ difficulty, text: qText, options });
+                    }
+                }
+                
+                if(questions.length > 0) {
+                    allTopics.push({ id: topicId, questions });
+                }
+            }
+        }
+
+        function renderSidebar() {
+            const list = document.getElementById('topic-list');
+            list.innerHTML = '';
+            allTopics.forEach((topic, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'topic-btn';
+                btn.textContent = `${topic.id}-mavzu`;
+                btn.onclick = () => selectTopic(index);
+                list.appendChild(btn);
+            });
+        }
+
+        function selectTopic(index) {
+            currentTopicIndex = index;
+            document.querySelectorAll('.topic-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+            
+            const topic = allTopics[index];
+            document.getElementById('topic-title').textContent = `${topic.id}-mavzu testlari`;
+            document.getElementById('score-display').textContent = '';
+            document.getElementById('submit-btn').style.display = 'block';
+            
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+            
+            topic.questions.forEach((q, qIndex) => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                
+                let html = `<div class="question-title">
+                                ${qIndex + 1}. ${q.text.replace(/\n/g, '<br>')} 
+                                <span class="difficulty-badge">Qiyinlik: #${q.difficulty}</span>
+                            </div>`;
+                
+                q.options.forEach((opt, optIndex) => {
+                    html += `
+                        <label class="option" id="opt-${qIndex}-${optIndex}">
+                            <input type="radio" name="q${qIndex}" value="${optIndex}">
+                            ${opt.text}
+                        </label>
+                    `;
+                });
+                
+                card.innerHTML = html;
+                container.appendChild(card);
+            });
+        }
+
+        function checkAnswers() {
+            const topic = allTopics[currentTopicIndex];
+            let correctCount = 0;
+            
+            topic.questions.forEach((q, qIndex) => {
+                const selected = document.querySelector(`input[name="q${qIndex}"]:checked`);
+                const selectedVal = selected ? parseInt(selected.value) : -1;
+                
+                q.options.forEach((opt, optIndex) => {
+                    const label = document.getElementById(`opt-${qIndex}-${optIndex}`);
+                    label.classList.remove('correct', 'wrong');
+                    
+                    // To'g'ri va noto'g'ri javoblarni belgilash
+                    if (opt.isCorrect) {
+                        label.classList.add('correct');
+                    } else if (selectedVal === optIndex && !opt.isCorrect) {
+                        label.classList.add('wrong');
+                    }
+                });
+                
+                // Ball hisoblash
+                if (selectedVal !== -1 && q.options[selectedVal].isCorrect) {
+                    correctCount++;
+                }
+            });
+            
+            document.getElementById('score-display').textContent = 
+                `Natija: ${correctCount} / ${topic.questions.length}`;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onload = loadTests;
+    </script>
+</body>
+</html>
