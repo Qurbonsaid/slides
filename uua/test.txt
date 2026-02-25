@@ -1,1122 +1,3020 @@
 &1
 #1
-UUA qisqartmasi qanday ma'noni anglatadi?
+Uchuvchisiz uchish apparati (UUA) qanday texnik qurilma hisoblanadi?
+@0
+Faqat harbiy harakatlar uchun mo'ljallangan havo kemasi
 @1
-Uchuvchisiz uchar apparatlar
+Bortida uchuvchisiz, masofadan yoki avtomatik boshqariladigan havo transport vositasi
 @0
-Umumiy uchar apparatlar
+Odam tashuvchi qisqa masofali vertolyot
 @0
-Uzoqqa uchuvchi apparatlar
-@0
-Uzilgan uchar aloqalar
+Faqat yuk tashish uchun mo'ljallangan avtonom tizim
 #2
-Harbiy operatsiyalarda UUA lar asosan qanday vazifalarni bajaradi?
-@0
-Faqat yuk tashish
+UUA tizimining asosiy tashkiliy tuzilishiga nimalar kiradi?
 @2
-Razvedka, kuzatuv va tahdidlarni baholash
+Uchish apparati, yer nazorat stansiyasi, aloqa kanallari, qo'shimcha jihozlar
 @0
-Tibbiy yordam ko'rsatish
+Faqat uchish apparati va motorlar
 @0
-Yo'llarni ta'mirlash
+Dron, kamera va batareya
+@0
+Pult, monitor va qanotlar
 #3
-Qishloq xo'jaligida UUA lar qaysi kameralar yordamida o'simliklar kasalliklarini aniqlaydi?
+Multikopter qanday ishlash prinsipiga ega?
 @0
-Faqat oddiy optik kameralar
+Qattiq qanotlar yordamida havoda rejalashtirib uchadi
 @0
-Faqat rentgen kameralar
+Bitta katta rotor yordamida vertikal harakatlanadi
 @3
-Multispektral va termal kameralar
+Bir necha propellerlarning parraklarini aylantirishi orqali vertikal ko'tariladi
 @0
-Ultratovushli kameralar
+Reaktiv dvigatel yordamida gorizontal harakatlanadi
 #1
-UUA larning qutqaruv ishlari va favqulodda vaziyatlardagi asosiy roli nimadan iborat?
+Qattiq qanotli dronlarning asosiy afzalligi nimada?
 @1
-Vaziyatni tezkor baholash va qidiruv ishlari
+Uzoq masofalarni uchib o'tish va yuqori tezlikda harakatlanish imkoniyati
 @0
-Zilzilalarni to'xtatish
+Joyida muallaq tura olishi (hover)
 @0
-Yong'inni o'chirish
+Bino ichida harakatlanish qulayligi
 @0
-Transport vositalarini boshqarish
+Vertikal ko'tarilish va qo'nish qobiliyati
 #2
-Ilmiy-tadqiqot sohasida UUA lar yordamida nimalar amalga oshiriladi?
+VTOL turidagi UUA nimasi bilan ajralib turadi?
 @0
-Faqat dori-darmon yetkazib berish
+Faqat yengil yuklarni tashishi bilan
 @2
-Geografik, ekologik va meteorologik ma'lumotlar yig'ish
+Vertikal uchish va qo'nishga qodirligi hamda gorizontal parvoz qilish imkoniyati bilan
 @0
-Faqat sanoat obyektlarini qurish
+Faqat tungi vaqtlarda foydalanilishi bilan
 @0
-Harbiy mashg'ulotlar o'tkazish
+Hech qanday boshqaruvsiz to'liq avtonom ekanligi bilan
+#1
+Vazni bo'yicha mikro-dronlar necha grammgacha bo'lgan qurilmalarni o'z ichiga oladi?
+@0
+100 grammgacha
+@0
+500 grammgacha
+@1
+250 grammgacha
+@0
+1 kilogrammgacha
+#3
+Yarim avtonom dronlarning ishlash prinsipi qanday?
+@3
+Dron avtopilot funksiyalariga ega, ammo operator muhim qarorlarni o'zi qabul qiladi
+@0
+To'liq sun'iy intellekt orqali boshqariladi
+@0
+Faqat GPS tarmog'isiz qo'lda boshqariladi
+@0
+Dron o'zi marshrut tuzib, operator aralashuvisiz qaytadi
+#2
+Kichik dronlar (2-25 kg) asosan qaysi maqsadlarda keng foydalaniladi?
+@0
+Faqat bino ichidagi sport musobaqalari uchun
+@2
+Professional videografiya, xaritalash, inspeksiya ishlarida
+@0
+Harbiy havo hujumlari uchun
+@0
+Tibbiyot sohasida inson organlarini tashishda
+#1
+To'liq avtonom boshqaruv usulida qanday texnologiyalardan ko'proq foydalaniladi?
+@0
+Analog radiouzatgichlar
+@1
+Sun'iy intellekt va mashinali o'rganish texnologiyalari
+@0
+Oddiy kompas va barometr
+@0
+Bluetooth ulanishi
+#2
+UUA qaysi xalqaro konvensiya normalariga rioya qilishi shart?
+@2
+1944-yildagi Chikago konvensiyasi normalariga
+@0
+Jeneva konvensiyasiga
+@0
+Parij iqlim kelishuviga
+@0
+Kiotto protokollariga
+#3
+O'rta dronlar (25-150 kg) ko'pincha nima uchun jihozlanadi?
+@0
+O'yin-kulgi va oddiy suratga olish
+@0
+Sport dronlari musobaqalari
+@3
+Og'ir kameralar, lidar, multispektral sensorlar va yuk tashish tizimlari bilan
+@0
+Ichki xavfsizlik kameralari tarmog'i bilan
+#1
+Dronlarni tasniflashda qaysi mezon eng ko'p qo'llaniladi?
+@1
+Konstruksiya, vazn, boshqaruv usuli va qo'llanish sohasi
+@0
+Faqat qanday rangda ekanligi
+@0
+Faqat qaysi davlatda ishlab chiqarilganligi
+@0
+Faqat batareyasining hajmi
+#2
+Geksakopter nechta propellerga ega bo'ladi?
+@0
+4 ta
+@2
+6 ta
+@0
+8 ta
+@0
+2 ta
+#1
+Harbiy dronlarning asosiy xususiyati nima?
+@0
+Ochiq tizimli dasturiy ta'minotga egaligi
+@1
+Uzoq parvoz vaqti, yuqori balandlik va maxfiylik
+@0
+Faqat kunduzgi vaqtda ucha olishi
+@0
+Barcha uchun erkin sotuvda mavjudligi
+#3
+Boshqaruv pulti nima deb ataladi?
+@3
+Transmitter
+@0
+Transponder
+@0
+Telemetriya bloki
+@0
+Giroskop
 &2
 #1
-Elektr toki nima?
+Huquqni muhofaza qilish organlarida dronlar asosan nima uchun qo'llaniladi?
+@0
+Hujjatlarni chop etishda
 @1
-Elektr zaryadlarining tartibli harakati
+Ommaviy tadbirlarni nazorat qilish, jinoyatchilikka qarshi kurashish va xavfsizlikni ta'minlashda
 @0
-Elektr zaryadlarining tartibsiz harakati
+Kiberhujumlarning oldini olishda
 @0
-Moddalar ichidagi issiqlik harakati
-@0
-Atomlarning tebranishi
+Ofis binosi ichida kuzatuv olib borishda
 #2
-Metall o'tkazgichlarda elektr tokini asosan nimalar tashiydi?
-@0
-Ionlar
+Favqulodda vaziyatlarda UUA dan foydalanishning qanday aniq foydasi bor?
 @2
-Erkin elektronlar
+Tezkor vaziyatni baholash va qidiruv-qutqaruv operatsiyalarini odam hayotini xavf ostiga qo'ymay amalga oshirish
 @0
-Protonlar
+Faqat oziq-ovqat yetkazib berish
 @0
-Neytronlar
+Radiatsiya darajasini ko'paytirish
+@0
+Qutqaruvchilarga xalaqit berish
 #3
-Elektr toki hosil bo'lishi uchun qanday shartlar bajarilishi zarur?
-@0
-Faqat manba bo'lishi yetarli
-@0
-Faqat yopiq zanjir va o'tkazgich
+Termal kamerali dronlar tungi operatsiyalarda nima uchun muhim?
 @3
-Elektr manbai, yopiq zanjir va o'tkazgich
+Ular issiqlik nurlanishini aniqlab, qorong'ida ham inson yoki transport vositalarini topish imkonini beradi
 @0
-Elektr maydoni va izolyator
+Ular atrofni to'liq yoritib yuboradi
+@0
+Ular faqat yong'inni o'chirish uchun suv sepadi
+@0
+Ular tovush to'lqinlarini qayd etadi
 #1
-Doimiy tok nima?
+Yo'l harakati xavfsizligida dronlar qanday yordam beradi?
 @1
-Zaryad tashuvchilar bir xil yo'nalishda harakatlanadigan elektr toki
+Yo'l harakatini monitoring qilish va qoidabuzarliklarni masofadan aniqlashda
 @0
-Harakat yo'nalishi doim o'zgarib turadigan tok
+Avtomobillarning shinalarini tekshirishda
 @0
-Faqat yuqori kuchlanishli tok
+Yo'l chiziqlarini bo'yashda
 @0
-Ionlar yordamida tarqaladigan tok
+Svetoforlarni o'rnatishda
 #2
-O'zgaruvchan tok asosan nima sababdan uzoq masofalarga uzatishda keng qo'llaniladi?
+O'zbekistonda "Xavfsiz shahar" loyihasi doirasida dronlar qanday tizim bilan birlashtirilmoqda?
 @0
-Uning chastotasi juda yuqori bo'lgani uchun
+Mobil o'yinlar tizimi bilan
 @2
-Transformatorlar yordamida kuchlanishni oson o'zgartirish mumkinligi uchun
+Video monitoring tizimlari va analitik dasturlar bilan
 @0
-Erkin elektronlar ko'p bo'lgani uchun
+Tibbiy xizmat bazasi bilan
 @0
-Doimiy tokka qaraganda arzon bo'lgani uchun
+Faqat pochta xizmati bilan
+#1
+Sel-toshqin va tabiiy ofatlarda UUA qanday qutqaruv vazifasini bajaradi?
+@0
+Selni to'xtatadi
+@0
+Suv ostida suzadi
+@1
+Jabrlangan hududlarni tezkor baholaydi va qutqaruv yo'llarini belgilaydi
+@0
+Vayronalarni tozalaydi
+#3
+Katta hududlarni qisqa vaqt ichida tekshirish uchun qaysi turdagi dron afzalroq?
+@3
+Qattiq qanotli dronlar
+@0
+Kvadrokopterlar
+@0
+Mikro-dronlar
+@0
+Bino ichida uchuvchi dronlar
+#2
+UUA orqali olingan tahliliy ma'lumotlar huquqni muhofaza qilish organlariga qanday yordam beradi?
+@0
+Internet tezligini oshirishda
+@2
+Vaziyatni to'g'ri baholash, xavf-xatarlarni aniqlash va tezkor qarorlar qabul qilishda
+@0
+Ob-havoni o'zgartirishda
+@0
+Barcha ijtimoiy tarmoqlarni bloklashda
+#1
+Chegaralarni muhofaza qilishda UUA qanday foyda keltiradi?
+@1
+Uzoq va borish qiyin bo'lgan hududlarni masofadan xavfsiz kuzatish imkoniyatini beradi
+@0
+Chegara simlarini tortishda
+@0
+Pasport nazoratini amalga oshirishda
+@0
+Viza berish jarayonini tezlashtirishda
+#3
+Qidiruv-qutqaruv jarayonida operator qanday xususiyatlarga e'tibor berishi lozim?
+@0
+Faqat dronning rangi va ovoziga
+@0
+Faqat tezlikni maksimal darajaga ko'tarishga
+@3
+Termal ko'rsatkichlar, relefning murakkabligi va batareya quvvatini to'g'ri taqsimlashga
+@0
+Ob-havoning umuman ahamiyati yo'qligiga
+#2
+Jinoyatchilikka qarshi kurashda dronlarning asosiy texnologik yordami nima?
+@2
+Real vaqt rejimida voqea joyidan video uzatish va qochib ketayotgan shaxslarni kuzatish
+@0
+Qarshilik ko'rsatish
+@0
+Elektron kalitlarni buzish
+@0
+Qonun loyihalarini yozish
+#1
+Favqulodda vaziyatlarda ishlatiladigan dronlar uchun eng muhim ko'rsatkich nima?
+@1
+Ishonchlilik, tezlik va yuqori sifatli axborot uzatish
+@0
+Tashqi ko'rinishining chiroyliligi
+@0
+Yengilligi
+@0
+Pultining kattaligi
+#3
+Ekologik monitoring doirasida huquq-tartibot organlari UUA dan qanday maqsadda foydalanadi?
+@3
+Noqonuniy daraxt kesish, brakonerlik va suv havzalarining ifloslanishini yuqoridan aniqlash uchun
+@0
+Baliqlarga oziq-ovqat berish uchun
+@0
+Faqat yomg'ir miqdorini o'lchash uchun
+@0
+Daraxt ekish uchun
+#2
+Ommaviy tadbirlarda dronlar yordamida olib boriladigan nazorat nima deb ataladi?
+@0
+Tibbiy kuzatuv
+@2
+Havo monitoringi va jamoat tartibini saqlash
+@0
+Reklama suratga olish
+@0
+Geodezik o'lchov
+#1
+Dronlar yordamida olingan ma'lumotlar voqea joyini o'rganishda qanday afzallik beradi?
+@1
+Hududning to'liq panoramasini va ko'rinmaydigan qismlarini yuqoridan ko'rish imkonini
+@0
+Ovozni yozib olish imkonini
+@0
+Xodimlarning sonini ko'paytirish imkonini
+@0
+Qurol ishlatish imkonini
 &3
 #1
-Elektr qarshiligining asosiy fizik mohiyati nima?
+Dronning asosiy skeleti va barcha qismlarni o'zida saqlovchi qism nima deb ataladi?
+@0
+Propeller
 @1
-Zaryad tashuvchilarning atomlar va ionlar bilan to'qnashuvi
+Korpus yoki rama
 @0
-Elektronlarning mutlaqo erkin harakatlanishi
+Gimbal
 @0
-Moddada erkin elektronlarning ko'pligi
-@0
-Atomlarning tebranmasligi
+Boshqaruv pulti
 #2
-Elektr qarshiligi o'tkazgichning qaysi geometrik o'lchamlariga bog'liq?
-@0
-Faqat uzunligiga
+Professional dronlarning ramalari ko'pincha qaysi materialdan yasaladi?
 @2
-Uzunligi va ko'ndalang kesim yuzasiga
+Karbon tolasi
 @0
-Faqat ko'ndalang kesim yuzasiga
+Og'ir temir qotishmasi
 @0
-Massasiga va hajmiga
+Oddiy shisha
+@0
+Sof alyuminiy
 #3
-Om qonuni qanday matematik formula bilan ifodalanadi?
-@0
-I = U * R
-@0
-R = I / U
+Brushless (cho'tkasiz) motorlarning oddiy motorlardan afzalligi nimada?
 @3
-I = U / R
+Ular samaraliroq, ishqalanish kamligi hisobiga uzoq xizmat qiladi va kam qiziydi
 @0
-U = I + R
+Ular arzonroq va juda tez qiziydi
+@0
+Ular faqat yoqilg'i bilan ishlaydi
+@0
+Ularda magnit maydon umuman bo'lmaydi
 #1
-Metall o'tkazgichlarda harorat oshishi bilan elektr qarshiligi qanday o'zgaradi?
+Dronlarning motorlari nima orqali boshqariladi?
 @1
-Ortadi
+Elektron tezlik nazoratchisi (ESC) orqali
 @0
-Kamayadi
+Faqat batareya orqali bevosita
 @0
-O'zgarmaydi
+Gimbal orqali
 @0
-Nolga teng bo'ladi
+Kamera orqali
 #2
-Izolyatorlarning elektr qarshiligi nega juda katta bo'ladi?
+ESC qanday vazifani bajaradi?
 @0
-Ular issiqlikni yaxshi o'tkazadi
+Rasmlarni saqlaydi
 @2
-Ularda erkin zaryad tashuvchilar deyarli yo'q
+Flight controllerdan kelgan signal asosida motorga qancha tok berishni hal qiladi
 @0
-Ular faqat o'zgaruvchan tokni o'tkazadi
+GPS signalini qabul qiladi
 @0
-Ularning atomlari juda kichik
+Dronning korpusini sovitadi
+#1
+Propellerlarning asosiy funksiyasi nima?
+@0
+Batareyani zaryadlash
+@1
+Havoni pastga itarish orqali dronni ko'tarish va harakatga keltirish
+@0
+Video signalini uzatish
+@0
+Faqat tormozlash
+#3
+Nima uchun multikopterlarning propellerlari juft bo'lib, qarama-qarshi yo'nalishlarda aylanadi?
+@0
+Ovozni kuchaytirish uchun
+@0
+Batareyani tejash uchun
+@3
+Aylanish momentini muvozanatlash va dronning barqarorligini ta'minlash uchun
+@0
+Motorlarning qizib ketmasligi uchun
+#2
+Karbon tolasining dron ramasi uchun asosiy xususiyati qanday?
+@2
+Juda yengil va ayni paytda juda mustahkam
+@0
+Juda og'ir va mo'rt
+@0
+Elastik va oson eruvchan
+@0
+Arzon va oson sinuvchan
+#1
+Motor qanchalik tez aylansa, dronning harakati qanday o'zgaradi?
+@1
+Ko'tarish kuchi ortadi va dron yuqoriga harakatlanadi
+@0
+Ko'tarish kuchi kamayadi
+@0
+Motor o'chib qoladi
+@0
+Dron avtomatik qo'nadi
+#2
+Qaysi rama shakli to'rtta motorli dronlarda eng ko'p qo'llaniladi?
+@0
+O shaklidagi
+@2
+X shaklidagi
+@0
+V shaklidagi
+@0
+Z shaklidagi
+#3
+Agar dronning bitta motori ishdan chiqsa, geksakopter (6 ta motorli) qanday holatda bo'ladi?
+@3
+Qolgan motorlar dronni barqaror ushlab turadi va xavfsiz qo'nishga imkon beradi
+@0
+Darhol qulab tushadi
+@0
+Tezligi ikki barobar ortadi
+@0
+U o'zini o'zi ta'mirlaydi
+#1
+Propellerlarda yoriq yoki shikast bo'lsa nima sodir bo'ladi?
+@0
+Yaxshiroq uchadi
+@1
+Vibratsiyaga va boshqaruvning yo'qolishiga olib keladi
+@0
+Kamera sifati yaxshilanadi
+@0
+Batareya zaryadi ortadi
+#2
+Elektr toki brushless motorning g'altaklaridan o'tganda nima sodir bo'ladi?
+@2
+Magnit maydon hosil bo'ladi va doimiy magnitlarni itarish orqali motorni aylantiradi
+@0
+Tok issiqlik energiyasiga aylanib parrakni eritadi
+@0
+Motor to'xtab qoladi
+@0
+Batareya portlaydi
+#1
+Dron motorlarining silliq aylanishini parvozdan oldin qanday tekshirish kerak?
+@1
+Har bir dvigatelni qo'l bilan aylantirib, g'alati ovoz yoki qarshilik yo'qligiga ishonch hosil qilish
+@0
+Pultdan maksimal tezlikni berib tekshirish
+@0
+Suv sepib tekshirish
+@0
+Faqat kompyuterga ulab tekshirish
+#3
+Katta o'lchamli propellerlarning kichiklarga nisbatan qanday xususiyati bor?
+@3
+Ular ko'proq havo itarib ko'proq ko'tarish kuchi beradi, lekin ko'proq energiya sarflaydi
+@0
+Ular kamroq energiya sarflaydi va kamroq shovqin qiladi
+@0
+Ular har qanday shamolda dronni qulashdan to'liq asraydi
+@0
+Ularning aylanish tezligi doim bir xil bo'ladi
 &4
 #1
-Elektr quvvati qaysi harf bilan belgilanadi va qanday o'lchov birligida o'lchanadi?
+Zamonaviy dronlarda qanday turdagi batareyalar eng ko'p qo'llaniladi?
+@0
+Qo'rg'oshin-kislotali batareyalar
 @1
-P, vatt (W)
+Litiy-polimer (Li-Po) batareyalar
 @0
-E, joul (J)
+Nikel-kadmiy batareyalar
 @0
-I, amper (A)
-@0
-U, volt (V)
+Ishqorli batareyalar
 #2
-Elektr quvvatini hisoblash formulasi qanday?
-@0
-P = U / I
+LiPo batareyalarining asosiy afzalligi nimada?
 @2
-P = U * I
+Ular yengil, energiya zichligi yuqori va tez quvvat berishga qodir
 @0
-P = I / U
+Ular juda og'ir va ishonchli
 @0
-P = U * R
+Ular hech qachon qizimaydi
+@0
+Ular xohlagancha zaryadsizlanishi mumkin
 #3
-Kundalik hayotda va sanoatda elektr energiyasini o'lchash uchun asosan qaysi birlikdan foydalaniladi?
-@0
-Joul (J)
-@0
-Vatt (W)
+LiPo batareyalarida "S" harfi nima ma'noni anglatadi (masalan, 3S, 4S)?
 @3
-Kilovatt-soat (kWh)
+Batareya ichidagi hujayralar (cell) sonini ko'rsatadi
 @0
-Amper-soat (Ah)
+Zaryadlash tezligini ko'rsatadi (Speed)
+@0
+Og'irlik o'lchov birligi
+@0
+Signallar sonini bildiradi
 #1
-Tok yuklamasi nima?
+Batareyaning sig'imi qanday o'lchov birligida ifodalanadi?
 @1
-Elektr zanjiri orqali oqib o'tayotgan tokning miqdori
+Milliamper soatlarda (mAh)
 @0
-Zanjirdagi qarshilik miqdori
+Voltlarda (V)
 @0
-Manbaning kuchlanishi
+Gerts (Hz)
 @0
-Elektronlarning massasi
+Amperlarda (A)
 #2
-Ortiqcha tok yuklamasining oqibatlari qanday bo'lishi mumkin?
+Parvozni xavfsiz boshlash uchun batareyaning zaryadlanish darajasi kamida qancha bo'lishi tavsiya etiladi?
 @0
-Elektr energiyasi sarfi kamayadi
+50%
 @2
-Simlar qizib ketadi va qisqa tutashuv xavfi ortadi
+90-100%
 @0
-Tok kuchi doimiy barqarorlashadi
+30%
 @0
-Qurilmalarning xizmat muddati uzayadi
+10%
+#1
+Batareyaning tashqi holatida shishganlik yoki deformatsiya ko'rinsa nima qilish kerak?
+@0
+Uni zaryadlash va parvozga tayyorlash
+@1
+Uni darhol ishlatishdan chiqarish va to'g'ri utilizatsiya qilish
+@0
+Ignada teshib havosini chiqarish
+@0
+Muzlatgichga qo'yib sovitish
+#3
+Storage mode (Saqlash rejimi) nima uchun kerak?
+@3
+Batareya uzoq vaqt ishlatilmasa, optimal (50-60%) zaryad miqdorida ushlab, xizmat muddatini uzaytirish uchun
+@0
+Batareyani 100% quvvatda doimiy saqlash uchun
+@0
+Dron xotirasidagi videolarni saqlash uchun
+@0
+Parvoz tezligini tejash uchun
+#2
+BMS (Batareya boshqaruv tizimi) qanday funksiyani bajaradi?
+@2
+Batareyaning holatini nazorat qilib, ortiqcha zaryadlanish yoki zaryadsizlanishdan himoya qiladi
+@0
+Faqat motor tezligini nazorat qiladi
+@0
+Signal masofasini uzaytiradi
+@0
+Kameraning fokusini sozlaydi
+#1
+Sovuq ob-havo ($0^{\circ}C$ dan past) batareyaga qanday ta'sir qiladi?
+@1
+Batareya sig'imi va parvoz vaqti keskin kamayadi
+@0
+Parvoz vaqti ikki barobar ortadi
+@0
+Hech qanday ta'sir qilmaydi
+@0
+Batareya o'zini o'zi isitadi
+#3
+LiPo batareyalarni zaryadlashda nimalarga qat'iy e'tibor berish lozim?
+@3
+Faqat original yoki tasdiqlangan zaryadlovchi qurilmalardan foydalanish va zaryadlash jarayonini qarovsiz qoldirmaslik
+@0
+Batareyani quyosh nuri ostida ochiq joyda zaryadlash
+@0
+Istagan mobil telefon zaryadlovchisidan foydalanish
+@0
+Zaryad to'lganidan keyin ham bir necha kun rozetkada qoldirish
+#2
+Tushirish tezligi (C-rating) nima degani?
+@0
+Batareyaning to'liq zaryadsizlanishi uchun ketadigan soatlar soni
+@2
+Batareyadan bir vaqtning o'zida qancha xavfsiz tok olish mumkinligini ko'rsatuvchi parametr
+@0
+Kameralarni zaryadlash tezligi
+@0
+Radio signalini qabul qilish darajasi
+#1
+LiPo batareyalarini qanday haroratda saqlash optimal hisoblanadi?
+@1
+$+5^{\circ}C$ dan $+25^{\circ}C$ gacha quruq joyda
+@0
+$+40^{\circ}C$ dan yuqori haroratda
+@0
+$-20^{\circ}C$ haroratdagi muzlatgichda
+@0
+To'g'ridan-to'g'ri isitgichlar yonida
+#3
+Batareyaning ishlash sikli (hayot davri) taxminan qancha bo'ladi?
+@0
+10-20 marta
+@3
+To'g'ri foydalanilganda taxminan 200-500 zaryadlash/razryadlash sikli
+@0
+Cheksiz, agar tushirib yuborilmasa
+@0
+10000 marta
+#2
+Parvoz vaqtida batareya quvvati tugashining oldini olish uchun eng yaxshi amaliyot nima?
+@2
+Parvozni rejalashtirish va batareyaning 20-30% quvvati qolganda dronga RTH (Home) buyrug'ini berish
+@0
+Batareya 0% bo'lguncha uchishda davom etish
+@0
+Motorlarni parvoz vaqtida o'chirib-yoqib tejash
+@0
+Signalni uzib qo'yish
+#1
+Agar parvoz paytida batareya kontaktlarida qisqa tutashuv yuz bersa qanday xavf yuzaga keladi?
+@0
+Dron avtomatik zaryadlanadi
+@1
+Yong'in chiqish yoki batareya portlash xavfi
+@0
+Batareya sig'imi oshadi
+@0
+Pult avtomatik o'chadi
 &5
 #1
-Batareya nima vazifani bajaradi?
+Dronning boshqaruv platasi yoki "miyasi" nima deb ataladi?
+@0
+ESC (Tezlik nazoratchisi)
 @1
-Kimyoviy energiyani elektr energiyasiga aylantiradi
+Flight controller (Parvoz nazoratchisi)
 @0
-Elektr energiyasini mexanik energiyaga aylantiradi
+Gimbal
 @0
-Mexanik energiyani issiqlikka aylantiradi
-@0
-Zaryadlarni yo'q qiladi
+Transmitter
 #2
-LiPo batareyalarining asosiy xususiyati nima?
-@0
-Ular faqat silindrsimon shaklda bo'ladi
+Giroskop sensori droni boshqarishda qanday ma'lumotni o'qiydi?
 @2
-Polimer elektrolitga va yuqori energiya zichligiga ega
+Dronning fazodagi burchak tezligi va qaysi tomonga qiyshayganligini
 @0
-Ularning elektroliti har doim gaz holatida bo'ladi
+Shamoldagi namlik darajasini
 @0
-Ular umuman qizimaydi
+Yerdan balandlikni santimetrda
+@0
+Batareyaning issiqligini
 #3
-C-rating tushunchasi nimani anglatadi?
-@0
-Batareyaning umumiy massasini
-@0
-Batareyaning faqat zaryadlanish vaqtini
+Barometr droni havoda qanday barqarorlashtiradi?
 @3
-Batareyaning qanchalik tez va qanday maksimal tok bilan energiya bera olishini
+Atmosfera bosimini o'lchash orqali dronning yerdan balandligini aniqlaydi
 @0
-Batareyaning haroratga chidamliligini
+U uzoqlikdagi to'siqlarni lazer orqali hisoblaydi
+@0
+GPS signalisiz joylashuvni aniqlaydi
+@0
+Motorlarning issiqligini o'lchaydi
 #1
-Batareyada elektronlar tashqi zanjir orqali qaysi tomonga harakatlanadi?
+Transmitter (boshqaruv pulti) nima vazifani bajaradi?
 @1
-Anoddan katodga
+Operatordan dronga radio to'lqinlar orqali boshqaruv buyruqlarini yuboradi
 @0
-Katoddan anodga
+Dronni quvvatlantiradi
 @0
-Faqat elektrolit ichida
+Videolarni tahrirlaydi
 @0
-Harakatlanmaydi
+Qanotlarni harakatlantiradi
 #2
-Agar 2000 mAh sig'imli batareya 10C reytingga ega bo'lsa, u maksimal qanday tok bera oladi?
+To'siqlarni aniqlash tizimi asosan qaysi sensorlarga tayanadi?
 @0
-2 A
+Faqat kompas va GPS ga
 @2
-20 A
+Ultratovush, infraqizil, optik kameralar yoki lidar sensorlariga
 @0
-10 A
+Faqat barometrga
 @0
-200 A
+Giroskop va akselerometrga
+#1
+Gimbalning asosiy vazifasi nima?
+@0
+Dron tezligini oshirish
+@1
+Kamerani har qanday tebranish va egilishlardan himoyalash, barqaror tasvir olish
+@0
+Batareyani ushlab turish
+@0
+Radio signalini kuchaytirish
+#3
+Magnetometr (kompas) nima uchun dronlarda juda muhim?
+@3
+Yerning magnit maydonini o'lchash orqali dronning shimolga nisbatan qaysi yo'nalishga qaraganligini aniqlaydi
+@0
+Magnitli buyumlarni qidirish uchun
+@0
+Batareyadan kelayotgan oqimni o'lchash uchun
+@0
+Havodagi bosimni hisoblash uchun
+#2
+Kamera tasvirini pultga yoki ekranga real vaqt rejimida yuborish nima deb ataladi?
+@2
+Video uzatish (FPV yoki Live Feed)
+@0
+Telemetriya
+@0
+Kalibrlash
+@0
+Barometriya
+#1
+Dron pultidagi joystik (tayoqcha) bilan nimalar boshqariladi?
+@1
+Dronning balandligi, aylanishi, oldinga/orqaga va yonga harakatlanishi
+@0
+Faqat kamerani yoqib o'chirish
+@0
+Faqat GPS signalini qidirish
+@0
+Parvoz yo'nalishini ob-havoga moslash
+#3
+Optik oqim (Optical flow) sensori qanday ishlaydi?
+@0
+Ovoz to'lqinlari yordamida harakatni hisoblaydi
+@3
+Kamera tasviri orqali yer yuzasidagi obyektlar harakatini tahlil qilib, dronning gorizontal siljishini va tezligini aniqlaydi
+@0
+Kosmik yo'ldoshlar bilan signallarni tahlil qiladi
+@0
+Magnit maydonini o'lchaydi
+#2
+FPV (First Person View) tizimi dronlarda nima imkoniyat beradi?
+@2
+Operatorga dronning kamerasidan go'yoki dron ichida o'tirgandek real vaqtda videoni ko'rish imkonini
+@0
+Faqat tunda uchish imkonini
+@0
+Dronni avtomatik ravishda uyga qaytarish imkonini
+@0
+Batareya sarfini tejash imkonini
+#1
+Akselerometr dron uchayotganda nimani o'lchaydi?
+@0
+Havoning haroratini
+@1
+Dronning to'g'ri chiziqli tezlanishini va tortishish kuchini
+@0
+Pultgacha bo'lgan masofani
+@0
+Wi-Fi signalini
+#3
+Parvozdan oldin kompasni nima sababdan kalibrlash kerak?
+@3
+Yangi hududdagi magnit xalaqitlar va o'zgarishlarni to'g'rilab, navigatsiya xatolarining oldini olish uchun
+@0
+Dronning motorlarini isitish uchun
+@0
+Kamera xotirasini tozalash uchun
+@0
+Faqat birinchi marta uchganda talab etiladi
+#2
+Telemetriya orqali pult ekranida operatorga qanday ma'lumotlar uzatiladi?
+@0
+Ob-havo prognozi va yangiliklar
+@2
+Balandlik, tezlik, batareya holati, GPS koordinatalari va signal sifati
+@0
+Dronning ichki harorati va narxi
+@0
+Faqat qolgan video xotirasi
+#1
+Ultratovush sensori asosan dronning qaysi qismida joylashadi va qachon ishlatiladi?
+@1
+Pastki qismida joylashib, asosan qo'nish va past balandlikda uchish vaqtida yergacha bo'lgan masofani o'lchaydi
+@0
+Tepa qismida, shamolni o'lchaydi
+@0
+Qanotlarda, qushlarni haydaydi
+@0
+Kamera oldida, yorug'likni o'lchaydi
 &6
 #1
-Kuchlanish pasayishi (Voltage drop) nima?
+O'zbekiston havo fazosidan foydalanish qoidalarini belgilovchi asosiy qonun qaysi?
+@0
+Jinoyat kodeksi
 @1
-Zanjir bo'ylab tok oqishi natijasida iste'molchiga yetib boradigan kuchlanishning kamayishi
+O'zbekiston Respublikasining Havo kodeksi
 @0
-Tok kuchining keskin ortishi
+Fuqarolik kodeksi
 @0
-Elektr manbai kuchlanishining doimiy saqlanishi
-@0
-Qarshilikning birdaniga yo'qolishi
+Soliq kodeksi
 #2
-Voltage drop ga ta'sir etuvchi asosiy omillar qaysilar?
-@0
-Faqat havo harorati
+Qaysi xalqaro tashkilot fuqaro aviatsiyasi va UUA bo'yicha umumiy standartlarni ishlab chiqadi?
 @2
-Tok kuchi, elektr qarshiligi va kabel uzunligi
+Xalqaro fuqaro aviatsiyasi tashkiloti (ICAO)
 @0
-Faqat elektr manbaining hajmi
+Xalqaro valyuta fondi (XVF)
 @0
-Kabelning rangi va izolyatsiyasi
+Jahon sog'liqni saqlash tashkiloti (JSST)
+@0
+BMT Xavfsizlik kengashi
 #3
-Uzoq masofalarga elektr energiyasini uzatishda kuchlanish pasayishining oldini olish uchun nima qilinadi?
-@0
-Kabel uzunligi yanada uzaytiriladi
-@0
-Yupqa simlardan foydalaniladi
+O'zbekiston Respublikasi Vazirlar Mahkamasining 2020-yil 15-yanvardagi 25-sonli qarori nima haqida?
 @3
-Kuchlanish yuqori qiymatlarga oshirilib uzatiladi
+Uchuvchisiz uchuvchi apparatlarni ro'yxatdan o'tkazish, ulardan foydalanish tartibi va cheklangan hududlarni belgilash haqida
 @0
-Doimiy tok o'rniga faqat batareyalardan foydalaniladi
+Dronlarni chet elga eksport qilish haqida
+@0
+Harbiy dronlar ishlab chiqarish zavodini qurish haqida
+@0
+Barcha dronlardan foydalanishni to'liq taqiqlash haqida
 #1
-Kuchlanish pasayishi Om qonunida qanday ifodalanadi?
+O'zbekistonda vazni necha grammdan og'ir bo'lgan barcha UUA lar ro'yxatdan o'tkazilishi shart?
 @1
-ΔU = I * R
+250 grammdan
 @0
-ΔU = P * I
+1 kilogrammdan
 @0
-ΔU = R / I
+50 grammdan
 @0
-ΔU = I / R
+5 kilogrammdan
 #2
-Elektr tizimlarida kuchlanish pasayishini kamaytirishning samarali usullaridan biri nima?
+UUA ro'yxatdan o'tkazilgach, unga nima beriladi va u qayerda joylashtiriladi?
 @0
-Kichik kesimli simlardan foydalanish
+Faqat pasport beriladi
 @2
-Kattaroq kesimli qalin simlarni tanlash
+Noyob identifikatsiya raqami (ID) beriladi va u dron korpusining ko'rinadigan joyiga yozilishi kerak
 @0
-Tok kuchini maksimal darajada oshirish
+Faqat sug'urta polisi beriladi
 @0
-Kabel uzunligini kerakligidan ortiqcha uzaytirish
+Chip dronga ulanadi
+#1
+Tijorat maqsadida drondan pul ishlash (masalan, to'ylarni suratga olish) uchun nima talab qilinadi?
+@0
+Hech narsa talab qilinmaydi
+@1
+Maxsus ruxsatnoma va tijorat litsenziyasi
+@0
+Faqat yuqori sifatli kamera
+@0
+Aeroportdan ruxsat xati
+#3
+O'zbekiston qonunchiligiga ko'ra harbiy hududlar ustidan UUA parvoz qilsa qanday oqibatga olib keladi?
+@3
+Bu qat'iyan taqiqlangan, ma'muriy jarimalar yoki jinoiy javobgarlikka olib kelishi mumkin
+@0
+Faqat ogohlantirish beriladi
+@0
+Dron operatori mukofotlanadi
+@0
+Hech qanday chora ko'rilmaydi
+#2
+Davlat bojxona qo'mitasi UUA larni mamlakatga olib kirishda qanday rol o'ynaydi?
+@2
+UUA larni chet eldan olib kirishni nazorat qiladi va bojxona tartib-qoidalariga ko'ra rasmiylashtiradi
+@0
+Dronlarning sifatini tekshirib yaroqliligini baholaydi
+@0
+Dronlarni bepul tarqatadi
+@0
+Faqat kameralarini tekshiradi
+#1
+Qonunchilikka ko'ra UUA egasi kim bo'lishi mumkin?
+@1
+O'zbekiston fuqarosi yoki qonuniy faoliyat yurituvchi yuridik shaxs
+@0
+Faqat davlat idoralari
+@0
+Faqat maxsus ruxsatga ega chet el fuqarolari
+@0
+Faqat politsiya xodimlari
+#3
+Ro'yxatdan o'tmagan drondan foydalanganlik uchun O'zbekistonda qanday jazo qo'llaniladi?
+@0
+Hech qanday jazo yo'q
+@3
+Belgilangan miqdorda ma'muriy jarima va dronning musodara qilinishi mumkin
+@0
+Operator zudlik bilan qamoqqa olinadi
+@0
+Dron faqat musodara qilinadi, jarima yo'q
+#2
+UUA operatori bo'lish uchun davlat qanday malaka talabini qo'ygan?
+@2
+Operator maxsus o'quv kurslaridan o'tib, imtihon topshirishi va malaka guvohnomasini olishi kerak
+@0
+Oliy ma'lumotli bo'lishi yetarli
+@0
+IT sohasi bo'yicha diplomi bo'lishi kerak
+@0
+Hech qanday talab yo'q
+#1
+Boshqalar shaxsiy hayotini buzish maqsasida UUA dan foydalanish qonunga zidmi?
+@1
+Ha, shaxsiy hayotga ruxsatsiz aralashish qonunga zid va tegishli javobgarlikka sabab bo'ladi
+@0
+Yo'q, dronlar uchun hamma narsa erkin
+@0
+Faqat tunda suratga olsa qonunga zid
+@0
+Faqat yuridik shaxslarga nisbatan mumkin emas
+#3
+"Fuqaro aviatsiyasi to'g'risida"gi qonun UUA sohasida nimani ta'minlaydi?
+@3
+Dronlarning ro'yxatga olinishi, operatorlarning litsenziyalanishi va umumiy parvoz qoidalarini
+@0
+Dronlarni yig'ish qoidalarini
+@0
+Dronlarni sotish narxlarini
+@0
+Batareyalar sifatini
+#2
+O'zbekistonda "Taqiqlangan zonalar"ga (No-Fly Zones) qaysi obyektlar kiradi?
+@0
+Faqat ochiq dala maydonlari
+@2
+Aeroportlar atrofi, harbiy obyektlar, davlat muassasalari va strategik infratuzilma
+@0
+Bog'lar va parklar
+@0
+Faqat maktablar va shifoxonalar
+#1
+Agar UUA faoliyati davomida boshqalarning mulkiga zarar yetsa, javobgarlik kimning zimmasida?
+@0
+Dronni ishlab chiqargan zavod zimmasida
+@1
+UUA egasi va uni boshqarayotgan operator zimmasida
+@0
+Davlat zimmasida
+@0
+Ob-havo sharoitiga bog'liq
 &7
 #1
-Brushless motorlarning (BLDC) asosiy afzalligi nima?
+UUA ni ro'yxatdan o'tkazish uchun ariza qayerga topshiriladi?
+@0
+Mahalliy hokimiyatga
 @1
-Mexanik cho'tkalarning yo'qligi sababli uzoq xizmat muddati va yuqori samaradorlik
+O'zaeronavigatsiya davlat korxonasiga (yoki belgilangan aviakomissiyaga)
 @0
-Ular faqat doimiy tok manbaisiz ishlaydi
+Ichki ishlar bo'limiga
 @0
-Ularning tuzilishi juda oddiy va arzon
-@0
-Ular umuman qizimaydi
+Favqulodda vaziyatlar vazirligiga
 #2
-Brushless motorda statorning vazifasi nimadan iborat?
-@0
-U aylanadigan qism bo'lib, mexanik energiya uzatadi
+Ro'yxatdan o'tkazish jarayonida dronga oid qanday vizual material talab qilinadi?
 @2
-Tok ta'sirida aylanuvchi magnit maydon hosil qiladi
+UUA ning turli burchaklardan olingan fotosuratlari
 @0
-Faqat batareya vazifasini bajaradi
+Dron uchayotgan videorolik
 @0
-Datchiklar o'rnini bosadi
+Operatorning dron bilan birga tushgan rasmi
+@0
+Qutining rasmi
 #3
-Brushless va brushed motorlar o'rtasidagi asosiy farq qayerda?
+Ro'yxatdan o'tish guvohnomasi asosan qanday muddatga beriladi?
 @0
-Foydalaniladigan materiallarning rangida
-@0
-Stator va rotorning joylashuv joylarida
+1 yil
 @3
-Tok kommutatsiyasi (mexanik yoki elektron) usulida
+3 yil muddatga
 @0
-Faqat ularning og'irligida
+10 yil
+@0
+Bir umrga
 #1
-Rotor brushless motorning qaysi qismi hisoblanadi?
+Maxsus belgilangan "erkin parvoz zonalaridan" tashqarida parvoz qilish uchun nima kerak?
 @1
-Doimiy magnitlardan iborat aylanadigan qismi
+Har bir parvoz uchun parvoz rejasini taqdim etib ruxsatnoma olish
 @0
-Qo'zg'almas qismi
+Faqat politsiya ogohlantirilsa yetarli
 @0
-Mis chulg'amlar joylashgan qismi
+Hech narsa kerak emas
 @0
-Batareyani zaryadlovchi qismi
+Faqat mahalladan ma'lumotnoma kerak
 #2
-Brushless motorlar qaysi elektron qurilma yordamida boshqariladi?
-@0
-Faqat kalit (viklyuchatel) bilan
+Standart parvoz ruxsatnomasi uchun ariza parvozdan kamida qancha vaqt oldin taqdim etilishi kerak?
 @2
-ESC (Electronic Speed Controller) yordamida
+Kamida 3 ish kuni oldin
 @0
-Transformator yordamida
+1 soat oldin
 @0
-Rezistorlar orqali
+1 oy oldin
+@0
+24 soat oldin
+#1
+Favqulodda vaziyatlarda (masalan qidiruv-qutqaruv) ruxsatnoma qanday muddatda berilishi mumkin?
+@0
+3 kun ichida
+@1
+Tezlashtirilgan tartibda 24 soat ichida
+@0
+Faqat tadbir tugagach
+@0
+Ruxsatsiz uchaveradi, qonun shart emas
+#3
+UUA ro'yxatdan o'tkazishda mulkdorning qanday ma'lumotlari davlat bazasiga kiritiladi?
+@3
+Ism-sharifi, yashash manzili va aloqa ma'lumotlari
+@0
+Faqat bank raqamlari
+@0
+Diplom nusxasi va ish joyi
+@0
+Oila a'zolari soni
+#2
+Chet eldan xarid qilingan UUA bojxonadan o'tkazilgach necha kun ichida ro'yxatdan o'tkazilishi shart?
+@0
+3 kun
+@2
+30 kun ichida
+@0
+1 yil
+@0
+Vaqt chegaralanmagan
+#1
+Tijorat yoki yuridik shaxslar uchun ro'yxatdan o'tishda fuqarolik pasportidan tashqari nima talab qilinadi?
+@1
+Tashkilotning ro'yxatdan o'tganligi haqida guvohnoma va tegishli litsenziyalar
+@0
+Xodimlarning tibbiy ma'lumotnomasi
+@0
+Soliq qarzi yo'qligi haqida qog'oz
+@0
+Bank hisobi holati
+#3
+Operatorning malaka guvohnomasini olish uchun talab qilinadigan o'quv kursining minimal davomiyligi qancha?
+@0
+12 soat
+@3
+Kamida 40 akademik soat
+@0
+6 oy
+@0
+Bir hafta
+#2
+Parvoz rejasida (ruxsatnoma olish uchun) qanday asosiy ma'lumotlar aks etishi shart?
+@2
+Parvoz sanasi, vaqti, hududi (marshrut), balandligi va maqsadi
+@0
+Dronning rangi va batareya soni
+@0
+Operatorning kayfiyati va sog'ligi
+@0
+Faqat dron modeli
+#1
+Agar parvoz rejasidagi hudud maxsus cheklovli zona bo'lsa, O'zaeronavigatsiya nima qiladi?
+@0
+Arizani zudlik bilan rad etadi
+@1
+Tegishli davlat organlari (masalan, Mudofaa vazirligi) bilan muvofiqlashtiradi
+@0
+Dronni musodara qiladi
+@0
+Operatordan pora so'raydi
+#3
+Nega arizalar ko'pincha rad etiladi?
+@3
+Hujjatlar to'liq taqdim etilmaganligi, texnik xususiyatlar noto'g'ri ko'rsatilganligi yoki hududda maxsus cheklovlar borligi sababli
+@0
+Dron juda arzon bo'lgani uchun
+@0
+Dron brendi ro'yxatga mos kelmagani uchun
+@0
+Operator 30 yoshdan kichik bo'lgani uchun
+#2
+Ro'yxatdan o'tishda davlat boji to'langanligini tasdiqlovchi hujjat zarurmi?
+@2
+Ha, to'lov kvitansiyasi arizaga ilova qilinishi shart
+@0
+Yo'q, UUA lar uchun davlat boji bekor qilingan
+@0
+Faqat xorijliklar uchun zarur
+@0
+Faqat og'ir dronlar to'laydi
+#1
+Agar operator malaka guvohnomasini yo'qotsa nima bo'ladi?
+@1
+Tegishli organ orqali qayta tiklanishi kerak, usiz parvoz qilish ruxsat etilmaydi
+@0
+Yangi dron sotib olishi kerak
+@0
+Hech narsa, xotiradan uchaveradi
+@0
+Parvozlar umrbod man qilinadi
 &8
 #1
-KV ko'rsatkichi nimani anglatadi?
+O'zbekistonda dronlar uchun ruxsat etilgan maksimal parvoz balandligi odatda qancha qilib belgilangan?
+@0
+50 metr
 @1
-Motorning 1 volt kuchlanishda bo'sh holatda erishadigan aylanish tezligi (RPM/V)
+120 metr (400 fut)
 @0
-Motorning maksimal quvvatini
+500 metr
 @0
-Motor ishlaydigan maksimal haroratni
-@0
-Batareya sig'imini
+Chegaralanmagan
 #2
-KV va aylantiruvchi moment (torque) o'rtasida qanday bog'liqlik mavjud?
-@0
-Ular to'g'ri proportsional
+VLOS (Visual Line of Sight) qoidasi nimani anglatadi?
 @2
-Teskari bog'liqlik (yuqori KV - past moment)
+Operator parvoz davomida dronni doimiy o'z ko'rish masofasida ushlab turishi shart
 @0
-Hech qanday bog'liqlik yo'q
+Dron faqat kameralar orqali boshqarilishi shart
 @0
-Faqat batareyaga bog'liq
+Faqat FPV ko'zoynaklari bilan uchish kerak
+@0
+Tungi vaqtda faqat maxsus yorug'lik bilan ishlash
 #3
-Thrust (ituvchi kuch) RPM bilan qanday munosabatda bo'ladi?
-@0
-Thrust RPM ga teskari proportsional
-@0
-Thrust RPM bilan doim bir xil o'zgaradi
+Odamlar to'plangan joylardan (masalan maydonlardan) dron minimal qancha masofa uzoqlikda uchishi tavsiya etiladi?
 @3
-Thrust RPM ning kvadratiga taxminan proportsional
+50 metr
 @0
-Thrust RPM ning kubiga proportsional
+10 metr
+@0
+200 metr
+@0
+Qat'iy taqiqlangan, har qanday masofada
 #1
-KV qiymati qanday o'zgartiriladi?
+Xalqaro aeroportlar atrofida dron parvozi mutlaq taqiqlangan radius odatda qancha?
 @1
-Uni dasturiy yo'l bilan o'zgartirib bo'lmaydi, u konstruktiv xususiyat
+5 kilometr radiusda
 @0
-ESC orqali osongina o'zgartiriladi
+500 metr radiusda
 @0
-Batareya kuchlanishini oshirish bilan KV ham o'zgaradi
+1 kilometr radiusda
 @0
-Pult orqali sozlanadi
+20 kilometr radiusda
 #2
-Og'ir yuk ko'taruvchi dronlarda odatda qanday motorlar qo'llaniladi?
+Tungi vaqtda UUA parvozlarini amalga oshirish uchun qanday shartlar bajarilishi kerak?
 @0
-Faqat yuqori KV motorlar
+Hech qanday qo'shimcha shart yo'q
 @2
-Past KV motorlar
+Maxsus ruxsatnoma va dronning aniq ko'rinuvchi navigatsiya yoritish tizimlari bilan jihozlanishi
 @0
-Faqat brushed motorlar
+Faqat chiroqsiz uchish mumkin
 @0
-10000 KV dan yuqori motorlar
+Batareyani ikki marta to'ldirish kerak
+#1
+Prezident saroyi, hukumat binolari kabi strategik ob'ektlar ustida dron uchirish mumkinmi?
+@0
+Ha, agar suratga olinmasa
+@1
+Yo'q, bu hududlar qat'iyan taqiqlangan zonalar (No-Fly Zones) hisoblanadi
+@0
+Ha, bayram kunlari ruxsat beriladi
+@0
+Ha, agar dron kichkina bo'lsa
+#3
+Parvoz oldidan UUA operatori qanday ob-havo parametrlarini tekshirishi juda muhim?
+@3
+Shamol tezligi va yo'nalishi, yog'in-sochin (yomg'ir, qor), harorat va ko'rinish masofasi (tuman)
+@0
+Faqat quyosh chiqish vaqti
+@0
+Osmondagi qushlar soni
+@0
+Oyning fazalari
+#2
+Elektr stansiyalari, neft va gaz quvurlari kabi energetika obyektlari ustidan parvoz nega xavfli?
+@2
+Magnit xalaqitlari yuzaga kelishi, avariya ehtimoli va strategik muhim obyekt xavfsizligiga tahdid tufayli
+@0
+Suratga olishda kamera sifati buzilgani uchun
+@0
+Dron batareyasi sekin zaryadlanishi uchun
+@0
+Pult signali kuchayib ketgani uchun
+#1
+Ommaviy tadbirlar (konsertlar, sport musobaqalari) vaqtida dron parvoziga nisbatan qanday vaqtinchalik cheklov qo'llaniladi?
+@1
+Tadbir vaqtida xavfsizlik maqsadida hududda parvozlar vaqtinchalik to'liq taqiqlanishi mumkin (maxsus ruxsatsiz)
+@0
+Barcha dronlarga tekin ruxsat beriladi
+@0
+Faqat qizil rangli dronlar ucha oladi
+@0
+Faqat past balandlikda odamlar ustida uchish mumkin
+#3
+Shamol tezligi qanchadan oshganda ko'pchilik oddiy dronlar parvozi xavfli hisoblanadi va taqiqlanadi?
+@3
+10-15 m/s dan oshganda
+@0
+2-3 m/s dan oshganda
+@0
+30 m/s dan oshganda
+@0
+Shamol tezligining ahamiyati yo'q
+#2
+Qushlar ko'p bo'lgan tabiat muhofazasi hududlarida (masalan, qo'riqxonalarda) dronlardan foydalanish tartibi qanday?
+@2
+Odatda cheklangan yoki hayvonlarni bezovta qilmaslik uchun ekologiya idoralaridan ruxsat talab qilinadi
+@0
+Erkin, cheklov yo'q
+@0
+Faqat qushlarni quvish uchun ruxsat beriladi
+@0
+U yerda GPS ishlamaydi
+#1
+Boshqa havo kemalari (samolyot, vertolyot) paydo bo'lganda UUA operatori nima qilishi kerak?
+@0
+Ular bilan yondashib suratga olishi kerak
+@1
+Zudlik bilan o'z dronini xavfsiz balandlikka tushirishi yoki qo'ndirib, yo'l bo'shatishi shart
+@0
+Signallar yuborib o'zini tanitishi kerak
+@0
+Havo kemasi ustidan uchib o'tishi kerak
+#3
+Agar parvoz vaqtida boshqaruv aloqasi (signal) to'satdan uzilsa, zamonaviy dronlar xavfsizlik uchun qanday rejimni faollashtiradi?
+@3
+Avtomatik ravishda uchish nuqtasiga qaytish (Return To Home - RTH) yoki joyida qo'nish (Land) rejimi
+@0
+Motorlarni darhol o'chirib yuboradi
+@0
+Signalni qidirib tasodifiy yo'nalishga uchib ketadi
+@0
+Ovozli sirena yoqib havoda cheksiz turadi
+#2
+Nega tuman va past bulutlar dron parvozi uchun katta xavf tug'diradi?
+@2
+Ular operatorning ko'rish masofasini (VLOS) cheklaydi, mo'ljal olishni qiyinlashtiradi va to'siqlarga urilish xavfini keskin oshiradi
+@0
+Dronning rangi o'chadi
+@0
+Dron bulutlardan quvvatlanib ketadi
+@0
+Kamera faqat oq rangni ko'radi
+#1
+"No-Fly Zone" (Taqiqlangan zona) algoritmiga ega dronlar taqiqlangan hududga yaqinlashganda nima qiladi?
+@1
+Avtomatik ravishda to'xtaydi yoki hududga kirmaydi (Geo-fencing tizimi orqali)
+@0
+Tezligini oshirib tezroq o'tib ketadi
+@0
+Faqat signal chalarak kirib boraveradi
+@0
+Pultni o'chirib qo'yadi
 &9
 #1
-ESC (Electronic Speed Controller) ning birlamchi vazifasi nima?
+GPS nima va u qaysi davlat tomonidan yaratilgan?
+@0
+Global Position System, Rossiya
 @1
-Dvigatelning aylanish tezligi va ish rejimini elektron usulda boshqarish
+Global Positioning System, AQSh
 @0
-Faqat akkumulyatorni zaryadlash
+General Power System, Yevropa
 @0
-Videoni yerga uzatish
-@0
-Dronning og'irligini kamaytirish
+Ground Patrol System, Xitoy
 #2
-ESC doimiy tokni qanday tokka aylantirib motorga uzatadi?
-@0
-Faqat doimiy tok ko'rinishida
+GPS tizimi qanday prinsip asosida joylashuvni aniqlaydi?
 @2
-Uch fazali o'zgaruvchan tok ko'rinishiga
+Trilyateratsiya usuli (kamida 4 ta yo'ldoshgacha bo'lgan masofani vaqt orqali o'lchash) orqali
 @0
-Bir fazali o'zgaruvchan tokka
+Radar to'lqinlarini qaytarish orqali
 @0
-Past kuchlanishli doimiy tokka
+Magnit maydon o'lchovlari orqali
+@0
+Ovoz to'lqinlari yordamida
 #3
-ESC ni tanlashda tok bo'yicha qanday qoidaga amal qilish kerak?
+GLONASS qaysi davlatning global navigatsiya tizimi hisoblanadi?
 @0
-ESC toki motorning maksimal tokidan doim kichik bo'lishi kerak
-@0
-ESC va motor toki aynan teng bo'lishi shart
+Yevropa Ittifoqi
 @3
-ESCning ruxsat etilgan toki motorning maksimal tokidan kamida 20-30% yuqori tanlanishi kerak
+Rossiya Federatsiyasi
 @0
-Tok qiymatining umuman ahamiyati yo'q
+Xitoy
+@0
+Hindiston
 #1
-Agar motor ruxsat etilgan maksimal kuchlanishdan yuqorida ishlatilsa nima yuz beradi?
+RTK (Real Time Kinematic) texnologiyasi oddiy GPS dan nimasi bilan farq qiladi?
 @1
-RPM oshib ketadi, tok ko'payadi, ESC va motor qizib ketadi
+Oddiy GPS 3-5 metr xatolik bersa, RTK bazaviy stansiya yordamida santimetr (1-2 sm) aniqligida joylashuvni aniqlaydi
 @0
-Samaradorlik cheksiz oshadi
+Faqat tezlikni o'lchaydi
 @0
-Hech narsa bo'lmaydi
+Hech qanday farqi yo'q, nomlari boshqa
 @0
-Batareya sig'imi ko'payadi
+Faqat bino ichida ishlaydi
 #2
-ESC fazalarni qanday usul bilan boshqaradi?
-@0
-Mexanik cho'tkalar yordamida
+Galileo va BeiDou qaysi davlatlar/mintaqalar navigatsiya tizimlaridir?
 @2
-PWM (Pulse Width Modulation) yordamida elektron tarzda
+Galileo - Yevropa Ittifoqi, BeiDou - Xitoy
 @0
-Faqat radioto'lqinlar yordamida
+Galileo - Rossiya, BeiDou - Yaponiya
 @0
-Transformator yordamida
+Galileo - AQSh, BeiDou - Hindiston
+@0
+Galileo - Italiya, BeiDou - Janubiy Koreya
+#1
+Multi-GNSS qabul qilgichlarining donga qanday foydasi bor?
+@0
+Batareyani zaryadlaydi
+@1
+Bir vaqtning o'zida GPS, GLONASS, Galileo kabi bir necha tizimlar signallarini qabul qilib, aniqlik va ishonchlilikni keskin oshiradi
+@0
+Dronni internetga ulaydi
+@0
+Faqat rasmlarni saqlaydi
+#3
+INS (Inertial Navigation System) qanday ishlaydi va uning foydasi nima?
+@3
+Akselerometr va giroskop yordamida harakatni hisoblaydi, GPS signali uzilib qolganda orientatsiyani saqlashga yordam beradi
+@0
+Faqat barometrdan iborat bo'lib, balandlikni hisoblaydi
+@0
+Lazerlar orqali yo'lni topadi
+@0
+Wi-Fi orqali ishlaydi
+#2
+DGPS (Differential GPS) qanday usulda aniqlikni oshiradi?
+@2
+Yer yuzasidagi aniq koordinataga ega stansiyalar yordamida kosmosdan kelgan GPS xatolarini tuzatuvchi signallarni uzatish orqali
+@0
+Ko'proq yo'ldosh uchirish orqali
+@0
+Antenna o'lchamini kattalashtirish orqali
+@0
+Kameradan foydalanish orqali
+#1
+GPS donga avtonom parvozda qanday yordam beradi?
+@1
+Waypoint (oraliq nuqtalar) bo'yicha oldindan belgilangan aniq marshrut asosida harakatlanish imkonini beradi
+@0
+Dronning rangini o'zgartiradi
+@0
+Motorlarni sovitadi
+@0
+Batareya sig'imini oshiradi
+#3
+Yopiq binolar yoki g'orlarda (GPS signali yo'q joylarda) navigatsiya qanday amalga oshiriladi?
+@3
+Vizual navigatsiya, optik oqim sensorlari va SLAM (kameralar/Lidar) texnologiyalari orqali
+@0
+Faqat kompas orqali
+@0
+Pultdagi kuchaytirilgan GPS orqali
+@0
+Hech qanday usul yo'q, dron uchmaydi
+#2
+Parvozdan oldin GPS modulida "Fix" bo'lishi nima degani?
+@2
+Dron yetarli miqdordagi yo'ldoshlar bilan (odatda 6-8 tadan ko'p) ishonchli bog'langanini anglatadi
+@0
+Dronning kamerasi tayyorligini anglatadi
+@0
+Motorlarning qiziganini anglatadi
+@0
+Dasturiy ta'minot buzilganini anglatadi
+#1
+Agar dron yo'ldoshlarni umuman topa olmasa nima bo'ladi?
+@1
+Dron avtomatik tarzda ATTI (Attitude) rejimiga o'tadi va joylashuvni shamol ta'sirida o'zi ushlab turolmaydi, operator to'liq boshqarishi kerak
+@0
+Dron zudlik bilan qulab tushadi
+@0
+Dron ucha olmaydi
+@0
+Faqat yuqoriga qarab cheksiz ko'tariladi
+#3
+SLAM (Simultaneous Localization and Mapping) texnologiyasi nima?
+@3
+Dron turli sensorlar (kamera, lidar) yordamida bir vaqtning o'zida notanish muhit xaritasini tuzib, uning ichida o'z joylashuvini aniqlash tizimi
+@0
+Faqat batareya quvvatini tejash rejimi
+@0
+Haroratni o'lchash texnologiyasi
+@0
+Radio to'lqinlarini kodlash protokoli
+#2
+Geofencing (geo-chegara) GPS ga qanday bog'liq?
+@2
+Dron GPS orqali o'z joylashuvini dasturdagi taqiqlangan zonalar xaritasi bilan solishtiradi va chegarani buzib o'tmaydi
+@0
+U uzoqroq masofaga uchish imkonini beradi
+@0
+Batareyani ikki marta tejashini ta'minlaydi
+@0
+Bu faqat suv ostida ishlaydigan xususiyat
+#1
+Qishloq xo'jaligi dronlarida nega asosan RTK tizimidan foydalaniladi?
+@0
+Ular arzonroq bo'lgani uchun
+@1
+Dala ekinlariga dori yoki o'g'it sepganda santimetr aniqlikdagi marshrut muhim bo'lgani uchun
+@0
+Faqat bu tizim tungi vaqtda ishlagani uchun
+@0
+RTK dronlarni qushlardan himoya qilgani uchun
 &10
 #1
-Propellerning asosiy vazifasi nima?
+Dron pulti va apparat o'rtasidagi asosiy radio boshqaruv signali odatda qaysi chastotada ishlaydi?
+@0
+100 MHz
 @1
-Motorning aylanish harakatini chiziqli itarish kuchiga (thrust) aylantirish
+2.4 GHz
 @0
-Dronni yorug'lik bilan ta'minlash
+10 GHz
 @0
-Videolarni suratga olish
-@0
-Motorni sovitish
+50 Hz
 #2
-Propeller diametri oshishi qanday natijaga olib keladi?
-@0
-Thrust kamayadi, shovqin ortadi
+HD video tasvirini operatonga real vaqtda uzatish uchun ko'pincha qaysi chastota qo'llaniladi?
 @2
-Thrust ortadi, lekin motor valiga tushadigan moment talabi ham ortadi
+5.8 GHz
 @0
-Faqat aylanish tezligi (RPM) oshadi
+2.4 GHz
 @0
-Dronning og'irligi yengillashadi
+433 MHz
+@0
+900 MHz
 #3
-Propellerning pitch (qadam) ko'rsatkichi nimani anglatadi?
-@0
-Propellerning umumiy og'irligini
-@0
-Propellerdagi pichoqlar sonini
+Uzoq masofali operatsiyalar (BVLOS) uchun radio signaldan tashqari qanday innovatsion aloqa qo'llanilmoqda?
 @3
-Propeller bir marta aylanganda havoda bosib o'tadigan nazariy masofasini
+LTE (4G) va 5G mobil tarmoqlari, ba'zan yo'ldosh aloqasi
 @0
-Propellerning qanday materialdan qilinganligini
+Faqat Bluetooth
+@0
+Faqat infraqizil port
+@0
+Faqat kabel ulanishi
 #1
-Katta diametr va past pitch qanday dronlarda ko'proq foydalaniladi?
+Telemetriya ma'lumotlari deganda nima tushuniladi?
 @1
-Foto, video va uzoq vaqt uchadigan dronlarda
+Dronning holati: balandlik, tezlik, GPS koordinatalari, batareya quvvati kabi pultga real vaqtda keladigan axborot
 @0
-Racing (poyga) dronlarida
+Faqat yozib olingan MP4 videolar
 @0
-Faqat o'yinchoq dronlarda
+Kameraning fokus sozlamalari
 @0
-Faqat suv osti dronlarida
+Pult tugmalarining nomi
 #2
-Propeller parametrlari noto'g'ri tanlansa (masalan, haddan tashqari katta diametr) qanday xavf tug'iladi?
+Jamming (signalni to'sish) amaliyoti dronlarga qanday ta'sir qiladi?
 @0
-Dron tezligi cheksiz oshadi
+Kamera sifatini yaxshilaydi
 @2
-Motor va ESC haddan tashqari qizib ketadi, batareya yuklanadi
+Boshqaruv va GPS signallarini ataylab bo'g'ib, dronning orientatsiyasini yo'qotadi va qulashiga yoki majburiy qo'nishiga olib keladi
 @0
-Batareya muddati ikki baravar ko'payadi
+Batareya zaryadini oshiradi
 @0
-Faqat pultning batareyasi tez tugaydi
+Dronni tezlashtiradi
+#1
+AES (Advanced Encryption Standard) shifrlashi dronlarda nima uchun ishlatiladi?
+@0
+Rasmlarni chiroyli qilish uchun
+@1
+Video va boshqaruv signallarini uchinchi shaxslar (xakerlar) ushlab olib, o'qiy olmasligi va xavfsizlikni ta'minlash uchun
+@0
+Dron motorlarini sovitish uchun
+@0
+Pult ekranini yoritish uchun
+#3
+FHSS (Frequency Hopping Spread Spectrum) texnologiyasining asil mohiyati nima?
+@3
+Uzatgich va qabul qilgich sekundiga yuzlab marta kelishilgan holda chastotani o'zgartiradi, bu interferensiya va signalni ushlab qolishdan himoya qiladi
+@0
+Bir xil chastotada cheksiz qolib signalni kuchaytiradi
+@0
+Video va audioni alohida saqlaydi
+@0
+Faqat Wi-Fi orqali ma'lumot uzatadi
+#2
+MAVLink qanday maqsadlarda ishlatiladigan protokol hisoblanadi?
+@2
+Flight controller va yer stansiyasi o'rtasida buyruqlar, telemetriya va sozlamalarni uzatish uchun standart ochiq manbali aloqa protokoli
+@0
+Faqat batareyani zaryadlash protokoli
+@0
+Suratlarni formatlash usuli
+@0
+Dron korpusini loyihalash qoidasi
+#1
+OSD (On Screen Display) operatorga qanday yordam beradi?
+@1
+Telemetriya ma'lumotlarini (tezlik, balandlik va h.k.) bevosita video oqimi ekrani (yoki FPV ko'zoynak) ustiga yozib ko'rsatadi
+@0
+Dronning orqa tomonini ko'rsatadi
+@0
+Faqat xaritalarni 3D formatda chiqaradi
+@0
+Radio signalini musiqaga aylantiradi
+#3
+Agar parvoz vaqtida bino yoki katta to'siq orqasiga o'tilsa radio signal nima bo'ladi?
+@0
+Signal yanada kuchayadi
+@3
+Radio to'lqinlar to'silishi natijasida signal keskin zaiflashadi yoki butunlay uzilib qoladi
+@0
+Signal rangi o'zgaradi
+@0
+Hech qanday o'zgarish bo'lmaydi
+#2
+RSSI (Received Signal Strength Indicator) nima vazifani bajaradi?
+@2
+Qabul qilinayotgan radio signalning joriy kuchini (sifatini) ko'rsatib, operatorni aloqa uzilishi xavfidan ogohlantiradi
+@0
+Faqat GPS yo'ldoshlari sonini ko'rsatadi
+@0
+Batareyaning isishini o'lchaydi
+@0
+Dronning motor tezligini belgilaydi
+#1
+Remote ID (Masofadan identifikatsiya) tizimi nega huquq-tartibot organlari uchun muhim?
+@0
+Faqat soliq yig'ish uchun
+@1
+Dron havoda uchib turganda uning egasi, joylashuvi va qayddan o'tgan raqamini radio orqali uzatib turadi, bu qonuniy nazoratni ta'minlaydi
+@0
+Kameradagi yuzlarni tanish uchun
+@0
+Dron poygalarida tezlikni o'lchash uchun
+#3
+Crossfire (TBS) yoki ExpressLRS qanday tizimlar hisoblanadi?
+@3
+Dronlar (asosan FPV) uchun uzoq masofali (900 MHz kabi chastotalarda ishlovchi), past kechikishli maxsus ishonchli radio aloqa protokollari
+@0
+Dronlarni yuvish uskunalari
+@0
+Faqat video saqlash serverlari
+@0
+Barometrning yangi turlari
+#2
+Dron va operator o'rtasida "Ikki tomonlama aloqa" deganda nimani tushunasiz?
+@2
+Pult dronga boshqaruv buyruqlarini yuboradi (Uplink) va dron pultga video/telemetriya qaytaradi (Downlink)
+@0
+Ikkita pult bilan bitta dronni boshqarish
+@0
+Dron ham, operator ham harakatlanishi
+@0
+Pultga faqat rasm kelishi
+#1
+Elektromagnit interferensiya (xalaqit) qaysi obyektlar yaqinida kuchli bo'lishi mumkin?
+@1
+Yuqori kuchlanishli elektr uzatish liniyalari, kuchli radio antennalar va metall konstruksiyalar atrofida
+@0
+Ochiq dengiz ustida
+@0
+Qalin o'rmonlar ichida
+@0
+Kichik daryolar yonida
 &11
 #1
-Propellerning inertsiya momenti qanday jism xususiyatiga asoslanadi?
+Parvozga tayyorgarlik ko'rishda "Checklist" (tekshiruv ro'yxati) nima maqsadda ishlatiladi?
 @1
-Jismning o'z aylanish harakati holatini saqlashga intilishiga
+Parvoz oldidan barcha texnik va xavfsizlik qoidalarini ketma-ket, unutmasdan tekshirib chiqish uchun
 @0
-Jismning faqat massasiga
+Faqat dronni sotib olishda narxlarni tekshirish uchun
 @0
-Havo oqimining tezligiga
+Faqat batareya quvvatini o'lchash uchun
 @0
-Motorning elektr qarshiligiga
+Dronning rangini tanlash uchun
 #2
-Kichik diametrli va yengil propellerlarning dinamik xususiyati nima?
+Parvozdan oldin dron pervanellari (vintlari) qanday holatda ekanligiga e'tibor berish kerak?
 @0
-Inertsiya momenti yuqori, shuning uchun juda sekin aylanadi
+Yaltiroq va toza ekanligiga
 @2
-Inertsiya momenti kichik bo'lgani uchun RPMni juda tez o'zgartira oladi
+Hech qanday yoriq, darz ketmagan va motorga mahkam qotirilganligiga
 @0
-Ular faqat past tezlikda ishlay oladi
+Faqat qaysi tomonga aylanishiga
 @0
-Ular hech qachon qizib ketmaydi
+Faqat ularning narxiga
 #3
-"Disk yuklamasi" (disk loading) tushunchasi qanday ifodalanadi?
+Kompasni kalibrlash qachon talab qilinadi?
 @0
-Propellerning umumiy og'irligi bilan
+Har safar batareya almashtirilganda
 @0
-Motorga berilgan tok miqdori bilan
+Faqat qish faslida
 @3
-Thrustning propeller diski maydoniga nisbati sifatida (q=T/A)
+Dron yangi, uzoq joyga olib borilganda yoki magnit anomaliyalari haqida ogohlantirish chiqqanda
 @0
-Qanot uzunligining havo zichligiga nisbati bilan
+Faqat bino ichida uchganda
 #1
-Inertsiya momenti yuqori bo'lgan propellerlar to'satdan to'xtaganda nima yuz beradi?
+Pultning (boshqaruv panelining) quvvati parvoz oldidan kamida qancha bo'lishi tavsiya etiladi?
+@0
+10%
 @1
-Motor valiga va rama elementlariga katta zarba yukini uzatadi
+To'liq (yoki kamida 70-80%)
 @0
-Hech narsa bo'lmaydi, chunki ular o'zini o'zi tormozlaydi
+5%
 @0
-Faqatgina batareya tezroq zaryadsizlanadi
-@0
-Propellerning qanotlari avtomatik katlanib qoladi
+Pultga quvvat kerak emas
 #2
-Havo oqimi bo'ylab thrust qanday taqsimlanadi va buni qanday tekislash mumkin?
+Parvoz qilinadigan hudud ob-havosini tekshirishda qaysi ko'rsatkich eng xavfli hisoblanadi?
 @0
-Bir xil taqsimlanadi, hech narsa qilish kerak emas
+Quyoshli havo
 @2
-Uchida ko'proq, markazida kamroq bo'ladi; buni pichoqlardagi "twist" (burilish) orqali tekislash mumkin
+Kuchli shamol va yomg'ir
 @0
-Faqat markazda thrust bo'ladi, buni o'zgartirib bo'lmaydi
+Yengil shabada
 @0
-Taqsimot faqat motor tezligiga bog'liq
+Ochiq osmon
+#1
+Dron yoqilgandan keyin birinchi navbatda nima ulanishi kerak?
+@1
+Dron va boshqaruv pulti o'rtasidagi aloqa
+@0
+Kamera va mikrofon
+@0
+Faqat GPS o'z-o'zidan
+@0
+Internet tarmog'i
+#3
+Sensorlarni tozalash nega parvoz oldi tekshiruvining muhim qismi hisoblanadi?
+@3
+Chunki ifloslangan to'siqni aniqlash sensorlari ishlamay qolishi va dron avariyaga uchrashi mumkin
+@0
+Dronning tezligi oshishi uchun
+@0
+Pult ko'rinishi chiroyli bo'lishi uchun
+@0
+Kamera qizib ketmasligi uchun
+#2
+Parvoz xaritasini tekshirish nima uchun kerak?
+@2
+Hududda parvoz qilish taqiqlangan yoki cheklangan zonalar bor-yo'qligini aniqlash uchun
+@0
+Yangi binolarni ko'rish uchun
+@0
+Do'konlar qayerda joylashganini bilish uchun
+@0
+Odamlar sonini sanash uchun
+#1
+Xotira kartasi (MicroSD) parvozdan oldin nima qilinishi kerak?
+@0
+Suvga pishib olinishi kerak
+@1
+Uning bo'sh joyi borligi tekshirilishi va kerak bo'lsa format qilinishi kerak
+@0
+Faqat oq rangga bo'yalishi kerak
+@0
+Pultning ichiga yashirilishi kerak
+#3
+Home Point (Uy nuqtasi) to'g'ri yozilganligini qanday bilish mumkin?
+@3
+Dastur ekranda "Home Point recorded" deb xabar beradi va xaritada to'g'ri joylashuv ko'rsatiladi
+@0
+Dron ovoz chiqarib qo'shiq aytadi
+@0
+Dron osmonga o'zi otilib chiqadi
+@0
+Hech qanday belgi bo'lmaydi
+#2
+Dronning vizual tekshiruvi (Visual inspection) o'z ichiga nimalarni oladi?
+@0
+Faqat qutisini ko'zdan kechirishni
+@2
+Korpusda yoriqlar yo'qligini, motorlar ochiqligini, batareya qulfi to'liq yopilganligini tekshirishni
+@0
+Faqat operatorning ko'zoynagi tozaligini
+@0
+Kameralarni linzasini olib tashlashni
+#1
+Pult antennalari qanday yo'naltirilgan bo'lishi kerak?
+@1
+Dron tomon optimal burchak ostida (odatda dronga yon tomoni bilan qaratilib)
+@0
+Pastga, yerga qarab
+@0
+Operatordan orqaga qarab
+@0
+Antennalarni yashirib qo'yish kerak
+#3
+IMU (Inertial Measurement Unit) kalibratsiyasi qachon amalga oshiriladi?
+@3
+Dasturda IMU xatosi ko'rsatilganda yoki dron notekis, qing'ir uchayotganda
+@0
+Har safar parvozdan oldin
+@0
+Faqat yomg'ir yog'ganda
+@0
+Faqat tunda uchganda
+#2
+RTH (Uyga qaytish) balandligi parvozdan oldin qanday o'rnatilishi kerak?
+@0
+0 metrga
+@2
+Parvoz hududidagi eng baland daraxt yoki binodan kamida 10-20 metr balandroq qilib
+@0
+Doim 500 metrga
+@0
+Uni o'zgartirish mumkin emas
+#1
+Gimbal blokirovkasini (qopqog'ini) qachon yechib olish kerak?
+@0
+Parvoz tugagandan so'ng
+@1
+Dronni yoqishdan oldin
+@0
+Dron havoga ko'tarilgach
+@0
+Uni umuman yechish kerak emas
 &12
 #1
-Ko'tarilish kuchi (lift) qaysi tomonga yo'nalgan bo'ladi?
+Avtopilot qanday texnologiya hisoblanadi?
 @1
-Oqim yo'nalishiga taxminan perpendikulyar va odatda yuqoriga qaragan bo'ladi
+Dronning fazodagi holatini, balandligini va yo'nalishini avtomatik ushlab turuvchi va boshqaruvchi tizim
 @0
-Oqim yo'nalishiga parallel ravishda orqaga
+Faqat kamerani aylantiruvchi motor
 @0
-Faqat pastga qarab yo'naladi
+Dronning batareyasini quvvatlovchi qurilma
 @0
-Aylana bo'ylab tarqaladi
+Pultdagi maxsus o'yin
 #2
-Bernulli prinsipiga ko'ra aeroprofil atrofidagi bosim qanday farq qiladi?
-@0
-Oqim tezligi past bo'lgan ustki yuzada bosim juda kichik bo'ladi
+Stabilize rejimi qanday ishlaydi?
 @2
-Oqim tezligi yuqori bo'lgan ustki yuzada bosim past, ostki yuzada esa nisbatan yuqori bo'ladi
+Operator pult tayoqchalarini qo'yib yuborganda dron avtomatik ravishda o'zini gorizontal (tekis) holatga qaytaradi
 @0
-Ikkala yuzada ham bosim va tezlik har doim bir xil bo'ladi
+Dron faqat aylana shaklida uchadi
 @0
-Tezlik oshgan joyda bosim ham maksimal darajaga yetadi
+Dronning motorlari to'xtaydi
+@0
+Dron balandlikni umuman ushlamaydi
 #3
-"Stoll" (stall) hodisasi nima va u qachon yuz beradi?
-@0
-Dvigatelning to'satdan o'chib qolishi, u batareya tugaganda yuz beradi
-@0
-Havo oqimining tezlashishi, u faqat sovuq havoda yuz beradi
+AltHold (Altitude Hold) rejimida dron qaysi sensordan ko'proq foydalanadi?
 @3
-Hujum burchagi kritik qiymatdan oshganda oqimning yuzadan ajralishi va liftning keskin kamayishi
+Barometrdan (balandlikni ushlab turish uchun)
 @0
-Propellerning sinib ketishi, asosan shamol kuchli bo'lganda yuz beradi
+GPSdan
+@0
+Termal kameradan
+@0
+Kompasdan
 #1
-Hujum burchagi (angle of attack) nima?
+Loiter (yoki P-Mode/Position) rejimi nimani anglatadi?
+@0
+Dronni tezlikni oshirib uchirish
 @1
-Kiruvchi havo oqimi yo'nalishi bilan qanotning chord chizig'i orasidagi burchak
+Dron o'z joylashuvini (GPS) va balandligini (Barometr) qat'iy ushlab, bir joyda muallaq turadi
 @0
-Dronning yerga nisbatan qiyaligi
+Faqat tunda uchish rejimi
 @0
-Propeller va motor valigacha bo'lgan burchak
-@0
-Qanotning uzunligi va eni orasidagi burchak
+Dron avtomatik yerga qulashi
 #2
-Lift tenglamasiga ko'ra oqim tezligi oshganda ko'tarilish kuchi qanday o'zgaradi?
-@0
-Tezlik bilan birga chiziqli ravishda sekin o'sadi
+Manual (yoki Acro) rejimida uchishning qanday xavfi bor?
 @2
-Tezlikning kvadratiga mutanosib ravishda juda tez o'sadi
+Hech qanday avtomatik barqarorlashtirish yo'q, pult qo'yib yuborilsa dron qulashi mumkin, faqat professional poygachilar ishlatadi
 @0
-O'zgarmaydi, chunki faqat zichlikka bog'liq
+Dron sekinlashib qoladi
 @0
-Tezlik oshganda ko'tarilish kuchi doim kamayadi
+Dron avtomatik ravishda boshqa joyga uchib ketadi
+@0
+GPS o'z-o'zidan yong'in chiqaradi
+#1
+RTH (Return To Home) rejimi nima qiladi?
+@1
+Dronni avtomatik ravishda uchishni boshlagan (Uy) nuqtasiga qaytarib olib keladi va qo'ndiradi
+@0
+Dronni uydagi Wi-Fi tarmog'iga ulaydi
+@0
+Motorlarni darhol o'chiradi
+@0
+Pultni quvvatlaydi
+#3
+Smart RTH, Low Battery RTH va Failsafe RTH o'rtasidagi farq nima?
+@3
+Smart - operator o'zi bosadi, Low Battery - quvvat kamayganda avtomatik yonadi, Failsafe - signal yo'qolganda ishga tushadi
+@0
+Hech qanday farqi yo'q
+@0
+Hammasi faqat quvvat tugaganda ishlaydi
+@0
+Bular faqat kameralar turlari
+#2
+Follow Me (Menga ergash) rejimi qanday prinsipda ishlaydi?
+@0
+Ovozni eshitib orqadan yuradi
+@2
+Dron pultning yoki operator telefonining GPS koordinatalarini kuzatib, u bilan birga harakatlanadi yoki maxsus obyektni tanib ergashadi
+@0
+Kamera ob-havoga qarab harakatlanadi
+@0
+Dron shamol yo'nalishida uchadi
+#1
+Sport rejimining (S-Mode) asosiy xususiyati nima?
+@1
+To'siqlarni aniqlash datchiklari o'chadi, dronning maksimal tezligi va chaqqonligi oshadi
+@0
+Dron faqat sport maydonlarida uchadi
+@0
+Dron sekinlashadi va ko'p quvvat tejaydi
+@0
+Faqat suratga olish uchun ishlatiladi
+#3
+Avtopilot tizimlarida PID sozlamalari (Proportional, Integral, Derivative) nimaga ta'sir qiladi?
+@3
+Dronning buyruqlarga qanchalik tez, silliq va aniq javob berishiga hamda shamolga qarshi barqarorligiga
+@0
+Faqat kameraning oq balansiga
+@0
+Radio signalning uzoqligiga
+@0
+Batareya zaryadlanish vaqtiga
+#2
+Dronning avtopiloti to'siqni ko'rganda APAS tizimi (Advanced Pilot Assistance Systems) nima qiladi?
+@0
+Tezlikni oshirib to'siqqa uriladi
+@2
+Avtomatik ravishda to'siqni aylanib o'tish yoki ustidan o'tish yo'lini hisoblab parvozni davom ettiradi
+@0
+Ovozli yig'laydi
+@0
+Uyiga qarab qochadi
+#1
+Avtopilot qanday holatda dronni joyiga qo'ndirish (Auto-Land) buyrug'ini faollashtiradi?
+@1
+Batareya quvvati o'ta tanqidiy (masalan 10% dan kam) darajaga yetganda va qaytishga imkon qolmaganda
+@0
+Suratga olib bo'lingach
+@0
+Pult o'chirilgandan 1 sekund o'tib
+@0
+Yomg'ir tomchilay boshlasa
+#3
+Waypoint (oraliq nuqtalar) rejimi qanday ishlaydi?
+@0
+Faqat bir chiziq bo'ylab uchadi
+@3
+Operator oldindan xaritada belgilagan nuqtalar bo'ylab dron to'liq avtonom ravishda parvoz vazifasini bajaradi
+@0
+Kamerani o'chirib qo'yadi
+@0
+Parvozni bekor qiladi
+#2
+TapFly rejimi qanday ishlashini tushuntiring.
+@2
+Operator planshet/telefon ekranidagi biror nuqtani bossa, dron avtomatik o'sha yo'nalish bo'ylab barqaror uchadi
+@0
+Dronni qo'l bilan teginib uchirish
+@0
+Dron qanotlariga teginish
+@0
+Ekrandagi tugmalarni o'chirish
+#1
+ATTI (Attitude) rejimiga dron o'z-o'zidan o'tib qolsa nima bo'ladi?
+@0
+Dron to'xtab qoladi
+@1
+GPS xizmati ishlamaydi, dron shamol ta'sirida surilib ketishi mumkin, o'rnini qo'lda ushlab turish kerak
+@0
+Dronning tezligi 2 barobar oshadi
+@0
+Pult to'liq bloklanadi
 &13
 #1
-CoG (Center of Gravity) nima?
+Missiya rejalashtirish o'zi nima?
 @1
-Jism og'irligi konsentratsiyalashgandek tasavvur qilinadigan og'irlik (massalar) markazi
+Parvozdan oldin kompyuter yoki dastur orqali dronning uchish marshrutini, balandligini va vazifalarini belgilab chiqish
 @0
-Faqatgina batareyaning joylashgan nuqtasi
+Faqat dronni qutiga joylash
 @0
-Motorlarning aylanish tezligi markazi
+Dronni xaridorga yetkazib berish
 @0
-Dronning eng yuqori nuqtasi
+Batareyani quvvatlash jarayoni
 #2
-X-konfiguratsiyali multikopterda CoG ideal holda qayerda joylashishi kerak?
+Waypoint (nuqta) tushunchasi nimani anglatadi?
 @0
-Iloji boricha orqa motorlarga yaqin
+Faqat uchish va qo'nish maydonchasi
 @2
-Romaning geometrik markaziga va vertikal o'qda propeller disklari markaziga iloji boricha yaqin
+Xaritadagi aniq GPS koordinatalarga ega bo'lgan va dron borishi kerak bo'lgan manzil nuqtasi
 @0
-Kamera joylashgan old tomonda
+Dronning xotira kartasi
 @0
-Batareyaning eng chekkasida
+Operator turgan joy
 #3
-CoGning oldinga siljishi dronning parvoz dinamikasiga qanday ta'sir qiladi?
-@0
-Hamma motorlar bir xil ishlayveradi, farqi bo'lmaydi
-@0
-Faqat batareya sarfi kamayadi
+Grid (to'r) shaklidagi missiyalar asosan qanday operatsiyalarda qo'llaniladi?
 @3
-Dron oldinga egilishga intiladi va oldingi motorlar ko'proq ishlashga (ortiqcha yuklanishga) majbur bo'ladi
+Katta maydonlarni ortofotoplan (xarita) qilish, qishloq xo'jaligida 3D xaritalash va geodeziyada
 @0
-Dron avtomatik ravishda balandlikni oshiradi
+Kichik xonalarni ichida kuzatishda
+@0
+Poyga musobaqalarida
+@0
+Faqat tezlikni o'lchashda
 #1
-CoGni amaliy (eksperimental) aniqlashning eng sodda usuli qanday?
+Qishloq xo'jaligida ekinlarga dori sepish missiyasida qaysi ko'rsatkich qat'iy rejalashtiriladi?
 @1
-Dronni old-orqa va chap-o'ng yo'nalishida tayanch ustiga qo'yib muvozanatlash
+Qatorlar orasidagi masofa va dori sepish me'yori (oqim tezligi)
 @0
-Faqat dasturiy ta'minot orqali taxmin qilish
+Kameraning tasvir o'lchamlari
 @0
-Dronni yerga urib ko'rish
+Dronning ranglari
 @0
-Kabelning uzunligini o'lchash
+Pultning narxi
 #2
-Noto'g'ri markazlash (CoG xatosi) asosan qanday xavfni yuzaga keltiradi?
-@0
-Dron tezligi o'n baravar oshib ketadi
+Overlap (qoplam) xaritalash missiyalarida nimani bildiradi?
 @2
-Motor/ESClar har xil qiziydi, boshqaruv qiyinlashadi va avariya xavfi ortadi
+Dron olgan ketma-ket suratlarning bir-birining ustiga ma'lum foizda tushishi (kesishishi)
 @0
-Kamera sifati o'z-o'zidan yaxshilanadi
+Dronning batareyasi tugashini
 @0
-GPS signali kuchayadi
+Dronlarning havoda to'qnashishini
+@0
+GPS signalining yo'qolishini
+#1
+Dasturda missiya rejasini tuzgandan so'ng nima qilinadi?
+@0
+Kompyuter o'chiriladi
+@1
+Reja dronning xotirasiga (avtopilotiga) simsiz yoki kabel orqali yuklanadi
+@0
+Faqat qog'ozga chop etiladi
+@0
+Hech narsa, u o'zi uchib ketadi
+#3
+Terrain Following (relef bo'ylab uchish) xususiyati nima uchun muhim?
+@3
+Tog'li yoki past-baland joylarda dron yer sathiga nisbatan doimiy bir xil balandlikni avtomatik saqlab uchadi
+@0
+Faqat tekislikda uchish uchun
+@0
+Suv ostida navigatsiya qilish uchun
+@0
+Ob-havoni o'lchash uchun
+#2
+Poligon missiyasi qanday tuziladi?
+@0
+Faqat bitta chiziq chiziladi
+@2
+Operator xaritada o'rganilishi kerak bo'lgan hududning chegaralarini belgilaydi va dastur avtomat ravishda marshrut chizib beradi
+@0
+Dron o'zi aylanib chiqadi
+@0
+Politsiyaga xabar beriladi
+#1
+Missiya vaqtida batareya quvvati tugab qolsa qanday funksiya ishga tushadi?
+@1
+Dron ishlagan joyini eslab qoladi, quvvatlanishga qaytadi va keyin o'sha nuqtadan davom ettiradi (Resume flight)
+@0
+Dron o'sha yerda qulab tushadi
+@0
+Missiya butunlay o'chib ketadi
+@0
+Kamera ishlamay qoladi
+#3
+Mission Planner yoki QGroundControl qanday dasturlar hisoblanadi?
+@3
+Yer boshqaruv stansiyasi (GCS) dasturlari bo'lib, ochiq kodli dronlarni sozlash va to'liq avtonom missiyalarni rejalashtirish uchun xizmat qiladi
+@0
+Dronlarda o'yin o'ynash uchun dasturlar
+@0
+Faqat rasmlarga ishlov beruvchi filtrlar
+@0
+Antivirus dasturlari
+#2
+Parvoz tezligini missiya davomida o'zgartirish nima uchun kerak bo'lishi mumkin?
+@2
+Sifatliroq suratga olish uchun sekinlashish yoki uzoq nuqtaga tezroq yetib borish uchun
+@0
+Batareyani qizdirish uchun
+@0
+Ovozni balandroq chiqarish uchun
+@0
+Qushlarni cho'chitish uchun
+#1
+POI (Point of Interest) - qiziqish nuqtasi funksiyasi dronga qanday buyruq beradi?
+@0
+Faqat shu nuqtaga borib qo'nish
+@1
+Belgilangan obyekt atrofida aylanib, kamerani markaziy obyektga qaratib uchish
+@0
+Bu nuqtadan uzoqroq qochish
+@0
+Bu nuqtaga raketadan zarba berish
+#3
+Geofence missiya tuzishda qanday vazifa bajaradi?
+@3
+Virtual devor yaratadi, dron missiya davomida tasodifan ham bu chegaradan chiqib ketmasligini ta'minlaydi
+@0
+Dron tezligini oshiradi
+@0
+Wi-Fi signalini kuchaytiradi
+@0
+Batareya zaryadini uzaytiradi
+#2
+Kamera sozlamalari marshrut rejasiga qanday ulanadi?
+@2
+Har bir Waypoint da kameraning burchagi, rasmga olish yoki video yozish amallari alohida dasturlab qo'yilishi mumkin
+@0
+Hech qanday, kamera alohida boshqariladi
+@0
+Kamera o'zi xohlagan vaqtda oladi
+@0
+Ularni bog'lash umuman ilojsiz
+#1
+Qidiruv missiyalarida qaysi marshrut usuli tez-tez qo'llaniladi?
+@1
+Zanjir yoki ilonizi (Zig-zag) usulida hududni to'liq ko'zdan kechirish
+@0
+Faqat bitta joyda turish
+@0
+Aylana usulida uzoqlashish
+@0
+To'g'riga qarab cheksiz uchish
 &14
 #1
-Inersiya momenti dron mexanikasida nimani ifodalaydi?
+Dron kamerasidagi Gimbalning eng asosiy vazifasi nima?
+@0
+Suratni rangli qilish
 @1
-Aylanuvchi jismning o'z burchak tezligini o'zgartirishga bo'lgan qarshilik darajasini
+Kamerani 3 o'qda (axis) mexanik barqarorlashtirish va tasvirning tebranmasligini ta'minlash
 @0
-Faqat apparatning umumiy og'irligini
+GPS signalini qabul qilish
 @0
-Batareyaning maksimal quvvatini
-@0
-Havo oqimining tezligini
+Videoni internetga ulash
 #2
-Massani dron markazidan uzoqlashtirish inersiya momentiga qanday ta'sir qiladi?
-@0
-Inersiya momentini kamaytiradi
+Kadrlar tezligi (FPS - Frames Per Second) nimani anglatadi?
 @2
-Inersiya momentini tez oshiradi, javob reaksiyasini sekinlashtiradi
+Kamera bir soniyada nechta rasm (kadr) yozib olishini
 @0
-Umuman ta'sir qilmaydi
+Parvoz tezligini
 @0
-Faqat motorning qizishini kamaytiradi
+Suratning rangini
+@0
+Fleshka xotirasini
 #3
-Nyuton-Eyler tenglamasiga ko'ra, burchak tezlanishi (α) inersiya momenti bilan qanday bog'langan?
-@0
-To'g'ri proportsional (I ortsa, α ham ortadi)
-@0
-Hech qanday bog'liqlik yo'q
+Shutter Speed (Ekspozitsiya vaqti) kamerada qanday ahamiyatga ega?
 @3
-Teskari proportsional (bir xil momentda I qanchalik katta bo'lsa, α shunchalik kichik bo'ladi)
+Kamera matritsasiga yorug'lik tushish vaqtini belgilaydi; tezroq bo'lsa harakatni qotiradi, sekinroq bo'lsa xira (motion blur) qiladi
 @0
-Faqat havo zichligiga bog'liq bo'ladi
+Faqat videoning hajmini belgilaydi
+@0
+Batareya sarfini belgilaydi
+@0
+Kamerani o'chib-yoqilish tezligi
 #1
-Kichik inersiya momentiga ega bo'lgan FPV dronlarning asosiy xususiyati nima?
+ISO darajasi oshirilsa tasvirda qanday o'zgarish bo'ladi?
 @1
-Reaksiyalar tez, "o'tkir" va agility (chaqqonlik) yuqori bo'ladi
+Tasvir yorqinlashadi, lekin "shovqin" (donadorlik yoki xiralik) ko'payib ketishi mumkin
 @0
-Javob juda sekin bo'ladi
+Tasvir qorayib ketadi
 @0
-Faqat uzoq masofaga, to'g'ri uchishga mo'ljallangan
+Tasvir tezlashadi
 @0
-Ular umuman burila olmaydi
+Tasvir qotib qoladi
 #2
-Dronning uchta asosiy aylanish o'qlari qaysilar?
-@0
-Tezlik, balandlik va og'ish
+Oq rang balansi (White Balance) nima uchun to'g'irlanadi?
 @2
-Roll, pitch va yaw
+Yorug'lik sharoitiga qarab (masalan, quyoshli yoki bulutli) kadrdagi ranglarni tabiiy ko'rsatish uchun
 @0
-Old, orqa va yon
+Tasvirni faqat oq-qora qilish uchun
 @0
-Thrust, lift va drag
+Kameraning og'irligini tenglash uchun
+@0
+Kamerani tozalash uchun
+#1
+Havo fotosuratga olishda eng keng tarqalgan format qaysi?
+@0
+TXT yoki PDF
+@1
+JPEG va RAW (DNG)
+@0
+MP3
+@0
+DOCX
+#3
+RAW (DNG) formatining JPEG dan asosiy ustunligi nimada?
+@3
+Rasm hech qanday siqilmasdan, barcha ma'lumotlari bilan saqlanadi va kompyuterda rang/yorug'likni chuqur tahrirlash imkonini beradi
+@0
+Hajmi juda kichik va xotirani tejaydi
+@0
+Faqat oq-qora formatda oladi
+@0
+U videolarni yozib olish formati
+#2
+ND (Neutral Density) filtrlari kamera obyektiviga nima uchun taqiladi?
+@2
+Kameraga kiradigan yorug'lik miqdorini kamaytirish uchun, go'yoki kamera uchun "quyoshdan himoya ko'zoynagi" kabi ishlaydi
+@0
+Tasvirni kattalashtirish (Zoom) uchun
+@0
+Kamerni sinishdan asrash uchun
+@0
+Faqat qorong'uda yoritish uchun
+#1
+Panoramik suratga olish qanday amalga oshiriladi?
+@1
+Dron o'z o'qida aylanib, bir nechta suratga oladi va ularni bitta keng burchakli katta rasm qilib birlashtiradi
+@0
+Bitta tugmani bosish bilan darhol kengayib qoladi
+@0
+Pult orqali tasvir chiziladi
+@0
+Dron tez-tez tepaga-pastga tushadi
+#3
+Braketing (AEB - Auto Exposure Bracketing) rejimi qanday ishlaydi?
+@3
+Kamera bir vaqtning o'zida har xil ekspozitsiyada (yorqin, normal, qorong'u) 3 ta yoki 5 ta rasm oladi, keyin HDR uchun birlashtiriladi
+@0
+U faqat bitta mukammal rasm oladi
+@0
+Kamerani 3 marta aylantirib beradi
+@0
+Videoni tezlashtiradi
+#2
+Gimbalning Pitch (Tilt) o'qi kamerani qaysi tomonga harakatlantiradi?
+@2
+Tepaga va pastga (vertikal)
+@0
+O'ngga va chapga (gorizontal)
+@0
+Aylanasiga
+@0
+Oldinga va orqaga
+#1
+Cinematic rejim droni pult bilan boshqarishda nimani ta'minlaydi?
+@1
+Dron va gimbal harakatlarini juda silliq va sekinlashtirilgan qilib, professional kinoga o'xshash kadrlar olishga yordam beradi
+@0
+Dronni poyga tezligiga o'tkazadi
+@0
+Kamerani o'chirib qo'yadi
+@0
+Faqat ovoz yozishni boshlaydi
+#3
+F-stop (Diafragma) nima va u dron kamerasida qanday vazifa bajaradi?
+@3
+Kamera linzasidagi teshik o'lchami bo'lib, chuqurlik maydonini (DOF) va kiruvchi yorug'lik miqdorini boshqaradi
+@0
+Faqat pultning batareyasi
+@0
+Dronning tormozlash masofasi
+@0
+Kameraning maksimal harorati
+#2
+Ortiqcha yorug'lik tushgan zonalar (Overexposed) ekranda qanday belgi bilan ko'rsatilishi mumkin?
+@0
+Qizil yurakcha bilan
+@2
+"Zebra" chiziqlari (shriftlar) miltillashi orqali (haddan tashqari oq bo'lib ketgan joylarni bildiradi)
+@0
+Ovozli signal chalib
+@0
+Kamera o'z-o'zidan o'chib qolib
+#1
+Kamerani tepadan 90 daraja vertikal pastga qaratish (Top-down) arxitekturada nima deb ataladi?
+@1
+Qush parvozi balandligidan qarash (Bird's-eye view)
+@0
+Yon tomonlama qarash
+@0
+Pastdan yuqoriga qarash
+@0
+Faqat yer yuzi
 &15
 #1
-Frame (rama) dron uchun qanday vazifani bajaradi?
+Termal kameralar nima asosida tasvir yaratadi?
+@0
+Yorug'likni qaytarish orqali
 @1
-Barcha mexanik va elektron komponentlarni o'zida jamlovchi karkas tizimi vazifasini
+Obyektlardan tarqalayotgan infraqizil (issiqlik) nurlanishini sezish orqali
 @0
-Faqat videoni yozib olish vazifasini
+Rentgen nurlari orqali
 @0
-Batareyani zaryadlash vazifasini
-@0
-Radio to'lqinlarni qabul qilish vazifasini
+Ultratovush to'lqinlari orqali
 #2
-X-konfiguratsiyali framening asosiy afzalliklaridan biri nima?
-@0
-Unda umuman kamera o'rnatib bo'lmaydi
+Termal dronlar asosan qaysi vaqtda eng yuqori samaradorlik ko'rsatadi?
 @2
-Geometrik markaz va CoG o'rtasida yaxshi moslikka erishish oson, roll va pitch bo'yicha javob simmetrik
+Tunda yoki qorong'i va yomon ko'rish sharoitida (tuman, tutun ichida)
 @0
-U faqat bitta motor bilan ishlay oladi
+Faqat tush paytida quyosh ostida
 @0
-Shamolga eng kam chidamli struktura
+Qattiq yomg'ir vaqtida suv ostida
+@0
+Faqat oydin kechalarda
 #3
-Nima sababdan frame (rama) yetarlicha qattiqlikka (stiffness) ega bo'lishi kerak?
+Termal kameraning "rezolyutsiyasi" (masalan, 640x512) nimani anglatadi?
+@3
+Kamera sensorining issiqlikni o'qiydigan piksellar sonini, bu qanchalik yuqori bo'lsa, tasvir shunchalik aniq va detallarga boy bo'ladi
+@0
+Faqat tasvirning hajmini megabaytda
+@0
+Kameraning necha metr uzaoqlikni ko'rishini
+@0
+Issiqlik darajasini Selsiyda
+#1
+"White Hot" (Oq issiq) palitrasi termal ekranda qanday ko'rinadi?
+@1
+Issiq obyektlar oq rangda, sovuq obyektlar qora yoki to'q rangda ko'rinadi
+@0
+Hamma joy faqat oq rangda bo'ladi
+@0
+Issiq obyektlar ko'k rangda ko'rinadi
+@0
+Faqat sovuq narsalar ko'rinadi
+#2
+Huquq-tartibot organlari qochqinlarni qidirishda nega termal dronlardan foydalanadi?
+@0
+Ularni ovozidan topish uchun
+@2
+Odam tanasi atrof-muhitdan (o'rmon, bino) farqli issiqlik tarqatadi, bu termal kamerada yaqqol ajralib turadi
+@0
+Jinoyatchini lazer bilan urish uchun
+@0
+Chiroq yoqib atrofni yoritish uchun
+#1
+Isoterm (Isotherm) funksiyasi termal kamerada qanday ishlaydi?
+@0
+Dronni o'zini isitadi
+@1
+Operator ma'lum bir harorat oralig'ini belgilaydi (masalan $30-40^{\circ}C$) va faqat shu haroratdagi obyektlar qizil rangda ajralib turadi
+@0
+Hamma narsani ko'rinmas qiladi
+@0
+Suratni oq-qora qilib qo'yadi
+#3
+Infraqizil nurlantiruvchi (IR Illuminator) donga nima maqsadda o'rnatilishi mumkin?
+@3
+Oddiy tungi ko'rish (Night Vision) kameralariga yorug'lik manbai yaratish uchun, bu inson ko'ziga ko'rinmaydigan nur beradi
+@0
+Issiqlik kamerani ishlashi uchun zarur
+@0
+Kamerani sovitish uchun
+@0
+Ob-havoni o'lchash uchun
+#2
+Radiometrik termal kamera nima degani?
+@2
+U tasvirdagi har bir pikselning aniq haroratini (Selsiy yoki Farengeyt) o'lchay oladigan kameradir
+@0
+U radio tinglash imkonini beruvchi kamera
+@0
+U faqat qizil rangni ko'radigan kamera
+@0
+U faqat insonni taniydigan kamera
+#1
+Qalin o'rmonlarda odamni izlashda termal kameraning kamchiligi nimada bo'lishi mumkin?
+@1
+Qalin daraxt shoxlari va barglari issiqlik nurlarini to'sib qolishi mumkin va kameraga to'liq ko'rinmaydi
+@0
+Daraxtlar kuyib ketadi
+@0
+Odamning harorati daraxtdan past bo'ladi
+@0
+Kamera ishlamay qoladi
+#3
+Issiqlik kontrasti (Thermal Contrast) nima degani?
+@3
+Izlanayotgan obyekt (masalan odam) va fon (masalan yer) haroratlari orasidagi farq; farq qancha katta bo'lsa, obyekt shuncha yaxshi ko'rinadi
+@0
+Kamera yorqinligini o'zgartirish
+@0
+Dronning batareyasi va motor harorati
+@0
+Quyosh nuri miqdori
+#2
+Blend (MSX) texnologiyasi termal dronlarda qanday yordam beradi?
+@2
+Oddiy optik kamera tasviri qirralarini termal rasm ustiga tushirib, obyektlar shaklini aniqroq tanib olishga yordam beradi
+@0
+Faqat ovozni yozib oladi
+@0
+Tasvirni butunlay o'chirib yuboradi
+@0
+Termal tasvirni oddiy rangliga aylantiradi
+#1
+Yong'in o'chirishda termal dronlar nega muhim?
+@0
+Ular suv sepadi
+@1
+Qalin tutun ortini ko'ra oladi, yong'inning eng issiq o'choqlarini aniqlaydi va qutqaruvchilarga yo'l ko'rsatadi
+@0
+Faqat jurnalistlar uchun rasm oladi
+@0
+Yong'inni o'zi o'chiradi
+#3
+Yozning jazirama kunlarida termal dron samaradorligi qanday o'zgaradi?
+@3
+Samaradorlik pasayadi, chunki quyoshda qizigan toshlar va binolar harorati inson harorati bilan deyarli bir xil bo'lib, kontrast yo'qoladi
+@0
+Samaradorlik 10 barobar oshadi
+@0
+Termal kamera portlab ketadi
+@0
+Hech narsa o'zgarmaydi
+#2
+Strobe chiroqlari (miltillovchi mayoqlar) tungi parvozda nima uchun kerak?
+@2
+Boshqa havo kemalari va yerdagi odamlar dronning havoda ekanligini uzoqdan ko'rishi va xavfsizlik uchun
 @0
 Faqat chiroyli ko'rinish uchun
 @0
-O'yinchoqqa o'xshamasligi uchun
-@3
-Deformatsiyaning oldini olish, motorlar geometriyasini saqlash va vibratsiyani kamaytirish uchun
+Qorong'ida yo'lni yoritish uchun
 @0
-Radiosignalni yaxshiroq tarqatish uchun
+Termal kameraga nishon bo'lish uchun
 #1
-Karbon tola (carbon fiber) nima uchun dron ramalarida ko'p ishlatiladi?
+Searchlight (Katta yoritkich) jihozlangan dronlar qanday vaziyatda ishlatiladi?
 @1
-Yuqori qattiqlik-massa nisbatiga ega bo'lgani va yengilligi uchun
+Qorong'ida katta hududni kuchli yorug'lik nuri bilan yoritib, jinoyatchini izlash yoki qutqaruv ishlari olib borish uchun
 @0
-Juda og'ir bo'lgani uchun
+Faqat to'ylarda
 @0
-Radio to'lqinlarni to'sib qo'ygani uchun
+Batareyani zaryadlash uchun
 @0
-Zarbada umuman sinmaydigan yagona modda bo'lgani uchun
-#2
-Hexacopter va octocopter konfiguratsiyalarining quadcopterga nisbatan afzalligi nimada?
-@0
-Ular arzonroq va yengilroq
-@2
-Yuk ko'tarish qobiliyati yuqori va bitta motor ishdan chiqqanda ham uchishni davom ettirish (redundans) xususiyatiga ega
-@0
-Ular faqat xona ichida uchishga mo'ljallangan
-@0
-Ularda batareya umuman sarflanmaydi
+Termal kamerani sovutish uchun
 &16
 #1
-Uchuvchi apparatga ta'sir etuvchi to'rtta asosiy kuch qaysilar?
+Jamoat tartibini saqlashda UUA qanday xizmat ko'rsatadi?
 @1
-Og'irlik, ko'tarilish kuchi (Lift), qarshilik kuchi (Drag) va ilgarilanma kuchi (Thrust)
+Katta olomonni yuqoridan kuzatib turish, tartibbuzarliklarni barvaqt aniqlash va xodimlarga ma'lumot uzatish
 @0
-Bosim, zichlik, harorat va hajm
+Tadbir qatnashchilarini jazolash
 @0
-Inersiya, moment, tezlanish va tezlik
+Faqat chiptalarni tekshirish
 @0
-Elektr, magnit, mexanik va kimyoviy kuchlar
+Qo'shiq aytish
 #2
-Parazit drag qaysi elementlar tufayli yuzaga keladi?
-@0
-Faqat qanot uchlaridagi girdoblar sababli
+Ommaviy namoyishlar vaqtida dron politsiyaga qanday ustunlik beradi?
 @2
-Foydali lift hosil qilmaydigan sirt va elementlar (fuselage, antennalar, qo'llar) tufayli
+Olomonning harakat yo'nalishini, agressiv guruhlarni tahlil qilish va xavfsiz evakuatsiya yo'llarini rejalashtirish imkonini
 @0
-Faqat propellerning uzunligi tufayli
+Dron orqali ko'zdan yosh oqizuvchi gaz sepish
 @0
-Faqat quyosh nurlari ta'sirida
+Hamma ishtirokchilarni yuzidan tanib pasportini tekshirish
+@0
+Namoyishchilarni qo'rqitish
 #3
-Induktsion drag qanday hosil bo'ladi?
-@0
-Faqat havoning harorati o'zgarganda
-@0
-Apparat faqat yerda turganida
+Karnay (Loudspeaker) moduli o'rnatilgan dronlardan qanday foydalaniladi?
 @3
-Qanot uchlarida past va yuqori bosim zonalarining aralashishi oqibatida girdoblar hosil bo'lishidan (liftning narxi)
+Olomonga xavfsizlik qoidalarini, tarqalish talablarini eshittirish yoki qidirilayotgan shaxsga taslim bo'lishni aytish uchun
 @0
-Dvigatelning qizib ketishi natijasida
+Faqat musiqa qo'yish uchun
+@0
+Dron batareyasini bildirish uchun
+@0
+Atrofdagi radiolarni buzish uchun
 #1
-Aerodinamik samaradorlik qaysi nisbat bilan baholanadi?
+Tirbandlikni boshqarishda UUA ning roli qanday?
+@0
+Mashinalarni tepaga ko'tarish
 @1
-Lift-drag nisbati (L/D) bilan
+Tirbandlik sabablarini tepadan tez aniqlab, YPX xodimlariga muqobil yo'llarni ochish bo'yicha ma'lumot berish
 @0
-Og'irlik va thrust nisbati bilan
+Faqat jarima yozish
 @0
-Quvvat va kuchlanish nisbati bilan
-@0
-Tezlik va vaqt nisbati bilan
+Svetoforni almashtirish
 #2
-Polar egri (CD-CL diagrammasi) nimani ko'rsatadi?
-@0
-Faqat batareyaning sarflanish tezligini
+Dron orqali avtoraqamlarni aniqlash (ANPR) tizimi qanday ishlaydi?
 @2
-Lift va drag koeffitsiyentlari o'rtasidagi bog'lanishni, turli hujum burchaklaridagi samaradorlikni
+Yuqori aniqlikdagi kamera mashina raqamini suratga olib, markaziy bazadagi qidiruvdagi raqamlar bilan solishtiradi
 @0
-Faqat shamolning yo'nalishini
+Dron o'zi raqam yasab beradi
 @0
-Radio to'lqinlarning chastotasini
+Faqat to'xtab turgan mashinalarga ishlaydi
+@0
+Mashina rangini o'zgartiradi
+#1
+Stadionlarda xavfsizlikni ta'minlashda drondan foydalanishning qulayligi nimada?
+@1
+Keng hududni va har bir kirish-chiqish nuqtalarini qisqa vaqtda va ko'p xodim jalb etmasdan kuzatish imkoniyati
+@0
+Faqat o'yinni televizorga uzatish
+@0
+Futbolchilar ustidan uchib yurish
+@0
+Hakam vazifasini bajarish
+#3
+Sun'iy intellektga (AI) asoslangan dronlar olomon ichidan tartibbuzarni qanday topishi mumkin?
+@3
+Kiyimi, tana tuzilishi, g'ayritabiiy harakatlari (masalan qochish, zarba berish) yoki yuzni tanish algoritmlari orqali
+@0
+Barchani haroratini o'lchash orqali
+@0
+Operatorning taxmini bilan
+@0
+Faqat pultdagi qizil tugmani bosish orqali
+#2
+Soxta xabarlar asosida chaqiruv bo'lganda (masalan, "Bomba qo'yilgan"), UUA qanday birlamchi harakatni bajaradi?
+@0
+O'zi bombani qidirib zararsizlantiradi
+@2
+Birinchi bo'lib hududga uchib borib, tashqi vizual xavf-xatarlarni xodimlarning xavfsizligi uchun baholaydi
+@0
+Hech narsa qilmaydi
+@0
+Dron ham portlab ketadi
+#1
+Tungi patrul xizmatida dronlarda ko'pincha nimalar birga ishlatiladi?
+@1
+Termal kameralar va kuchli projektor chiroqlari
+@0
+Faqat ovoz yozuvchilar
+@0
+Musqiali asboblar
+@0
+Katta bayroqlar
+#3
+Ko'p qavatli binolar oldida jinoyatchi yashiringanda donga qanday vazifa yuklatiladi?
+@3
+Bino tomini tekshirish, derazalarni masofadan ko'zdan kechirish va jinoyatchining harakatlanish yo'llarini to'sishga ko'maklashish
+@0
+Binoni buzib tashlash
+@0
+Binoning faqat birinchi qavatida turish
+@0
+Qutqaruvchilarga ovqat olib kelish
+#2
+UUA jamoat tartibi vaqtida qanchalik uzoq ucha oladi?
+@2
+Odatda maxsus bog'langan (Tethered) dronlar kabel orqali elektr olib, uzluksiz soatlab havoda tura oladi
+@0
+Faqat 10 daqiqa
+@0
+Cheksiz, quvvat tugamaydi
+@0
+Faqat 1 oy davomida
+#1
+Tethered (Kabel orqali bog'langan) dronlarning afzalligi nima?
+@0
+Ular tez uchadi
+@1
+Kabel orqali doimiy quvvatlanadi va xavfsiz ma'lumot uzatadi, havoda uzoq vaqt bir joyda qolishi mumkin
+@0
+Ular hech qachon ko'rinmaydi
+@0
+Ularda kamera bo'lmaydi
+#3
+Dron vositasida dalillarni to'plash jarayonida videoning haqiqiyligini qanday ta'minlash mumkin?
+@3
+Kamera vaqt/sana tamg'asi, GPS koordinatalari va raqamli imzo (shifrlash) bilan saqlangan holda sudga taqdim etiladi
+@0
+Faqat operatorning so'zi orqali
+@0
+Televizorda ko'rsatish orqali
+@0
+Fleshkani hammaga tarqatish orqali
+#2
+Jinoyatchini ta'qib qilishda UUA dan foydalanishning foydasi nimada?
+@2
+Politsiya xodimlarining hayoti xavf ostida qolmaydi, jinoyatchi ko'rinmaydigan joylarga kirsa ham tepadan kuzatish davom etadi
+@0
+Jinoyatchini mashinasini urib yuborish mumkin
+@0
+Shamol qilib jinoyatchini yiqitish
+@0
+Dron uni o'rab oladi
+#1
+Saylov okruglari, imtihon markazlari atroflarida dronlar nima maqsadda qo'llaniladi?
+@1
+Tashqaridagi xavfsizlikni, ruxsatsiz shaxslar yoki buyumlar yaqinlashmasligini nazorat qilish uchun
+@0
+Imtihon qog'ozlarini tarqatish uchun
+@0
+Saylov byulletenlarini tashish uchun
+@0
+Odamlarni chalg'itish uchun
 &17
 #1
-Balandlik oshishi bilan havo zichligi odatda qanday o'zgaradi?
+Favqulodda vaziyatlarda (masalan yer qimirlaganda) UUA birinchi bo'lib qanday vazifani bajaradi?
+@0
+G'ishtlarni tashiydi
 @1
-Pasayadi
+Vayronagarchilik ko'lamini tezkor baholaydi va xaritasini chizib qutqaruvchilarga jo'natadi
 @0
-Ortadi
+Faqat rasmlarni Instagramga qo'yadi
 @0
-O'zgarmaydi
-@0
-Avvaliga ortib, keyin o'zgarmay qoladi
+Odamlarga suv tashiydi
 #2
-"Zichlik balandligi" (density altitude) qachon haqiqiy balandlikdan sezilarli darajada yuqori bo'ladi?
-@0
-Juda sovuq va quruq kunlarda
+Tog'da adashib qolgan odamlarni qidirishda donga nima o'rnatilgan bo'lishi eng samarali hisoblanadi?
 @2
-Issiq kunlar, past bosim va yuqori namlik sharoitida
+Termal kamera
 @0
-Faqat yomg'ir yog'ayotgan vaqtda
+Oddiy fotokamera
 @0
-Shamol bo'lmagan qorong'u tunda
+Suv sepadigan truba
+@0
+Raqamli tarozi
 #3
-Havo zichligi kamayganda propellerning ishlashiga qanday ta'sir ko'rsatiladi?
-@0
-Propeller kamroq quvvat bilan ko'proq thrust beradi
-@0
-Batareya sarfi o'z-o'zidan nolga tushadi
+Suvdagi qutqaruv ishlari (Cho'kayotgan odam) vaqtida drondan qanday foydalanish mumkin?
 @3
-Propeller ma'lum RPMda kamroq thrust beradi, uchish uchun ko'proq quvvat va motor RPMi talab qilinadi
+Dron orqali jabrlanuvchiga aniqlik bilan qutqaruv jileti yoki chambaragini (doirasi) tashlab berish mumkin
 @0
-Umuman ta'sir qilmaydi, thrust o'zgarmaydi
+Dron odamni o'zi suvdan tortib oladi
+@0
+Dron suv ostiga tushib suzadi
+@0
+Faqat suvni isitib beradi
 #1
-Dronni tog'li (yuqori balandlikdagi) hududlarda uchirishda nimalar kuzatilishi mumkin?
+Dronlar yordamida dorilar va qon qanday yetkazib beriladi?
 @1
-Maksimal ko'tariladigan yuk kamayishi va parvoz vaqtining qisqarishi
+Maxsus transport qutisiga solinib, borish qiyin bo'lgan hududlarga GPS orqali avtomatik uchib boradi
 @0
-Dronning tezligi ikki baravar ortishi
+Parashyutsiz otib yuboriladi
 @0
-GPS signalining yo'qolishi
+Odam dronni ustiga minib oladi
 @0
-Kamera o'z-o'zidan o'chib qolishi
+Dorilarni tepadan sepadi
 #2
-Havo zichligining lift (ko'tarilish kuchi) va drag (qarshilik) ga ta'siri qanday formula parametrida aks etadi?
-@0
-Faqat tezlik (V) orqali
+Katta o'rmon yong'inlarida dronlar o't o'chiruvchilarga qanday strategik yordam beradi?
 @2
-L va D formulalaridagi zichlik (ρ) ko'paytuvchisi orqali (ular zichlikka to'g'ri proportsional)
+Yong'inning tarqalish yo'nalishini va tezligini ko'rsatib berib, qutqaruvchilar xavfsizligini ta'minlaydi
 @0
-Faqat og'irlik (W) orqali
+Kichik droni o'zi bilan suv tashib yong'inni to'liq o'chiradi
 @0
-Faqat harorat (T) orqali
+Faqat daraxtlarni kesadi
+@0
+Shamol qilib yong'inni kuchaytiradi
+#1
+Radioaktiv yoki kimyoviy moddalar tarqalgan hududda nega UUA ishlatish muhim?
+@0
+Ular qimmat bo'lgani uchun
+@1
+Inson hayoti xavf ostida qolmasligi uchun dronlar havo namunasini olishi va hududni tekshirishi mumkin
+@0
+Dron kimyoviy moddani eydi
+@0
+U yerda faqat dron uchadi, qonun shunday
+#3
+Qidiruv rejasida Zanjir (Grid) marshruti nega kerak?
+@3
+Hududning biror qismi tekshirilmay qolib ketmasligi va har bir kvadrat metr e'tiborda bo'lishi uchun
+@0
+Dron adashib ketmasligi uchun
+@0
+Batareyani ko'p yeyishi uchun
+@0
+Pult chiroyli ishlashi uchun
+#2
+Paydrop tizimi donga nima imkonini beradi?
+@2
+Kerakli yukni (aloqa radiosi, oziq-ovqat, dori) masofadan turib pastga, ko'zlangan manzilga tashlab berish mexanizmi
+@0
+Kamerani tushirib yuborish
+@0
+Motorlarni to'xtatish
+@0
+Dronni yomg'irdan asrash
+#1
+Baland binolardagi yong'inda dron qanday o'ziga xos ishlarni qila oladi?
+@1
+Tepadan derazalar orqali ichkaridagi odamlarni izlashi yoki ba'zan o't o'chiruvchi kapsulalarni otishi mumkin
+@0
+Liftni tuzatib beradi
+@0
+Odamlarni olib tushadi
+@0
+Elektr tokini ulab beradi
+#3
+Avariya holatida zararlangan elektr stansiyalarini ko'rikdan o'tkazishda dron qanday rol o'ynaydi?
+@3
+Yuqori kuchlanish liniyalaridagi uzilishlarni operator xavfsiz masofadan, tok urish xavfisiz tekshiradi
+@0
+Tokni donga ulab olib ketadi
+@0
+Simlarni qayta ulaydi
+@0
+Transformerlarni portlatadi
+#2
+Favqulodda vaziyatda dron batareyasi nechta qutqaruv missiyasiga yetadi?
+@0
+Bitta batareya bir kun ishlaydi
+@2
+Batareyalar cheklangan (odatda 20-40 daqiqa), shuning uchun ko'plab almashtiriladigan zaxira batareyalar yoki generator bo'lishi shart
+@0
+Faqat 1 daqiqa
+@0
+Umuman batareya kerak emas
+#1
+Radiatsiya darajasini o'lchaydigan dronlar qanday nomlanadi yoki jihozlanadi?
+@1
+Geiger-Myuller hisoblagichi yordamida jihozlangan radiatsion razvedka dronlari
+@0
+Oddiy o'yinchoq dron
+@0
+Suv osti droni
+@0
+Faqat poyga dronlari
+#3
+Toshqin va sel vaqtida dondan olingan 3D xaritalar (DEM - Digital Elevation Model) nima uchun zarur?
+@3
+Suv bosish yo'nalishi va sathining ehtimoliy darajasini modellashtirib, aholini evakuatsiya qilish qarorini qabul qilish uchun
+@0
+Xaritani devorga ilish uchun
+@0
+Suvni ichishga yaroqligini bilish uchun
+@0
+Baliq tutish uchun
+#2
+G'orlar yoki xarobalar ichida qidiruv olib borganda qanday dron kerak bo'ladi?
+@2
+GPS talab qilmaydigan, to'qnashuvdan himoyalangan qafasli (Cage) va kuchli yoritkichli dronlar
+@0
+Tijorat qishloq xo'jaligi dronlari
+@0
+Qattiq qanotli uzoq uchar dron
+@0
+Faqat suv osti droni
+#1
+Sel toshqinida aloqa uzilib qolgan hududda UUA qanday xizmat ko'rsatishi mumkin?
+@0
+Dron ko'prik vazifasini o'taydi
+@1
+UUA vaqtinchalik aloqa (Wi-Fi yoki radio) retranslyatori bo'lib xizmat qilib, qutqaruvchilarni bog'lab turadi
+@0
+Dron daraxtlarni yig'adi
+@0
+Faqat quyosh isitgich bo'ladi
 &18
 #1
-Statik barqarorlik apparatning qanday xususiyati?
+Agar parvoz vaqtida UUA va pult o'rtasida aloqa to'satdan uzilib qolsa, nima sodir bo'ladi?
+@0
+Dron darhol o'chadi va qulaydi
 @1
-Kichik bezovtalikdan so'ng o'z muvozanat holatiga qaytishga intilish xususiyati
+Failsafe rejimi ishga tushadi va dron (odatda) avtomat ravishda o'z uyi nuqtasiga qaytadi
 @0
-Vaqt o'tishi bilan chayqalishlarning cheksiz ortib borishi
+Dron qochib ketadi
 @0
-Radio signalni yaxshi qabul qilish qobiliyati
-@0
-Kameraning tasvirni barqarorlash xususiyati
+Dron pultni izlay boshlaydi
 #2
-Dronlar va multirotorlar tabiatan qanday aerodinamik xususiyatga ega?
-@0
-Juda barqaror va hech qanday nazoratni talab qilmaydi
+Flyaway (dronning qochib ketishi) nimadan kelib chiqadi?
 @2
-Aerodinamik jihatdan beqaror, muvozanat faqat elektronika orqali faol stabilizatsiya qilinadi
+Kuchli magnit interferensiya tufayli kompas xatoligi, GPS signali chalkashishi yoki operatorning dasturiy xatosi
 @0
-Ular faqat gorizontal stabilizatorlarga ega
+Faqat shamol uni puflab ketishidan
 @0
-Ular faqat shamol yordamida ucha oladi
+Batareya juda ko'p bo'lganidan
+@0
+Pult qattiq bosilganidan
 #3
-PID nazoratdagi I (integral) komponentining asosiy vazifasi nima?
-@0
-Faqat hozirgi xatolikka mutanosib javob qaytarish
-@0
-Xatolik o'zgarish tezligini sekinlashtirish (damping)
+Agar dron yomg'irda qolib ketsa yoki suvga tushsa, qanday kutilmagan holat yuz berishi aniq?
 @3
-Vaqt bo'yicha yig'ilgan xatolikni kompensatsiya qilish va doimiy og'ishni (trim xatosini) yo'qotish
+Elektron platalar (ESC, FC) qisqa tutashuv bo'ladi, motorlar o'chadi va batareya yonib ketishi mumkin
 @0
-Motorni tezkor o'chirish
+Hech narsa, xavfsiz uchaveradi
+@0
+Dastur o'zini o'zi tozalaydi
+@0
+Kamera o'z-o'zidan suvga chidamli bo'ladi
 #1
-Dron barqarorligini ta'minlovchi uchish nazoratchisi (flight controller) qaysi sensorlardan ma'lumot oladi?
+Kuchli shamolda donga "Shamol tezligi yuqori" degan xabar kelsa operator nima qilishi kerak?
 @1
-Gyroskop, akselerometr, barometr, magnitometr, GPS kabilardan
+Balandlikni pastlatishi va dronni tezroq o'zi tomon xavfsiz qaytarishi kerak
 @0
-Faqat kameradan
+Yana ham balandroq ko'tarilishi kerak
 @0
-Faqat batareya datchigidan
+Dronni sport rejimiga qo'yib tashlab yuborish kerak
 @0
-Faqat pultning batareyasidan
+Pultni o'chirib qo'yish kerak
 #2
-Haddan tashqari katta P (proportional) yoki D (derivative) qiymatlari qanday muammoga olib kelishi mumkin?
+Parvoz vaqtida propeller bittasi sinib ketsa multikopter nima qiladi?
 @0
-Dron batareyasi darhol to'lib qoladi
+Yaxshiroq ucha boshlaydi
 @2
-Yuqori chastotali tebranishlar, beqarorlik va "oscillation"larga
+Muvozanatni yo'qotadi va aksariyat hollarda boshqarib bo'lmaydigan holatda aylanib yerga qulaydi
 @0
-Dron juda sekin va dangasa bo'lib qoladi
+Uchta propeller bilan qo'nib oladi
 @0
-GPS uzilishi va kompasning buzilishiga
+Uchishni shunchaki davom ettiradi
+#1
+Qushlar (masalan burgutlar) donga hujum qilsa nima qilish eng samarali?
+@0
+Qush bilan urishish
+@1
+Dronni vertikal ravishda yuqoriga tez ko'tarish, chunki qushlar tepaga qaraganda pastga qarab tezroq hujum qiladi
+@0
+Pultni tashlab qochish
+@0
+Ovozni balandlatib kutish
+#3
+Batareya kuchlanishi (Voltage) parvoz paytida to'satdan keskin tushib ketsa, bu nimaning belgisi?
+@3
+Batareya hujayralaridan biri (cell) ishdan chiqqan yoki harorat juda sovuq bo'lib batareya "muzlab" qolgan
+@0
+Dron tezligi oshganini
+@0
+Havo juda issiqligini
+@0
+GPS yaxshi ishlashini
+#2
+Magnetic Interference (Magnit xalaqit) nima qiladi va u qayerda ko'p bo'ladi?
+@2
+Dron kompasini adashtiradi va boshqaruvni yo'qotadi, u ko'pincha temir-beton ko'priklar, katta metall buyumlar atrofida bo'ladi
+@0
+Faqat batareyani zaryadlaydi
+@0
+O'rmon ichida ko'p bo'ladi
+@0
+Dronning rangini o'zgartiradi
+#1
+Dron bino ichida uchib, GPS uzilsa nima qilish kerak?
+@1
+Vizual boshqaruvda bo'lish, qattiq harakat qilmaslik va imkon boricha sekin ochiq hududga olib chiqish
+@0
+RTH (Uyga qaytish) ni bosish kerak
+@0
+Bino derazasini urib sindirish
+@0
+Ko'zlarni yumib uchish
+#3
+Motor Obstructed (Motor blokka tushdi) xatosi ekranda ko'rinsa nima tushuniladi?
+@3
+Propellerlarga narsa (shox, ip) tiqilib qolgan yoki motor ishlashga qarshilik sezmoqda, uni qulashdan oldin darhol qo'ndirish kerak
+@0
+Motor juda tez aylanmoqda
+@0
+Motorga quvvat kerak emas
+@0
+Faqat dasturni yangilash kerak
+#2
+Parvoz vaqtida planshet yoki telefon dasturi (App) qotib qolsa yo o'chsa nima bo'ladi?
+@0
+Dron qulab tushadi
+@2
+Dron o'z joyida qoladi yoki pultdagi tayoqchalar (joystiklar) orqali boshqarilishda davom etaveradi
+@0
+Batareya yonib ketadi
+@0
+Kamera xotirasi o'chadi
+#1
+Dron uzoqqa uchib signal uzilishi tez-tez kuzatilsa, antennalar qanday holatda ekanini tekshirish kerak?
+@1
+Antennalarning yassi tomoni dron turgan yo'nalishga to'g'ri qaraganligini
+@0
+Antennalar yerga sanchilganligini
+@0
+Antennalar pultning ichiga kirib ketganligini
+@0
+Antennalar suvga bo'yalganligini
+#3
+Agar dronda IMU (Akselerometr) xatosi bo'lsa parvozda u qanday o'zini tutadi?
+@3
+U gorizontni yo'qotib qiyshayib uchadi, joyida tura olmaydi yoki umuman motorlarni yoqishga ruxsat bermaydi
+@0
+Faqat tezroq uchadi
+@0
+Kamera ishlamaydi xolos
+@0
+Uyga qaytadi
+#2
+Favqulodda qo'nish (Emergency Landing) vaqtida operator qanday joy izlashi kerak?
+@2
+Odamlar yo'q, daraxtlar va suv havzalaridan uzoqroq, tekis maysazor yoki tuproq maydonni
+@0
+Odamlar gavjum bo'lgan joyni
+@0
+Baland daraxt uchini
+@0
+Tez yurayotgan mashinalar ustini
+#1
+Agar dron kutilmaganda tasodifiy yo'nalishga uchib keta boshlasa, operator qaysi amalni bajarishi eng to'g'ri?
+@0
+Qarab turish
+@1
+Tezlik bilan parvoz rejimini GPS (P-mode) dan ATTI (Sport/Manual) rejimiga o'tkazib, kompas aralashuvini uzish va qo'lda tortib kelish
+@0
+Pultni o'chirish
+@0
+Dronni chaqirish
 &19
 #1
-Radio to'lqinlarining chastota (f) va to'lqin uzunligi (λ) orasidagi bog'lanish qanday?
+UUA ga texnik xizmat ko'rsatish nega muntazam amalga oshirilishi kerak?
 @1
-λ = c / f (teskari proportsional)
+Parvoz vaqtida kutilmagan avariyalar oldini olish, detallar eskirishini bilish va dronning umrini uzaytirish uchun
 @0
-λ = c * f (to'g'ri proportsional)
+Dron faqat qimmat bo'lgani uchun
 @0
-λ = f / c
+Pult chiroyli turishi uchun
 @0
-Ular orasida hech qanday bog'lanish yo'q
+Faqat qonun talab qilgani uchun
 #2
-FPV dronlarda 2.4 GHz diapazoni asosan qanday maqsadlarda ishlatiladi?
-@0
-Faqat video uzatish uchun
+Motorlarga texnik xizmat ko'rsatishda nimalarni ko'zdan kechirish kerak?
 @2
-Asosan boshqaruv signallari va nazorat linklari (RC link) uchun
+Ularning ichiga chang yoki qum kirmaganligi, podshipniklarda (rulmanlarda) begona ovoz yoki qarshilik yo'qligini
 @0
-Dronni quvvatlantirish uchun
+Ularning rangini
 @0
-GPS lokatsiyasini sun'iy yo'ldoshga uzatish uchun
+Motorlarga moy quyganni
+@0
+Motorlarni batareyaga to'g'ri ulanishini
 #3
-5.8 GHz diapazonining 2.4 GHz ga nisbatan asosiy kamchiligi nimada?
-@0
-Kanallar soni kam va ma'lumot uzatish tezligi juda past
-@0
-Antennalari juda katta va og'ir bo'lishi kerak
+Firmware (Proshivka) yangilanishi asosan nimalarni to'g'rilaydi?
 @3
-To'siqlardan yomonroq o'tadi, so'nishi kuchliroq va uzoq masofaga yetib borishi qiyinroq
+Dasturiy xatoliklarni (bugslar), avtopilot barqarorligini, No-Fly zonalarni va yangi funksiyalarni ta'minlaydi
 @0
-Faqat tunda ishlaydi
+Faqat batareya quvvatini
+@0
+Pult og'irligini
+@0
+Kameraning linzalarini tozalaydi
 #1
-Dron boshqaruvida ISM diapazonlarining (2.4 va 5.8 GHz) ommabopligiga nima sabab bo'lgan?
+Propellerlarda (parraklarda) mayda tirnalishlar yoki kichik tishlamlar paydo bo'lsa nima qilinadi?
+@0
+Yelim bilan yopishtiriladi
 @1
-Litsenziyasiz foydalanish imkoniyati va antennalarning ixchamligi
+Xavfsizlik maqsadida ular darhol yangisiga almashtiriladi
 @0
-Ularning davlat siri ekanligi
+Zımpara (shkurka) bilan silliqlanadi
 @0
-Boshqa hech qanday radio chastota yo'qligi
-@0
-Ularning to'siqlardan 100% o'ta olishi
+Hech narsa, uchaveradi
 #2
-Wi-Fi va boshqa qurilmalar sababli chastota diapazonida nima yuz berishi mumkin?
-@0
-Signal o'z-o'zidan kuchayadi
+Lipo batareyalarni uzoq muddatga saqlash uchun qanday quvvatda olib qo'yish kerak?
 @2
-Interferensiya, paket yo'qotishlari va kanal tiqilinchligi (tiqilinch)
+Taxminan 50-60% quvvatda (Storage mode)
 @0
-Batareya zaryadi ko'payadi
+100% quvvatda
 @0
-Kamera obyekti aniqroq ko'rinadi
+0% (to'liq tugatib)
+@0
+Istagan quvvatda
+#1
+Korpusni (Ramani) tozalashda nimalardan foydalanish tavsiya etiladi?
+@1
+Quruq mikrofibra mato yoki siqilgan havo yordamida (suv tegizmasdan)
+@0
+Sovunli suv va cho'tka bilan yuvish
+@0
+Benzin yoki atseton bilan
+@0
+Qum bilan
+#3
+Gimbal motorlari ishlashida qattiq qizish bo'lsa yoki tebranish sezilsa, sababi nima bo'lishi mumkin?
+@3
+Kamera balanslanmagan yoki mexanizm ichiga chang/qum tiqilib motorni majburiy zo'riqish bilan ishlashga majbur qilmoqda
+@0
+Dron juda baland uchgan
+@0
+Batareya zaryadi past
+@0
+Faqat proshivka eski
+#2
+Sensorni tozalashda nimalarga e'tibor qaratiladi?
+@0
+Barmoq bilan qattiq artib tashlashga
+@2
+Kamera linzasi kabi juda ehtiyotkorlik bilan, maxsus mato va suyuqlik bilan tozalashga, tirnab yubormaslikka
+@0
+Zanglamaslik uchun moy surtishga
+@0
+Loy bilan ishqalashga
+#1
+Dron pultining tayoqchalari (Joystiklar) bo'shashib qolsa nima qilinadi?
+@1
+Pultning kalibrlash menyusidan qadam-baqadam tekshirib chiqiladi va agar sinish bo'lsa mexanizm almashtiriladi
+@0
+Skotch bilan qotiriladi
+@0
+Dronni uzoqqa uchirmaslik kerak
+@0
+Faqat sport rejimida uchiladi
+#3
+Sohilbo'yi (dengiz yoki sho'r ko'l) joylarda parvoz qilgach dronga qanday xizmat ko'rsatish zarur?
+@3
+Tuzli bug'lar metallarni zanglatmasligi uchun dron zudlik bilan siqilgan havo va nam mato bilan tozalanishi shart
+@0
+Suvga pishib olinishi kerak
+@0
+Quyoshda quritish kerak
+@0
+Faqat yopiq joyda qoldirish kerak
+#2
+MicroSD xotira kartasi xatosi (Card Error) bermasligi uchun nima tavsiya qilinadi?
+@2
+Har safar muhim parvozdan oldin kompyuterda fayllarni saqlab, kartani aynan dron orqali format qilish
+@0
+Kartani tez-tez yuvib turish
+@0
+Kartani faqat 100% to'lguncha format qilmaslik
+@0
+Magnit yonida saqlash
+#1
+Dron uchun eng optimal saqlash harorati qanday?
+@0
+$-20^{\circ}C$ da
+@1
+Quruq, to'g'ridan-to'g'ri quyosh nuri tushmaydigan xona haroratida ($15^{\circ}C$ - $25^{\circ}C$)
+@0
+Hammomda
+@0
+$50^{\circ}C$ dan yuqori isitkichda
+#3
+Tezlik regulyatorlari (ESC) larning kuyishiga nima sabab bo'lishi mumkin?
+@3
+Motorlarning to'siqqa urilib tiqilib qolgani va operator ularni pultdan majburan aylantirishga urinishi
+@0
+Dron havoda tez uchgani
+@0
+Proshivkaning to'g'ri o'rnatilgani
+@0
+GPS ning o'chib qolgani
+#2
+Qishda uchishdan oldin batareyaga qanday texnik qoida qo'llaniladi?
+@0
+Muzlatgichda sovitiladi
+@2
+Batareya parvozdan oldin kamida $+20^{\circ}C$ gacha isitilishi kerak (maxsus quti yoki cho'ntakda)
+@0
+Unga antifriz sepiladi
+@0
+Hech narsa, sovuqda uchaveradi
+#1
+Texnik ro'yxat daftari (Logbook) nima maqsadda yuritiladi?
+@1
+Har bir dronning umumiy parvoz soatlari, nosozliklari va qilingan ta'mirlash ishlarini yozib borish uchun
+@0
+Faqat rasmlarni saqlash uchun
+@0
+Ob-havoni qayd qilish uchun
+@0
+Internet parollarini yozish uchun
 &20
 #1
-Dipol antenna qanday nurlanish diagrammasiga ega?
+UUA dan foydalanishda shaxsiy hayot daxlsizligi deganda nima tushuniladi?
 @1
-Nisbatan bir tekis "donut" shaklidagi qamrovga ega
+Boshqa odamlarning hovlisi, uyi yoki shaxsiy mulkini ularning roziligisiz kamera orqali kuzatmaslik va videoga olmaslik
 @0
-Old tomonda tor konus shaklida
+O'z dronini kimgadir bermaslik
 @0
-Orqaga yo'nalgan nurlanishga
+Dron parolini hech kimga aytmaslik
 @0
-Faqat tepaga qaratilgan to'lqinga ega
+Faqat kunduzi uchish
 #2
-Cloverleaf yoki Pagoda kabi antennalarning (aylanma polarizatsiyali) asosiy afzalligi nimada?
-@0
-Juda katta uzoqlikdagi masofaga (100 km) tor nur tarqatishi
+Olingan foto va videolarni tarqatishda qanday huquqiy va etik masala yuzaga keladi?
 @2
-Multipath (qaytgan signallar) interferensiyasini kamaytirishi
+Videoda tasodifan yuzi tushib qolgan odamlar uni ommaga tarqatishga norozi bo'lishi mumkin, ularning huquqi himoya qilinishi kerak
 @0
-Ularni batareyasiz ishlatish mumkinligi
+Video sifati buziladi
 @0
-Ular faqat 2.4 GHz da ishlaydi
+Fleshka tez to'lib qoladi
+@0
+Internet tezligi pasayadi
 #3
-Diversity qabul qilish tizimi nima maqsadda qo'llaniladi?
-@0
-Dronning tezligini oshirish maqsadida
-@0
-Kameraning piksellarini ko'paytirish uchun
+Ma'lumotlar xavfsizligi doirasida donga qilinadigan kiber-hujum (Spoofing) nima?
 @3
-Ikki yoki undan ortiq antennadan foydalanib eng yaxshi signalni tanlash va qabul ishonchliligini oshirish uchun
+Xakerlar dronga soxta GPS koordinatalarini jo'natib, dronni o'zlari xohlagan joyga qo'ndirishlari va o'g'irlashlari
 @0
-GPS signalini to'xtatish uchun
+Dron kamerasini sindirishi
+@0
+Dronning batareyasini portlatishi
+@0
+Pult tugmalarini ishlamay qoldirishi
 #1
-Uzoq masofali FPV parvozlarda (Long Range) qabul qiluvchi tomonda ko'pincha qanday antenna ishlatiladi?
+Favqulodda vaziyat (masalan, yo'l-transport hodisasi) yuz berganda xususiy dron uchirish axloqi qanday?
+@0
+Uchib borib qonli rasmlar olish
 @1
-Katta gain va tor qamrov burchagiga ega bo'lgan Patch yoki Helical antenna
+Qutqaruv vertolyotlari va politsiyaga xalaqit bermaslik uchun hududdan darhol dronni olib ketish shart
 @0
-Kichkina dipol antenna
+Hamma oldiga kelib maqtanish
 @0
-Faqat omni-directional antenna
-@0
-Radio uzatgichning umuman antennasiz formasi
+Politsiyachilarni videoga tushirish
 #2
-Antennaning rezonans chastotasiga mos bo'lmasligi qanday salbiy oqibatga olib keladi?
+Huquqni muhofaza qilish organlariga olingan maxfiy tezkor ma'lumotlar qanday saqlanishi kerak?
 @0
-Motorlar ishlamay qoladi
+Telegram orqali do'stlarga yuborish kerak
 @2
-SWR (standing wave ratio) ortib, VTX qurilmasiga zarar yetishi va qizib ketishiga
+Shifrlangan disklar va ruxsat berilgan yopiq serverlarda (parollangan holda)
 @0
-Dron faqat orqaga qarab uchadi
+Ochiq YouTube kanalida
 @0
-Video sifati 4K ga o'zgaradi
-&21
+Oddiy fleshkada hamma kiradigan joyda
 #1
-FPV tizimida ichki interferensiya manbalariga nimalar kiradi?
+Dron orqali odamlarni bezovta qilish (quvish, past uchib qo'rqitish) etika va qonunga to'g'ri keladimi?
 @1
-Brushless motorlar, ESClar, uzun quvvat kabellari va DC-DC konvertorlar
+Yo'q, bu zo'ravonlik, xuliganlik hisoblanadi va ma'muriy yoki jinoiy jazoga tortilishi mumkin
 @0
-Mobil aloqa minoralari
+Ha, agar dron kichkina bo'lsa
 @0
-Quyosh radiatsiyasi
+Ha, faqat yosh bolalarni
 @0
-Wi-Fi routerlar
-#2
-Xavfli RF hududlarga qanday obyektlar atrofidagi zonalar kiradi?
-@0
-O'rmonlar va dalalar
-@2
-Aeroportlar, harbiy bazalar, televizion minoralar va elektr podstansiyalar
-@0
-Suv havzalari va ko'llar
-@0
-Ochiq sport maydonchalari
+Ha, bu shunchaki o'yin
 #3
-Kuchli interferensiya sharoitida FPV qabul qilishda nimalar kuzatilishi mumkin?
-@0
-Rasm sifatining mutlaq yaxshilanishi
-@0
-Batareyaning sovishi
+Telemetriya va parvoz jurnallari (Flight Logs) dondan uchinchi shaxslar qo'liga tushsa nima bo'ladi?
 @3
-Video tasvirdagi "snijeniya", shovqin, artefaktlar va aloqaning uzilishi
+Operatorning qayerdan uchgani, qayerlarga borgani kabi nozik marshrutlari va uyining manzili oshkor bo'lib qoladi
 @0
-Apparatning og'irligi kamayishi
-#1
-Interferensiyani kamaytirish uchun dron ichida qanday choralar ko'riladi?
-@1
-Signal va quvvat kabellarini ajratish, ferrit halqalar va LC filtrlardan foydalanish
+Dron ishlamay qoladi
 @0
-Motorlarni kattalashtirish
+Batareya zaryadsizlanadi
 @0
-Kamerani olib tashlash
-@0
-Qanotlarga metall qoplamalar qo'yish
+Pult buziladi
 #2
-Shaharlashgan hududlarda 2.4 va 5.8 GHz diapazonlarining ishlashi qanday bo'ladi?
-@0
-Dala sharoitidagidan ko'ra yaxshiroq va masofasi uzoqroq bo'ladi
+Dron pultidagi dastur (App) dan doimiy lokalizatsiyani uchinchi tomon yig'ib borishiga qanday qaraysiz?
 @2
-Ko'plab Wi-Fi va boshqa qurilmalar sababli interferensiya yuqori bo'ladi, masofa qisqarishi mumkin
+Bu xavfsizlik masalasi bo'lib, davlat sirlari yoki maxfiy obyektlar haqidagi ma'lumotlar chet davlat serverlariga ketib qolishi mumkin
 @0
-Bu hududlarda faqat 5.8 GHz yaxshi ishlaydi
+Juda yaxshi narsa
 @0
-Bu diapazonlarda chastota tekin bo'lib qoladi
-&22
+Xotirani tejaydi
+@0
+Dron tezroq uchadi
 #1
-Radio interferensiya tufayli boshqaruv aloqasi uzilib qolsa, donda qanday mexanizm ishga tushishi kerak?
+Dron bilan suratga olish qat'iyan taqiqlangan joylar ochiq-oydin bo'lsa nima qilasiz?
+@0
+Baktkadan yashirincha olaman
 @1
-Failsafe va RTH (Return-to-Home) mexanizmlari
+Hech qachon ruxsatsiz suratga olmayman
 @0
-O'z-o'zini yo'q qilish mexanizmi
+Kamerani o'chirib o'taman
 @0
-Faqat kamerani o'chirish
-@0
-Dvigatellarni maksimal tezlikda ishlatish
-#2
-Aeroportlar atrofida dron uchirish nima uchun qat'iyan man etiladi?
-@0
-Dronlar qushlarga halaqit bergani uchun
-@2
-Radarlar, navigatsion tizimlar va aviadispetcherlar aloqasiga xalaqit berishi va katta xavf tug'dirishi sababli
-@0
-Dronlar ko'zga ko'rinmaydigan chastotada ishlagani uchun
-@0
-Bu yerda havo zichligi juda katta bo'lgani uchun
+Tez uchib o'tib ketaman
 #3
-FPV dronni uchirishdan oldin radio link sifatini (signalni) qanday tekshirish tavsiya etiladi?
-@0
-Dronni darhol bulutlar orasiga olib chiqib tekshirish
-@0
-Faqat batareya zaryadini ko'rish orqali
+Axborot tizimlaridagi "Data Link Encryption" (Aloqa kanalini shifrlash) donda nima qiladi?
 @3
-Yaqin masofada RSSI va Link Quality ko'rsatkichlarini hamda FPV video sifatini kuzatish orqali
+Dron va pult o'rtasidagi video va buyruqlarni kodlaydi, hatto signal tutib olinsa ham qora ekran yoki tushunarsiz kod ko'rinadi
 @0
-Hech qanday tekshiruv shart emas
-#1
-Yuqori voltli kuch liniyalari yaqinida dron uchirishning RF xavfi nimada?
-@1
-Kuchli elektromagnit maydon va impuls shovqinlari qabul qilgichlarning signalini yo'qotishiga sabab bo'lishi
+Kamerani pikselini oshiradi
 @0
-Simlar dron batareyasini tez zaryadlashi
+Ranglarni to'yingan qiladi
 @0
-Dron motorlari o'z-o'zidan kattalashishi
-@0
-Signalning cheksiz uzoq masofaga tarqalishi
+Dasturni rus tiliga o'tkazadi
 #2
-Xavfsiz parvoz qilish uchun chastota tanlashda qanday usuldan foydalanish maqsadga muvofiq?
-@0
-Eng band va ommabop chastotani tanlash
+Davlat obyektini qo'riqlayotganda operator o'z droni kamerasini ijtimoiy tarmoqqa to'g'ridan-to'g'ri (Live stream) ulashi mumkinmi?
 @2
-Spektr analizator yoki VTX skaner yordamida tiqilinch bo'lmagan, bo'sh kanallarni tanlash
+Yo'q, bu xizmat sirlarini oshkor qilish hisoblanadi va jiddiy taqiqlanadi
 @0
-Har doim faqat bitta standart chastotada uchish
+Ha, obunachilar ko'payadi
 @0
-Dron kanalini telefon orqali doim o'zgartirib turish
+Ha, agar sifat HD bo'lsa
+@0
+Faqat kechasi mumkin
+#1
+Yovvoyi tabiatni (masalan o'rmon hayvonlarini) donda kuzatish axloqi qanday?
+@1
+Hayvonlarni cho'chitmaslik va qochishga majbur qilmaslik uchun yetarli masofa va balandlik saqlanishi kerak
+@0
+Yaqinlashib ularga tegish kerak
+@0
+Ustiga qo'nish kerak
+@0
+Ovoz chalish kerak
+#3
+Anti-Drone (Dronlarga qarshi kurashish) qurilmalaridan asossiz yovuz niyatda foydalanish oqibati nima?
+@3
+Bu davlatning havo makoni xavfsizligiga tahdid hisoblanib, noqonuniy signal to'sish oqibatida boshqa aloqa tizimlariga zarar yetkazishi mumkin
+@0
+U qonuniy
+@0
+Faqat jarima to'lanadi
+@0
+Dronlar arzonlashadi
+#2
+Operator faoliyati davomida fuqarolar "Meni kameraga tushirding, o'chir" desa qanday yo'l tutiladi (ijtimoiy joyda)?
+@2
+Vaziyatni tushuntirib, kerak bo'lsa janjal chiqarmaslik uchun nizoli kadr o'chirib yuborilishi yoki ko'rsatilishi etik jihatdan to'g'ri
+@0
+Qochib ketish kerak
+@0
+Fuqaroni o'zini urish kerak
+@0
+Politsiyaga darhol topshirish kerak
+#1
+Droningiz xato tufayli birovning bog'iga qulasa nima qilasiz?
+@1
+Uy egasiga murojaat qilib, voqeani tushuntirib uzr so'rab o'z mulkini so'rash axloqan to'g'ri (agar zarar yetsa qoplash kerak)
+@0
+Yashirincha devordan oshib tushib olib kelish
+@0
+Pult orqali donda bomba portlatish
+@0
+Dronni tashlab ketish va yangisini olish
