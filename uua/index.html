@@ -140,17 +140,6 @@
             font-size: 1.05rem;
             line-height: 1.5;
         }
-        .topic-badge {
-            display: inline-block;
-            background: #dbeafe;
-            color: #1e40af;
-            font-size: 0.78rem;
-            padding: 0.15rem 0.5rem;
-            border-radius: 0.25rem;
-            margin-left: 0.5rem;
-            vertical-align: middle;
-            font-weight: 600;
-        }
         .option {
             display: block;
             padding: 0.75rem;
@@ -310,6 +299,7 @@
         const LS_SELECTIONS = 'test_selections';
         const LS_ANSWERS = 'test_answers';
         const LS_START = 'test_start_time';
+        const LS_OPT_ORDER = 'test_opt_order';
 
         let allTopics = [];
         let testQuestions = [];
@@ -365,7 +355,8 @@
                 const student = JSON.parse(saved);
                 const selections = JSON.parse(localStorage.getItem(LS_SELECTIONS));
                 if (selections && selections.length > 0) {
-                    buildTestQuestions(selections);
+                    const savedOptOrder = JSON.parse(localStorage.getItem(LS_OPT_ORDER));
+                    buildTestQuestions(selections, savedOptOrder);
                     showTestPage(student);
                     return;
                 }
@@ -401,28 +392,52 @@
             localStorage.setItem(LS_ANSWERS, JSON.stringify({}));
             localStorage.setItem(LS_START, Date.now().toString());
 
-            buildTestQuestions(selections);
+            buildTestQuestions(selections, null);
             showTestPage(student);
         }
 
         function selectRandomQuestions() {
-            return allTopics.map((topic, idx) => {
-                const qIdx = Math.floor(Math.random() * topic.questions.length);
-                return { topicIdx: idx, qIdx };
+            // Fisher-Yates shuffle for maximum randomness in question order
+            var topicIndices = allTopics.map(function(_, i) { return i; });
+            for (var i = topicIndices.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = topicIndices[i];
+                topicIndices[i] = topicIndices[j];
+                topicIndices[j] = tmp;
+            }
+            return topicIndices.map(function(idx) {
+                var qIdx = Math.floor(Math.random() * allTopics[idx].questions.length);
+                return { topicIdx: idx, qIdx: qIdx };
             });
         }
 
-        function buildTestQuestions(selections) {
-            testQuestions = selections.map(sel => {
+        function buildTestQuestions(selections, savedOptOrder) {
+            var optOrder = savedOptOrder || [];
+            testQuestions = selections.map(function(sel, si) {
                 const topic = allTopics[sel.topicIdx];
                 const q = topic.questions[sel.qIdx];
+                var order;
+                if (optOrder[si]) {
+                    order = optOrder[si];
+                } else {
+                    order = q.options.map(function(_, i) { return i; });
+                    for (var i = order.length - 1; i > 0; i--) {
+                        var j = Math.floor(Math.random() * (i + 1));
+                        var tmp = order[i];
+                        order[i] = order[j];
+                        order[j] = tmp;
+                    }
+                    optOrder[si] = order;
+                }
+                var shuffledOptions = order.map(function(oi) { return q.options[oi]; });
                 return {
                     topicId: topic.id,
                     difficulty: q.difficulty,
                     text: q.text,
-                    options: q.options
+                    options: shuffledOptions
                 };
             });
+            localStorage.setItem(LS_OPT_ORDER, JSON.stringify(optOrder));
         }
 
         // ========== Test page ==========
@@ -449,8 +464,7 @@
 
                 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
                 let html = '<div class="question-title">' +
-                    (qIndex + 1) + '. ' + q.text.replace(/\n/g, '<br>') +
-                    ' <span class="topic-badge">' + q.topicId + '-mavzu</span></div>';
+                    (qIndex + 1) + '. ' + q.text.replace(/\n/g, '<br>') + '</div>';
 
                 q.options.forEach((opt, optIndex) => {
                     const letter = letters[optIndex] || String.fromCharCode(65 + optIndex);
@@ -576,6 +590,7 @@
             localStorage.removeItem(LS_SELECTIONS);
             localStorage.removeItem(LS_ANSWERS);
             localStorage.removeItem(LS_START);
+            localStorage.removeItem(LS_OPT_ORDER);
         }
 
         async function sendToTelegram(message) {
@@ -610,6 +625,7 @@
             localStorage.removeItem(LS_SELECTIONS);
             localStorage.removeItem(LS_ANSWERS);
             localStorage.removeItem(LS_START);
+            localStorage.removeItem(LS_OPT_ORDER);
             testQuestions = [];
             document.getElementById('inp-ism').value = '';
             document.getElementById('inp-familiya').value = '';
