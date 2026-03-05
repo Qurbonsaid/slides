@@ -520,7 +520,7 @@
             }
 
             const student = JSON.parse(localStorage.getItem(LS_STUDENT));
-            const startTime = parseInt(localStorage.getItem(LS_START));
+            const startTime = parseInt(localStorage.getItem(LS_START)) || Date.now();
             const elapsedMin = Math.round((Date.now() - startTime) / 60000);
 
             const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
@@ -558,6 +558,7 @@
             try {
                 sent = await sendToTelegram(message);
             } catch (e) {
+                console.error('Telegram xatolik:', e);
                 sent = false;
             }
 
@@ -584,7 +585,9 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ chat_id: CHAT_ID, text: message })
             });
-            return res.ok;
+            if (!res.ok) return false;
+            const data = await res.json();
+            return data.ok === true;
         }
 
         // ========== Result page ==========
